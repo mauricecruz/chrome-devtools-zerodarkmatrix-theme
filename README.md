@@ -9,20 +9,25 @@ Tested on v. **28.0.1478.0 dev-m**
 ## Preview
 
 
-### Console
-![console]
-
 ### Elements
 ![elements]
 
-### Sources
-![sources]
+###Resources
+![resources]
 
 ###Network
 ![network]
 
+### Sources
+![sources]
+
+### Console
+![console]
+
 
 [elements]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/elements.png?raw=true "Elements"
+[elements2]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/elements2.png?raw=true "Elements"
+[resources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/resources.png?raw=true "Resources"
 [network]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network.png?raw=true "Network"
 [sources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/sources.png?raw=true "Sources"
 [console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
