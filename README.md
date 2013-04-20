@@ -5,6 +5,36 @@ A highly customized dark theme for Google Chrome.
 Tested on v. **28.0.1478.0 dev-m**
 
 
+
+## Preview
+
+
+### Console
+![console]
+
+### Elements
+![elements]
+
+### Sources
+![sources]
+
+###Network
+![network]
+
+
+[elements]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/elements.png?raw=true "Elements"
+[network]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network.png?raw=true "Network"
+[sources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/sources.png?raw=true "Sources"
+[console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
+
+## Features
+* Majority of inspector chrome re-styled
+* Customized Scrollbars
+* Animation for Finding
+* Subtle pulsating element selection
+* Animated Fading of inactive css elements 
+* Re-styled Popovers (PSD files included)
+
 ## Instructions
 
 Copy **Custom.css** and paste in:
@@ -32,35 +62,6 @@ C:\Users\YourUsername\AppData\Local\Google\Chrome\User Data\Default\User StyleSh
 ```
 C:\Documents and Settings\YourUsername\Local Settings\Application Data\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
 ```
-
-## Features
-* Majority of inspector chrome re-styled
-* Customized Scrollbars
-* Animation for Finding
-* Subtle pulsating element selection
-* Animated Fading of inactive css elements 
-* Re-styled Popovers (PSD files included)
-
-## Preview
-
-
-### Console
-![console]
-
-### Elements
-![elements]
-
-### Sources
-![sources]
-
-###Network
-![network]
-
-
-[elements]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/elements.png?raw=true "Elements"
-[network]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network.png?raw=true "Network"
-[sources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Sources"
-[console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
 
 ## Todos
 
