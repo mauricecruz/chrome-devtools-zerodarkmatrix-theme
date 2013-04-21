@@ -33,9 +33,9 @@
 /**********************************************/
 
 @-webkit-keyframes match-animation {
-      0% { box-shadow: 0px 0px 0px #222; background-color: #222; color: #222;}
-    50% { box-shadow: 0px 0px 25px #89F5A2;}
-    100% { box-shadow: 0px 0px 0px #89F5A2; background-color: #89F5A2;}
+      0% { box-shadow: 0 0 0 #222; background-color: #222; color: #222;}
+    50% { box-shadow: 0 0 25px #89F5A2;}
+    100% { box-shadow: 0 0 0 #89F5A2; background-color: #89F5A2;}
 }
 
 @-webkit-keyframes pulsate {
@@ -73,7 +73,7 @@
 }
 
 #-webkit-web-inspector ::-webkit-scrollbar-thumb:vertical{
-  -webkit-box-shadow: inset 3px 0px 5px 0 rgba(255,255,255,0.3) !important; 
+  -webkit-box-shadow: inset 3px 0 5px 0 rgba(255,255,255,0.3) !important; 
 }
 
 
@@ -157,7 +157,7 @@
   #-webkit-web-inspector.dock-to-right:not(.detached) .panel.audits .split-view-contents:nth-child(2),
   #-webkit-web-inspector.dock-to-right:not(.detached) .panel.profiles .split-view-contents:nth-child(2) {
     width: 100% !important;
-    height: 0% !important;
+    height: 0 !important;
     top: 20% !important;
     left: 0 !important;
     z-index: 1;
@@ -177,7 +177,7 @@
     top: auto !important;
     bottom: 0 !important;
     -webkit-transition: height 0.2s ease 0.2s;
-    box-shadow: 0px -1px 3px rgba(0,0,0,0.7);
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.7);
   }
 
   #-webkit-web-inspector.dock-to-right:not(.detached) .panel.resources .split-view-contents:nth-child(2) {
@@ -224,7 +224,7 @@
 
   #-webkit-web-inspector.dock-to-right:not(.detached) .panel.timeline .split-view-sidebar-left .sidebar-tree-section {
     /** COUNTERS and RECORDS label */
-    padding-left: 0px !important;
+    padding-left: 0 !important;
     font-size: 8px !important;
     overflow: hidden;
     padding-top: 3px !important;
@@ -454,7 +454,7 @@
 }
 
 #-webkit-web-inspector button:hover {
-  background-color: none !important;
+  background-color: transparent !important;
 }
 
 #-webkit-web-inspector button.scripts-step-over .glyph,
@@ -903,7 +903,7 @@
 }
 
 .console-formatted-node:hover{
-  background-color: #none !important;
+  background-color: transparent !important;
 }
 
 #-webkit-web-inspector .section .properties .name,
@@ -948,18 +948,7 @@
   background-color: #89f5a2 !important;
 }
 
-/* Add drop down arrows to Event Listeners */
-#-webkit-web-inspector .section.expanded .header::before,
-#-webkit-web-inspector .event-bars .event-bar.expanded .header::before,
-#-webkit-web-inspector #scripts-debug-sidebar-contents .properties-tree li.parent.expanded::before {
- 
-}
 
-#-webkit-web-inspector .section .header::before,
-#-webkit-web-inspector .event-bars .event-bar .header::before,
-#-webkit-web-inspector #scripts-debug-sidebar-contents .properties-tree li.parent::before {
- 
-}
 
 /*Data Containers aka table views */
 #-webkit-web-inspector .data-container td{
@@ -1083,7 +1072,7 @@
 }
 
 #-webkit-web-inspector .resource-headers-view .outline-disclosure .header-toggle:hover{
-  text-shadow: 0px 0px 10px #89f5a2;
+  text-shadow: 0 0 10px #89f5a2;
 }
 
 
@@ -1167,8 +1156,8 @@
   color: #777 !important;
 }
 
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-meta.
-#-webkit-web-inspector .cm-s-web-inspector-css span..revision-history-link {
+#-webkit-web-inspector .cm-s-web-inspector-css span.cm-meta,
+#-webkit-web-inspector .cm-s-web-inspector-css span.revision-history-link {
   color: #00a8ff !important;
 }
 
@@ -1462,7 +1451,7 @@ color: #9981BC !important;
   color: #f1f1f1 !important;
 }
 
-//object properties
+
 #-webkit-web-inspector #console-messages .section .properties .name, .event-properties .name {
   color: #96cbfe !important;
 }
@@ -1470,24 +1459,14 @@ color: #9981BC !important;
 
 /*exception icon state colors */
 #-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph{
-  background-color: rgba(180,3,3,.74) !important;
-
+  background-color: rgba(180,3,3,.4) !important;    
 }
 
 #-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph{
-  background-color: #D5B500 !important;
+  background-color: rgba(213,181,0,.6) !important;
 
 }
 
-#-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught{
-  
-
-}
-
-#-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-all{
-  
-
-}
 
 #-webkit-web-inspector .webkit-highlighted-line{
   background-color: #444 !important;
@@ -1885,9 +1864,6 @@ color: #9981BC !important;
   height: 20px !important;
 }
 
-#-webkit-web-inspector .popover.custom-popup-vertical-scroll{
-  
-}
 
 #-webkit-web-inspector .webkit-line-content .text-editor-overlay-highlight{
   background-color: rgba(137,245,162,.4) !important;
@@ -1926,7 +1902,7 @@ color: #9981BC !important;
   color: #000 !important;
   background-color: #222 !important;
   border: 2px rgba(0,0,0,.2) solid !important;
-  box-shadow: 0px 8px 10px 1px rgba(0,0,0,.1) !important;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,.1) !important;
 }
 
 #-webkit-web-inspector .suggest-box-content-item.source-code:hover {  
