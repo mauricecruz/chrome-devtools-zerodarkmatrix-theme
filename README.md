@@ -2,7 +2,8 @@
 
 A highly customized dark theme for Google Chrome. 
 
-Tested on v. **28.0.1478.0 dev-m**
+
+Tested on [Chrome Dev Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **28.0.1478.0 dev-m**
 
 
 
