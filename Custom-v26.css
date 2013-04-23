@@ -1,8 +1,5 @@
 /**********************************************/
 /* Zero-Dark-Matrix
-/* Optimized for Chrome Stable Channel
-/* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
-/*
 /* Forked from @simonowendesign and tweaked by Maurice Cruz
 /* https://github.com/simonowendesign/SO-Dark-Monokai
 /*  
@@ -97,7 +94,7 @@ body.platform-windows, body.platform-windows .toolbar-label {
 }
 
 body.platform-windows .toolbar-label{
-  font-size: 1em !important;
+  font-size: .9em !important;
 }
 
  
@@ -660,13 +657,6 @@ body.platform-windows .toolbar-label{
   background-color: #242424 !important;
 }
 
-#-webkit-web-inspector .styles-element-state-pane.expanded {
-  border-bottom: 1px solid #333 !important;
-}
-
-#-webkit-web-inspector .styles-element-state-pane {
-  background: #333 !important;
-}
 
 /* Style Bar  */
 #-webkit-web-inspector .styles-section .value {
@@ -1036,7 +1026,8 @@ body.platform-windows .toolbar-label{
   border-right: none !important;
 }
 
-#-webkit-web-inspector #network-container .header{
+#-webkit-web-inspector #network-container .header,
+#-webkit-web-inspector #network-container .header select{
   color: #89f5a2 !important;
 }
 
@@ -1064,6 +1055,15 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .network-log-grid.data-grid table {
   color: #333 !important;
 }
+
+#-webkit-web-inspector .data-grid .network-timeline-grid .resources-divider-label{
+  color: #db0 !important;
+}
+
+#-webkit-web-inspector .data-grid .network-timeline-grid .resources-divider{
+  border-right: 1px solid rgba(51,51,51,.8);
+}
+
 
 #-webkit-web-inspector .outline-disclosure > ol,
 #-webkit-web-inspector .resource-headers-view .outline-disclosure .parent {
@@ -1280,6 +1280,7 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .sidebar-pane-toolbar .sidebar-pane-subtitle,
 #-webkit-web-inspector .sidebar-pane{
   color: #bbb !important;  
+  text-shadow: none;
 }
 
 /*pane colors*/
@@ -1290,10 +1291,12 @@ body.platform-windows .toolbar-label{
     color-stop(0.05, rgb(88,88,88)),
     color-stop(0.05, rgb(80,80,80)),
     to(rgb(45, 42, 48))) !important;
-  color: rgb(204, 204, 204);
+  color: #ddd !important;
+  font-weight: 500 !important;
   border-top: #333 !important;
   border-bottom: #333 !important;  
   text-shadow: none !important;
+
 }
 
 #-webkit-web-inspector .pane-title-button.add,
@@ -1708,6 +1711,11 @@ color: #9981BC !important;
   margin-top: -46px !important;
   padding: 4px 0 !important;
   border-bottom: 1px solid #666 !important;
+}
+
+#-webkit-web-inspector .body {
+  background: #222 !important;
+  
 }
 
 #-webkit-web-inspector .styles-element-state-pane.expanded {
