@@ -1,34 +1,9 @@
-/**********************************************/
+/*****************************************************************************/
 /* Zero-Dark-Matrix
 /* Optimized for Chrome Dev/Canary Channel v28
 /* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
-/*
-/* Forked from @simonowendesign and tweaked by Maurice Cruz
-/* https://github.com/simonowendesign/SO-Dark-Monokai
-/*  
-/* Custom scrollbars influenced from:
-/* http://css-tricks.com/custom-scrollbars-in-webkit/
-/*
-/* SO-Dark-Monokai
-/* https://github.com/simonowendesign/SO-Dark-Monokai
-/* Taken from the below and tweaked by Simon Owen (@simonowendesign)
-/*
-/* IR_Dark_Monokai
-/* Designed and developed by Andres Pagella (@mapagella)
-/* http://www.andrespagella.com/customising-chrome-devtools
-/*
-/* Based on Ben Truyman's IR_Black
-/* which is...
-/* Based on Todd Werth's IR_Black:
-/* http://blog.toddwerth.com/entries/2
-/*
-/* With some toolbar code from Harris Novick:
-/* https://gist.github.com/4316646
-/*
-/* Inspired by Darcy Clarke's blog post:
-/* http://darcyclarke.me/design/skin-your-chrome-inspector/
-/*
-/*
+/*************************************************************************/
+
 /**********************************************
 /* Animations
 /**********************************************/
@@ -44,19 +19,85 @@
     100% { background-color: #333;}
 }
 
-@-webkit-keyframes fadeInRightBig {
+@-webkit-keyframes bounceInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(2000px);
+    -webkit-transform: translateX(-550px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
   }
 
   100% {
-    opacity: 1;
     -webkit-transform: translateX(0);
   }
 }
 
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(550px);
+  }
 
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(500px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideInLeftBig {
+  0% {    
+    -webkit-transform: translateX(-500px);
+  }
+
+  100% {    
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRightBig {
+  0% {    
+    -webkit-transform: translateX(500px);
+  }
+
+  100% {    
+    -webkit-transform: translateX(0);
+  }
+}
 /************************************************
 /* Scrollbars
 /************************************************/
@@ -470,9 +511,48 @@
   Styles
 */
 #-webkit-web-inspector,
-#-webkit-web-inspector .split-view-contents {
-  background-color: #242424;
+#-webkit-web-inspector .split-view-contents,
+#-webkit-web-inspector .split-view,
+#-webkit-web-inspector #scripts-split-view{
+  background-color: #242424;  
 }
+
+/*cursor color*/
+#-webkit-web-inspector .text-editor-editable:focus,
+#-webkit-web-inspector .editing:focus{
+  color: #89F5A2 !important;    
+}
+
+
+/* Animations for Elements Panel */
+
+
+#-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second,
+#-webkit-web-inspector .panel.scripts .split-view-horizontal .split-view-contents-second.split-view-sidebar{
+  -webkit-animation: bounceInUp 1s ease-in-out;  
+  z-index: 99;
+}
+
+/* Animations for Sources Panel */
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents{
+  -webkit-transition: right .5s ease-in-out;  
+
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-sidebar{
+  -webkit-animation: slideInRightBig .5s ease-out;  
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents-first.split-view-sidebar{
+  -webkit-animation: none !important
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay{
+  -webkit-animation: slideInLeftBig .5s ease-out;
+}
+
+
 
 #-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#505050,#383838) !important;  
@@ -962,13 +1042,13 @@
 
 #-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit {
   background-color: #333 !important;
-  border-right: 5px solid #89f5a2 !important;
+  border-right: 5px solid #89F5A2 !important;
   -webkit-transition: border-right .5s ease-out 0;
   -webkit-transition: background-color .5s ease-out 0;
 }
 
 #-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit:after {
-  background-color: #89f5a2 !important;
+  background-color: #89F5A2 !important;
 }
 
 /*Data Containers aka table views */
@@ -992,7 +1072,7 @@
 }
 
 #-webkit-web-inspector #network-container .header{
-  color: #89f5a2 !important;
+  color: #89F5A2 !important;
 }
 
 #-webkit-web-inspector #network-container:not(.brief-mode) .network-log-grid.data-grid td.name-column:hover{
@@ -1062,7 +1142,7 @@
 
 /*animate display of network panes */
 #-webkit-web-inspector #network-views{
-    -webkit-animation: fadeInRightBig .5s cubic-bezier(.67,.79,.18,.87);
+    -webkit-animation: bounceInRight .5s ease-in-out;
 }
 
 
@@ -1101,7 +1181,7 @@
 }
 
 #-webkit-web-inspector .resource-headers-view .outline-disclosure .header-toggle:hover{
-  text-shadow: 0 0 10px #89f5a2;
+  text-shadow: 0 0 10px #89F5A2;
 }
 
 #-webkit-web-inspector .network-log-grid.data-grid tr.filler {
@@ -1850,7 +1930,7 @@ color: #9981BC !important;
 }
 
 #-webkit-web-inspector .revision-history-link{
-  color: #89f5a2 !important;
+  color: #89F5A2 !important;
 }
 
 /***************************************************
@@ -1916,7 +1996,7 @@ color: #9981BC !important;
 }
 
 #-webkit-web-inspector .suggest-box .source-code .prefix{
-  color: #89f5a2!important;
+  color: #89F5A2!important;
 }
 
 #-webkit-web-inspector .suggest-box .source-code .suffix{
