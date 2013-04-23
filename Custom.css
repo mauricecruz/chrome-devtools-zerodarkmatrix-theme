@@ -1,9 +1,11 @@
 /**********************************************/
 /* Zero-Dark-Matrix
+/* Optimized for Chrome Dev/Canary Channel v28
+/* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
+/*
 /* Forked from @simonowendesign and tweaked by Maurice Cruz
 /* https://github.com/simonowendesign/SO-Dark-Monokai
 /*  
-/*
 /* Custom scrollbars influenced from:
 /* http://css-tricks.com/custom-scrollbars-in-webkit/
 /*
@@ -26,7 +28,7 @@
 /* Inspired by Darcy Clarke's blog post:
 /* http://darcyclarke.me/design/skin-your-chrome-inspector/
 /*
-/**********************************************/
+/*
 /**********************************************
 /* Animations
 /**********************************************/
@@ -691,6 +693,7 @@
   margin-top: 2px !important;
   min-width: 75px !important;  
   text-align: center !important;  
+  height: 30px !important;
 }
 
 /* adjust for horizontal split panels */
@@ -1462,7 +1465,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title::before{
   background-image: none !important;
   -webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
-  -webkit-mask-position: -4px -96px !important;  
+  -webkit-mask-position: -4px -95px !important;  
   -webkit-mask-repeat: no-repeat !important;  
   color: rgba(0,0,0,0) !important;
   background-color: #AAB0AF !important;
@@ -1499,9 +1502,17 @@ color: #9981BC !important;
 #-webkit-web-inspector .sidebar-pane .parent.expanded::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title.expanded::before{
   -webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
-  -webkit-mask-position: -20px -96px !important;    
+  -webkit-mask-position: -20px -95px !important;    
   -webkit-mask-repeat: no-repeat !important;
   width: 10px !important;
+}
+
+#-webkit-web-inspector .resource-view .properties-tree li.parent::before{
+  -webkit-mask-position: -4px -93px !important;    
+}
+
+#-webkit-web-inspector .resource-view .properties-tree li.parent.expanded::before{
+  -webkit-mask-position: -20px -93px !important;    
 }
 
 /* sort arrows point down*/
