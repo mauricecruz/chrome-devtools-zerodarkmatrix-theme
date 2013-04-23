@@ -938,6 +938,7 @@
 #-webkit-web-inspector .scripts.panel .outline-disclosure li.selected .selection,
 #-webkit-web-inspector .outline-disclosure ol:focus li.selected {
   background: #444 !important;
+  border-radius: 2px !important;
 }
 
 /* DOM Breakpoints */
@@ -1027,12 +1028,14 @@
 }
 
 #-webkit-web-inspector #network-views .resource-cookies-view.visible tr:nth-child(odd){
-  background-color: #222 !important;
+  background-color: #2d2d2d !important;
 }
 
 #-webkit-web-inspector #network-views .resource-cookies-view.visible .data-grid.visible{
   border: 1px solid #333 !important;
 }
+
+
 
 /* Network Timing Pane */
 #-webkit-web-inspector .resource-timing-view .network-timing-bar-title{
