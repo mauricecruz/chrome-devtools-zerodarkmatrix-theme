@@ -41,9 +41,11 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 ## Features
 * Majority of inspector chrome re-styled
 * Customized Scrollbars
-* Animation for Finding
+* Animations for 
+** finding elements
+** setting elements inactive
+** elements/sources/network panels
 * Subtle pulsating element selection
-* Animated Fading of inactive css elements 
 * Re-styled Popovers (PSD files included)
 
 ## Instructions
@@ -86,7 +88,8 @@ C:\Documents and Settings\YourUsername\Local Settings\Application Data\Google\Ch
 ## Credits
 
 * Thanks to Simon Owen for the base styles.  I used his [So-Dark-Monokai-v3](https://github.com/simonowendesign/SO-Dark-Monokai-v3) as a starting point.
-* CSS Tricks for the tutorial on customized scrollbars. http://css-tricks.com/custom-scrollbars-in-webkit/
+* CSS Tricks for the [tutorial on customized scrollbars](http://css-tricks.com/custom-scrollbars-in-webkit/). 
+* [Animate.css](https://github.com/daneden/animate.css) for some of the animations.
 
 *Simon's version also used samples from other templates so I will thank them as well!*
 * [IR_Dark_Monokai](http://www.andrespagella.com/customising-chrome-devtools) - Designed and developed by Andres Pagella (@mapagella) 
