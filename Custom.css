@@ -1028,10 +1028,25 @@
   -webkit-box-shadow: rgba(0,0,0,.5) 10px 2px 25px -7px !important;
 }
 
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title,
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
+  color: #000 !important;
+  text-shadow: none !important;
+}
+
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected{
+  background: #89F5A2 !important;
+  border-radius: 2px !important;
+}
+
 #-webkit-web-inspector .scripts.panel .outline-disclosure li.selected .selection,
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected {
+#-webkit-web-inspector .outline-disclosure li.selected {
   background: #444 !important;
   border-radius: 2px !important;
+}
+
+#-webkit-web-inspector .outline-disclosure li:hover {
+  background: #333 !important;  
 }
 
 /* DOM Breakpoints */
