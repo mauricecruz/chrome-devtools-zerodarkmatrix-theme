@@ -6,7 +6,7 @@ A highly customized dark theme for Google Chrome. There are 2 versions:
 Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **28.0.1486.0 canary**
 
 
-**Custom-v26.css**
+**Custom-Stable.css**
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **26.0.1410.64 m**
 
 
