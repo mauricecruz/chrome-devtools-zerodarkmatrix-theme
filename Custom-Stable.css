@@ -42,6 +42,85 @@
     100% { background-color: #333;}
 }
 
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-550px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(550px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(500px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideInLeftBig {
+  0% {    
+    -webkit-transform: translateX(-500px);
+  }
+
+  100% {    
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideInRightBig {
+  0% {    
+    -webkit-transform: translateX(500px);
+  }
+
+  100% {    
+    -webkit-transform: translateX(0);
+  }
+}
 
 
 /************************************************
@@ -514,8 +593,46 @@ body.platform-windows .toolbar-label{
   Styles
 */
 #-webkit-web-inspector,
-#-webkit-web-inspector .split-view-contents {
+#-webkit-web-inspector .split-view-contents,
+#-webkit-web-inspector .split-view,
+#-webkit-web-inspector #scripts-split-view{
   background-color: #242424;
+}
+
+
+/*cursor color*/
+#-webkit-web-inspector .text-editor-editable:focus,
+#-webkit-web-inspector .editing:focus{
+  color: #89F5A2 !important;    
+}
+
+
+/* Animations for Elements Panel */
+
+
+#-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second,
+#-webkit-web-inspector .panel.scripts .split-view-horizontal .split-view-contents-second.split-view-sidebar{
+  -webkit-animation: bounceInUp 1s ease-in-out;  
+  z-index: 99;
+}
+
+/* Animations for Sources Panel */
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents{
+  -webkit-transition: right .5s ease-in-out;  
+
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-sidebar{
+  -webkit-animation: slideInRightBig .5s ease-out;  
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents-first.split-view-sidebar{
+  -webkit-animation: none !important
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay{
+  -webkit-animation: slideInLeftBig .5s ease-out;
 }
 
 #-webkit-web-inspector #toolbar {
@@ -735,7 +852,12 @@ body.platform-windows .toolbar-label{
 /*adjustment for smaller resources view */
 #-webkit-web-inspector .small .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-title{
   position: relative;
-  top: -5px;
+  top: -5px;  
+}
+
+#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-title{
+text-shadow: none !important;
+font-weight: 500 !important;
 }
 
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{
@@ -759,7 +881,10 @@ body.platform-windows .toolbar-label{
 
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab:hover .tabbed-pane-header-tab-title{
   color: #eee !important;
+  text-shadow: none !important;
+  font-weight: 500 !important;
 }
+
 
 /*adjust network tab placement */
 #-webkit-web-inspector .network .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{  
@@ -1689,8 +1814,17 @@ color: #9981BC !important;
   color: #f1f1f1;
 }
 
+/*hover over selection on whole line*/
 #-webkit-web-inspector #elements-content li.hovered:not(.selected) .selection {
-  background: rgba(255, 255, 255, .2) !important;
+
+}
+
+/*hover over selection on element only*/
+#-webkit-web-inspector #elements-content li:hover {  
+  background: #333 !important;
+  border-radius: 4px !important;
+  z-index: 999999 !important;
+  
 }
 
 #-webkit-web-inspector #elements-content ol:focus li.selected .selection {
@@ -1843,7 +1977,7 @@ color: #9981BC !important;
 }
 
 #-webkit-web-inspector .webkit-execution-line{
-  -webkit-animation: pulsate 3s infinite !important;
+  -webkit-animation: pulsate 2.5s infinite !important;
   outline: none !important;
 }
 
