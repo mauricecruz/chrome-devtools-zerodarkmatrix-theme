@@ -523,10 +523,11 @@
   Styles
 */
 #-webkit-web-inspector,
+#-webkit-web-inspector .panel.scripts .split-view-horizontal,
 #-webkit-web-inspector .split-view-contents,
 #-webkit-web-inspector .split-view,
 #-webkit-web-inspector #scripts-split-view{
-  background-color: #242424;  
+  background-color: #222;  
 }
 
 /*cursor color*/
@@ -539,8 +540,8 @@
 /* Animations for Elements Panel */
 
 
-#-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second,
-#-webkit-web-inspector .panel.scripts .split-view-horizontal .split-view-contents-second.split-view-sidebar{
+#-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second:not(.metrics-and-computed),
+#-webkit-web-inspector .panel.scripts .split-view-horizontal > .split-view-contents-second.split-view-sidebar{
   -webkit-animation: bounceInUp 1s ease-in-out;  
   z-index: 99;
 }
@@ -556,12 +557,16 @@
   -webkit-animation: slideInRightBig .5s ease-out;  
 }
 
+#-webkit-web-inspector .panel.scripts div:not(.split-view-horizontal) .split-view-vertical .split-view-sidebar{
+  -webkit-animation: none !important;
+}
+
 #-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents-first.split-view-sidebar{
   -webkit-animation: none !important
 }
 
 #-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay{
-  -webkit-animation: slideInLeftBig .5s ease-out;
+  -webkit-animation: slideInLeftBig .5s ease-in;
 }
 
 
