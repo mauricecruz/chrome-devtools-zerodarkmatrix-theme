@@ -848,9 +848,6 @@
   top: 5px !important;
 }
 
-#-webkit-web-inspector .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-close-button{
-  color: #89F5A2!important;
-}
 
 #-webkit-web-inspector .help-window-main,
 #-webkit-web-inspector .help-window-main label:hover{
