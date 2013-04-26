@@ -24,6 +24,8 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 ###Network
 ![network]
 
+![network-headers]
+
 ### Sources
 ![sources]
 
@@ -35,6 +37,7 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 [elements2]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/elements2.png?raw=true "Elements"
 [resources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/resources.png?raw=true "Resources"
 [network]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network.png?raw=true "Network"
+[network-headers]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network-headers.png?raw=true "Network"
 [sources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/sources.png?raw=true "Sources"
 [console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
 
