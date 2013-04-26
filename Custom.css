@@ -627,13 +627,13 @@
   color: #f8f8f8 !important;
 }
 
-#-webkit-web-inspector #toolbar div:first-child {
+
+
+#-webkit-web-inspector.show-toolbar-icons .toolbar-icon{
   display: none !important;
 }
 
-#-webkit-web-inspector #toolbar > div:first-child {
-  display: block !important;
-}
+
 
 #-webkit-web-inspector #main {
   top: 34px !important;
