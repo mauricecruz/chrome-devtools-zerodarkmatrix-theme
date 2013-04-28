@@ -1613,6 +1613,21 @@ color: #9981BC !important;
   opacity: 1 !important;
 }
 
+/*pixel adjustment for mac */
+#-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent .expand-element,
+#-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section .header::before,
+#-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent::before,
+#-webkit-web-inspector.platform-mac .outline-disclosure li.parent::before,
+#-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent::before,
+#-webkit-web-inspector.platform-mac .properties-tree li.parent::before,
+#-webkit-web-inspector.platform-mac .section > .header::before,
+#-webkit-web-inspector.platform-mac .section .event-bar .header::before,
+#-webkit-web-inspector.platform-mac .sidebar-pane .parent::before,
+#-webkit-web-inspector.platform-mac .sidebar-pane-stack .sidebar-pane-title::before{
+  -webkit-mask-position: -4px -96px !important;
+}
+
+
 /* disable dark background for timeline */
 #-webkit-web-inspector #timeline-graphs, 
 #-webkit-web-inspector #memory-counters-graph, 
@@ -1646,6 +1661,20 @@ color: #9981BC !important;
   -webkit-mask-position: -20px -95px !important;    
   -webkit-mask-repeat: no-repeat !important;
   width: 10px !important;
+}
+
+/*pixel adjustment for mac */
+#-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent.expanded .expand-element,
+#-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section.expanded .header::before,
+#-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent.expanded::before,
+#-webkit-web-inspector.platform-mac .outline-disclosure li.parent.expanded::before,
+#-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent.expanded::before,
+#-webkit-web-inspector.platform-mac .properties-tree li.parent.expanded::before,
+#-webkit-web-inspector.platform-mac .section.expanded > .header::before,
+#-webkit-web-inspector.platform-mac .section .event-bar.expanded .header::before,
+#-webkit-web-inspector.platform-mac .sidebar-pane .parent.expanded::before,
+#-webkit-web-inspector.platform-mac .sidebar-pane-stack .sidebar-pane-title.expanded::before{
+   -webkit-mask-position: -20px -96px !important;
 }
 
 #-webkit-web-inspector .resource-view .properties-tree li.parent::before{
