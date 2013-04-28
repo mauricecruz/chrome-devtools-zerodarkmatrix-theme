@@ -801,7 +801,6 @@
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{
   border-top: 2px solid rgba(0,0,0,0) !important;
   margin-top: 2px !important;
-  min-width: 75px !important;  
   text-align: center !important;  
   height: 30px !important;
 }
@@ -814,7 +813,6 @@
 #-webkit-web-inspector .small .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{
   border-top: 2px solid rgba(0,0,0,0) !important;
   margin-top: 5px !important;
-  min-width: 75px !important;  
   text-align: center !important;  
 }
 
