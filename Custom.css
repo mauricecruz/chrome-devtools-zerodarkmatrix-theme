@@ -652,12 +652,12 @@
   font-size: 11px !important;
 }
 
-#-webkit-web-inspector .toolbar-item {
+#-webkit-web-inspector .toolbar-item:not(.close-left){
   height: 37px !important;
 }
 
-#-webkit-web-inspector .close-left {
-  margin: 10px 0 0 0 !important;
+#-webkit-web-inspector .close-left{
+  margin: 6px 0 0 0 !important;  
 }
 
 /* Panes */
