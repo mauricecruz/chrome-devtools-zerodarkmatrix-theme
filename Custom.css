@@ -1046,6 +1046,10 @@
   text-shadow: none !important;
 }
 
+#-webkit-web-inspector .base-navigator-tree-element-title.being-edited{
+  color: #000 !important;
+}
+
 #-webkit-web-inspector .outline-disclosure ol:focus li.selected{
   background: #89F5A2 !important;
   border-radius: 2px !important;
