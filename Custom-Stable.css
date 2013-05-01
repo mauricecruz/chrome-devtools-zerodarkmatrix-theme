@@ -871,7 +871,30 @@ body.platform-windows .toolbar-label{
 /*adjustment for smaller resources view */
 #-webkit-web-inspector .small .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-title{
   position: relative;
-  top: -5px;
+  top: -5px;  
+}
+
+#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab .tabbed-pane-header-tab-title,
+#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-title,
+#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab:hover .tabbed-pane-header-tab-title{
+text-shadow: none !important;
+font-weight: 500 !important;
+color: #eee !important;
+}
+
+#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab .tabbed-pane-header-tab-title{
+color: #aaa !important;
+}
+
+#-webkit-web-inspector .panel.network .tabbed-pane-header-tabs-drop-down{
+  color: #bbb !important;
+  margin-top: -4px !important;
+}
+
+#-webkit-web-inspector .panel.network .tabbed-pane-header-tabs-drop-down select{
+  background: #222 !important;
+  color: #eee;
+  padding: 5px !important;
 }
 
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{
@@ -880,6 +903,7 @@ body.platform-windows .toolbar-label{
   min-width: 75px !important;  
   text-align: center !important;  
 }
+
 
 /* adjust for horizontal split panels */
 #-webkit-web-inspector .split-view-horizontal .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{
@@ -893,14 +917,6 @@ body.platform-windows .toolbar-label{
   text-align: center !important;  
 }
 
-#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab .tabbed-pane-header-tab-title{
-  color: #bbb !important;
-  text-shadow: none !important;
-}
-
-#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab:hover .tabbed-pane-header-tab-title{
-  color: #eee !important;
-}
 
 /*adjust network tab placement */
 #-webkit-web-inspector .network .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab{  
@@ -915,11 +931,6 @@ body.platform-windows .toolbar-label{
   top: -1px !important;
   padding-top: 5px !important;   
   border-bottom: none !important;
-}
-
-#-webkit-web-inspector .tabbed-pane-header-tabs-drop-down{
-  color: #bbb !important;
-  bottom: 5px !important;
 }
 
 #-webkit-web-inspector .scripts .tabbed-pane-header,
@@ -990,11 +1001,6 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .source-code {
   color: #CCC !important;
 }
-
-#-webkit-web-inspector .sidebar-pane .body{
-  background-color: #222 !important;
-}
-
 
 #-webkit-web-inspector .sidebar-pane .body .metrics{
   color: #000 !important;
@@ -1131,14 +1137,8 @@ body.platform-windows .toolbar-label{
 /* Scripts */
 #-webkit-web-inspector .scripts.panel .sidebar-overlay {
   background: #242424;
-  border-right: none !important;
+  border-right: none !important;  
   -webkit-box-shadow: rgba(0,0,0,.5) 10px 2px 25px -7px !important;
-}
-
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title,
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
-  color: #000 !important;
-  text-shadow: none !important;
 }
 
 #-webkit-web-inspector .scripts.panel .outline-disclosure li.selected .selection,
@@ -1151,6 +1151,12 @@ body.platform-windows .toolbar-label{
   border-radius: 2px !important;
 }
 
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title,
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
+  color: #222 !important;
+  text-shadow: none !important;
+}
+
 #-webkit-web-inspector .scripts.panel .outline-disclosure li.selected .selection,
 #-webkit-web-inspector .outline-disclosure li.selected {
   background: #444 !important;
@@ -1160,6 +1166,8 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .outline-disclosure li:hover {
   background: #333 !important;
 }
+
+
 
 /* DOM Breakpoints */
 #-webkit-web-inspector .pane > .body .info {
@@ -1199,7 +1207,7 @@ body.platform-windows .toolbar-label{
 }
 
 #-webkit-web-inspector #network-container .header,
- #-webkit-web-inspector #network-container .timeline-column select{
+#-webkit-web-inspector #network-container .header select{
   color: #89f5a2 !important;
 }
 
@@ -1216,10 +1224,6 @@ body.platform-windows .toolbar-label{
   border-bottom: 1px solid #444 !important;  
 }
 
-#-webkit-web-inspector .data-grid .network-timeline-grid .resources-divider-label{
-  color: #db0 !important;
-}
-
 #-webkit-web-inspector .timeline-column option{
   color: #ddd !important;
   background: #222 !important;
@@ -1231,6 +1235,15 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .network-log-grid.data-grid table {
   color: #333 !important;
 }
+
+#-webkit-web-inspector .data-grid .network-timeline-grid .resources-divider-label{
+  color: #db0 !important;
+}
+
+#-webkit-web-inspector .data-grid .network-timeline-grid .resources-divider{
+  border-right: 1px solid rgba(51,51,51,.8);
+}
+
 
 #-webkit-web-inspector .outline-disclosure > ol,
 #-webkit-web-inspector .resource-headers-view .outline-disclosure .parent {
@@ -1447,19 +1460,23 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .sidebar-pane-toolbar .sidebar-pane-subtitle,
 #-webkit-web-inspector .sidebar-pane{
   color: #bbb !important;  
+  text-shadow: none;
 }
 
 /*pane colors*/
-#-webkit-web-inspector .sidebar-pane-title{
+#-webkit-web-inspector .pane-title{
   background-image: -webkit-gradient(
     linear, 0% 0%, 0% 100%, 
     from(rgb(51, 51, 51)), 
     color-stop(0.05, rgb(88,88,88)),
     color-stop(0.05, rgb(80,80,80)),
     to(rgb(45, 42, 48))) !important;
-  color: rgb(204, 204, 204);
+  color: #ddd !important;
+  font-weight: 500 !important;
   border-top: #333 !important;
   border-bottom: #333 !important;  
+  text-shadow: none !important;
+
 }
 
 #-webkit-web-inspector .pane-title-button.add,
