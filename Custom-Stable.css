@@ -786,13 +786,6 @@ body.platform-windows .toolbar-label{
   background-color: #242424 !important;
 }
 
-#-webkit-web-inspector .styles-element-state-pane.expanded {
-  border-bottom: 1px solid #333 !important;
-}
-
-#-webkit-web-inspector .styles-element-state-pane {
-  background: #333 !important;
-}
 
 /* Style Bar  */
 #-webkit-web-inspector .styles-section .value {
