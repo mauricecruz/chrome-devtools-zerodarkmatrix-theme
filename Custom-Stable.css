@@ -593,7 +593,8 @@ body.platform-windows .toolbar-label{
 /*cursor color*/
 #-webkit-web-inspector .text-editor-editable:focus,
 #-webkit-web-inspector .editing:focus{
-  color: #89F5A2 !important;    
+  color: #89F5A2 !important;
+  background-color: #222 !important;
 }
 
 
@@ -1457,7 +1458,7 @@ color: #aaa !important;
 }
 
 /*pane colors*/
-#-webkit-web-inspector .pane-title{
+#-webkit-web-inspector .sidebar-pane-title{
   background-image: -webkit-gradient(
     linear, 0% 0%, 0% 100%, 
     from(rgb(51, 51, 51)), 
@@ -2146,6 +2147,55 @@ color: #9981BC !important;
 
 #-webkit-web-inspector .popover .content .network-timing-bar-title{
   color: #ddd !important;
+}
+
+/***************************************************
+* Dialog Boxes
+***************************************************/
+
+#-webkit-web-inspector .dialog {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#3c3c3c)) !important;
+  box-shadow: 0 50px 30px rgba(0,0,0,.6) !important;
+  border: 1px solid #666 !important;
+}
+
+#-webkit-web-inspector .dialog .dialog-contents, #-webkit-web-inspector .dialog .fill{
+  background-color: #222 !important;
+}
+
+#-webkit-web-inspector .dialog .fill{
+  border: none !important;
+}
+
+#-webkit-web-inspector .filtered-item-list-dialog-item.two-rows {
+  background-color: #222 !important;
+  border-top: 1px solid #333 !important;
+  border-bottom: 1px solid #000 !important;
+}
+
+#-webkit-web-inspector .filtered-item-list-dialog-item.two-rows span {
+  color: #eee !important;
+}
+
+#-webkit-web-inspector .filtered-item-list-dialog-item.two-rows .highlight {
+  color: #89F5A2!important;
+}
+
+#-webkit-web-inspector .filtered-item-list-dialog-item:hover{
+  background-color: #333 !important;
+  box-shadow: inset 0 1px 5px 0 #222 !important;
+}
+
+#-webkit-web-inspector .dialog .fill .selected{
+  background-color: #444 !important;
+  box-shadow: inset 0 1px 5px 0 #222 !important;;
+}
+
+#-webkit-web-inspector .dialog input, #-webkit-web-inspector .dialog input:focus{
+  background-color: #222 !important;
+  border: none !important;
+  color: #eee !important;
+  padding: 0 5px;
 }
 
 /***************************************************
