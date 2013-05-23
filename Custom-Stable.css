@@ -593,7 +593,8 @@ body.platform-windows .toolbar-label{
 /*cursor color*/
 #-webkit-web-inspector .text-editor-editable:focus,
 #-webkit-web-inspector .editing:focus{
-  color: #89F5A2 !important;    
+  color: #89F5A2 !important;
+  background-color: #222 !important;
 }
 
 
