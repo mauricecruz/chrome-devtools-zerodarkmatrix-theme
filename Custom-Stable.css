@@ -1458,7 +1458,7 @@ color: #aaa !important;
 }
 
 /*pane colors*/
-#-webkit-web-inspector .pane-title{
+#-webkit-web-inspector .sidebar-pane-title{
   background-image: -webkit-gradient(
     linear, 0% 0%, 0% 100%, 
     from(rgb(51, 51, 51)), 
