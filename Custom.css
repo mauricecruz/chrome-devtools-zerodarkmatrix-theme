@@ -1257,6 +1257,12 @@
 
 /* Sources */
 
+/*placeholder text when no file is open*/
+#-webkit-web-inspector .tabbed-pane-placeholder{
+  text-shadow: 0 1px 0 #000 !important;
+  color: #999 !important;
+}
+
 /*line numbers */
 #-webkit-web-inspector .text-editor-lines{
   background-color: #2d2d2d !important;
