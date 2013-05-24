@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /* Zero-Dark-Matrix
-/* Optimized for Chrome Stable Channel v26
+/* Optimized for Chrome Stable Channel v27
 /* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
 /*************************************************************************/
 
@@ -940,6 +940,11 @@ color: #aaa !important;
 
 #-webkit-web-inspector .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-close-button{
   color: #89F5A2!important;
+  font-size: 12px !important;
+}
+
+#-webkit-web-inspector .tabbed-pane-header-tab .tabbed-pane-header-tab-close-button{  
+  font-size: 12px !important;
 }
 
 #-webkit-web-inspector .help-window-main,
@@ -1397,8 +1402,10 @@ color: #aaa !important;
 }
 
 #-webkit-web-inspector #drawer-contents .webkit-line-number {
-  background: #222 !important;
-  border-right: 2px solid #333 !important;
+  background: #2d2d2d !important;
+  border-right: 1px solid #444 !important;
+  padding: 1px 5px 1px 0 !important;
+  display: inline-block;
   color: #999 !important;
 }
 
@@ -1526,16 +1533,16 @@ color: #aaa !important;
   color: #A3A3A3 !important;
 }
 
-#-webkit-web-inspector .search-match.source-code{
-  margin: 2px 0 !important;
-}
-
 #-webkit-web-inspector #search-results-pane-file-based .parent{
   background-color: #2D2D2D;
   color: #ddd !important;
   border-top: 1px solid #5d5d5d;
   border-bottom: 1px solid #111;  
   line-height: 18px;
+}
+
+#search-results-pane-file-based .show-more-matches{
+  color: #89F5A2 !important;
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .parent:hover{

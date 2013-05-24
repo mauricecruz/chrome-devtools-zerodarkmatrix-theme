@@ -7,7 +7,7 @@ Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/
 
 
 **Custom-Stable.css**
-Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **227.0.1453**
+Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **27.0.1453**
 
 
 ## Preview
