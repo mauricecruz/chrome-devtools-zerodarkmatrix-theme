@@ -1444,6 +1444,10 @@
   line-height: 18px;
 }
 
+#search-results-pane-file-based .show-more-matches{
+  color: #89F5A2 !important;
+}
+
 #-webkit-web-inspector #search-results-pane-file-based .parent:hover{
   background-color: #444 !important;
   color: #ddd !important;
