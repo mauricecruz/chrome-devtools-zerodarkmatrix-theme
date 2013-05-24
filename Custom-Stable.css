@@ -1,6 +1,6 @@
 /*****************************************************************************/
 /* Zero-Dark-Matrix
-/* Optimized for Chrome Stable Channel v26
+/* Optimized for Chrome Stable Channel v27
 /* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
 /*************************************************************************/
 
@@ -940,6 +940,11 @@ color: #aaa !important;
 
 #-webkit-web-inspector .tabbed-pane-header-tab.selected .tabbed-pane-header-tab-close-button{
   color: #89F5A2!important;
+  font-size: 12px !important;
+}
+
+#-webkit-web-inspector .tabbed-pane-header-tab .tabbed-pane-header-tab-close-button{  
+  font-size: 12px !important;
 }
 
 #-webkit-web-inspector .help-window-main,
