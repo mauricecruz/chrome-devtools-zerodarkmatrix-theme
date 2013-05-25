@@ -1991,6 +1991,15 @@ color: #9981BC !important;
   background-color: #222 !important;
 }
 
+#-webkit-web-inspector .settings-tab .help-section-title,
+#-webkit-web-inspector .settings-tab-container .help-section-title{
+  color: #89F5A2 !important;
+}
+
+#-webkit-web-inspector .settings-tab-container .help-key-cell span{
+  color: #eee !important;
+}
+
 /***************************************************
 * Drawer [Local Modifications]
 ***************************************************/

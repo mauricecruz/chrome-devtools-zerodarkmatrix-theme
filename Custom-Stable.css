@@ -1912,16 +1912,6 @@ color: #9981BC !important;
   margin-top: 0 !important;
 }
 
-/*help section headers*/
-#-webkit-web-inspector .settings-tab .help-section-title,
-#-webkit-web-inspector .settings-tab-container .help-section-title{
-  color: #89F5A2 !important;
-}
-
-#-webkit-web-inspector .settings-tab-container .help-key-cell span{
-  color: #eee !important;
-}
-
 
 /**********************************************/
 /* HTML
@@ -2057,6 +2047,15 @@ color: #9981BC !important;
  *************************************/
 #-webkit-web-inspector .help-window-main .tabbed-pane-header{
   background-color: #222 !important;
+}
+
+#-webkit-web-inspector .settings-tab .help-section-title,
+#-webkit-web-inspector .settings-tab-container .help-section-title{
+  color: #89F5A2 !important;
+}
+
+#-webkit-web-inspector .settings-tab-container .help-key-cell span{
+  color: #eee !important;
 }
 
 /***************************************************
