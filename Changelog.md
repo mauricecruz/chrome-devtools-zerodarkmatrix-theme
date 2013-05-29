@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5 - 29 May 2013
+* Updated highlight style in sources panel
+* Fixed snippet renaming input colors
+* Styled child container of selected/hovered elements
 
 ## 0.4 - 23 May 2013
 * Styled dialog container.

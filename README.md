@@ -50,6 +50,7 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 ** elements/sources/network panels
 * Subtle pulsating element selection
 * Re-styled Popovers (PSD files included)
+* Child element styling in elements panel
 
 ## Instructions
 
