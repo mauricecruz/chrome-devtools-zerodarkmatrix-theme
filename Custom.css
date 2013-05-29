@@ -906,6 +906,7 @@
   color: #000 !important;
 }
 
+#-webkit-web-inspector .sidebar-pane .body .metrics .position,
 #-webkit-web-inspector .sidebar-pane .body .metrics .margin:not([style^=background-color]),
 #-webkit-web-inspector .sidebar-pane .body .metrics .border:not([style^=background-color]),
 #-webkit-web-inspector .sidebar-pane .body .metrics .padding:not([style^=background-color]),
