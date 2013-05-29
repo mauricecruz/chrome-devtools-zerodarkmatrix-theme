@@ -526,8 +526,12 @@
 #-webkit-web-inspector .panel.scripts .split-view-horizontal,
 #-webkit-web-inspector .split-view-contents,
 #-webkit-web-inspector .split-view,
-#-webkit-web-inspector #scripts-split-view{
-  background-color: #222;
+#-webkit-web-inspector #scripts-split-view,
+#-webkit-web-inspector #console-messages,
+#-webkit-web-inspector .tabbed-pane,
+#-webkit-web-inspector .tabbed-pane-content,
+#-webkit-web-inspector body.inactive .sidebar{
+  background-color: #222 !important;
 }
 
 /*cursor color*/
@@ -662,9 +666,6 @@
 }
 
 /* Panes */
-#-webkit-web-inspector #main ol {
-  background-color: #111 !important;
-}
 
 #-webkit-web-inspector .webkit-css-property,
 #-webkit-web-inspector .value {
@@ -763,10 +764,6 @@
     box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
 }
 
-#-webkit-web-inspector .tabbed-pane,
-#-webkit-web-inspector .tabbed-pane-content{
-  background-color: #222 !important;
-}
 
 #-webkit-web-inspector .tabbed-pane-header-contents{
   color: #bbb !important;
@@ -982,14 +979,6 @@
   color: #fff !important;
 }
 
-#-webkit-web-inspector .base-navigator-tree-element-title.being-edited{
-  color: #000 !important;
-}
-
-#-webkit-web-inspector .resources.panel .sidebar {
-  background-color: #242424 !important;
-}
-
 #-webkit-web-inspector .resources.panel .data-grid table.data,
 #-webkit-web-inspector .resources.panel table.header .data-grid th,
 #-webkit-web-inspector .data-grid th {
@@ -1050,6 +1039,14 @@
 #-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
   color: #000 !important;
   text-shadow: none !important;
+}
+
+
+#-webkit-web-inspector .resources.panel .sidebar :focus li.selected .selection,
+#-webkit-web-inspector .resources.panel .sidebar li.selected .selection{
+  background-image: none !important;
+  background-color: rgba(0,0,0,0) !important;
+  border-top: none !important;
 }
 
 #-webkit-web-inspector .outline-disclosure ol:focus li.selected{
@@ -1537,7 +1534,6 @@ color: #9981BC !important;
 /**********************************************/
 #-webkit-web-inspector #console-messages {
   font-family: 'DroidSansMono', Menlo, monospace !important;
-  background: #222;
   color: #AAA !important;
 }
 
@@ -1731,9 +1727,7 @@ color: #9981BC !important;
   background-color: inherit !important;
 }
 
-#-webkit-web-inspector #main ol {
-  background-color: inherit !important;
-}
+
 
 #-webkit-web-inspector .console-message-text {
   color: #49a6d2 !important;
@@ -1793,14 +1787,6 @@ color: #9981BC !important;
   z-index: 100 !important;
 }
 
-#-webkit-web-inspector #storage-views .script-view,
-#-webkit-web-inspector #elements-content,
-#-webkit-web-inspector #network-views .text-editor-contents,
-#-webkit-web-inspector #script-resource-views .script-view {
-  background: rgba(36,36,36,.9) !important;
-  font-size: 12px !important;
-}
-
 #-webkit-web-inspector #scripts-editor-container-tabbed-pane .text-editor-contents{
   margin-left: 5px;
 }
@@ -1827,7 +1813,7 @@ color: #9981BC !important;
 /*hover over selection on element only*/
 #-webkit-web-inspector #elements-content li:hover {
   background: #333 !important;
-  border-radius: 4px !important;
+  border-radius: 2px !important;
   z-index: 999999 !important;
 
 }
@@ -2001,6 +1987,18 @@ color: #9981BC !important;
   color: #eee !important;
 }
 
+
+/***************************************************
+* Search Functions/Selectors in File [Ctrl+Shift+O]
+****************************************************/
+#-webkit-web-inspector .dialog{
+  background: #333 !important;
+  border-color: #222 !important;
+  box-shadow: 0px 20px 10px 0px rgba(0,0,0,.5) !important;
+}
+
+
+
 /***************************************************
 * Drawer [Local Modifications]
 ***************************************************/
@@ -2145,6 +2143,8 @@ color: #9981BC !important;
   padding: 0 5px;
 }
 
+
+
 /***************************************************
 * Suggest Box
 ***************************************************/
@@ -2202,4 +2202,3 @@ color: #9981BC !important;
 #-webkit-web-inspector .CodeMirror .cm-header { color: #FF6400 !important; }
 #-webkit-web-inspector .CodeMirror .cm-hr { color: #AEAEAE !important; }
 #-webkit-web-inspector .CodeMirror .cm-link { color: #8DA6CE !important; }
-
