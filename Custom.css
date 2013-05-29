@@ -1482,6 +1482,15 @@
 
 }
 
+/* Highlight in Scripts  */
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content{
+  border-radius: 2px;
+  -webkit-animation: "match-animation" 1s ease-in !important;
+}
+
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content *{
+  color: #000 !important;
+}
 /**********************************************/
 /* Console
 /**********************************************/
@@ -1596,7 +1605,7 @@ color: #9981BC !important;
 }
 
 #-webkit-web-inspector .webkit-highlighted-line{
-  background-color: #444 !important;
+  background-color: #89F5A2 !important;
 }
 
 /* console line where commands are typed */
