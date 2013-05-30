@@ -1094,6 +1094,38 @@
   -webkit-transition: opacity .5s ease-in-out 0;
 }
 
+#-webkit-web-inspector .bubble.error, #-webkit-web-inspector .bubble.warning{
+  border-bottom: 1px solid #666;
+  position: relative;
+  right: 5px !important;
+  text-shadow: 0 0 2px #666 !important;
+}
+
+#-webkit-web-inspector .bubble.error{
+  background-color: #D82323 !important;
+  box-shadow: inset 0 1px 0 0 #651010;
+}
+
+#-webkit-web-inspector .bubble.warning{
+  background-color: #E8A400 !important;
+  box-shadow: inset 0 1px 0 0 #A87600;
+}
+
+#-webkit-web-inspector :focus .selected .bubble.error, #-webkit-web-inspector :focus .selected .bubble.warning{
+  color: #fff !important;
+  border-bottom: 1px solid #D8FCDE;
+}
+
+#-webkit-web-inspector .selected .bubble.error, #-webkit-web-inspector .selected .bubble.warning{
+  color: #fff !important;
+  border-bottom: 1px solid #888;
+}
+
+#-webkit-web-inspector .webkit-html-message-bubble{
+  color: #111 !important;
+}
+
+
 /**********************************************
 /* Network Tab
 /**********************************************/
