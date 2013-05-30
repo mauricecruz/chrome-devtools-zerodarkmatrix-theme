@@ -1837,18 +1837,13 @@ color: #9981BC !important;
   z-index: 100 !important;
 }
 
-#-webkit-web-inspector #scripts-editor-container-tabbed-pane .text-editor-contents{
-  margin-left: 5px;
-}
-
-
 #-webkit-web-inspector #elements-content li.selected {
   border-radius: 4px;
   -webkit-animation: pulsate 2.5s infinite;
 }
 
 /* highlight children */
-#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, #-webkit-web-inspector .parent.hovered.expanded + .children{
+#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, #-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding-bottom: 5px !important; 
