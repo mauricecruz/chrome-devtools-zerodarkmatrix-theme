@@ -524,8 +524,8 @@
 */
 #-webkit-web-inspector,
 #-webkit-web-inspector .panel.scripts .split-view-horizontal,
-#-webkit-web-inspector .split-view-contents,
-#-webkit-web-inspector .split-view,
+#-webkit-web-inspector .panel:not(.timeline) .split-view-contents,
+#-webkit-web-inspector .panel:not(.timeline) .split-view,
 #-webkit-web-inspector #scripts-split-view,
 #-webkit-web-inspector #console-messages,
 #-webkit-web-inspector .tabbed-pane,
@@ -1246,6 +1246,15 @@
 #-webkit-web-inspector .data-grid:focus tr.selected,
 #-webkit-web-inspector .data-grid tr.selected  {
   background: #444 !important;
+}
+
+/**********************************************
+/* Timeline Tab
+/**********************************************/
+#-webkit-web-inspector .timeline-category-statusbar-item,
+#-webkit-web-inspector .timeline-records-stats {
+  text-shadow: none !important;
+  color: #ccc !important;
 }
 
 /* Timeline */
