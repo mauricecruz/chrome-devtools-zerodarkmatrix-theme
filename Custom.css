@@ -2024,10 +2024,15 @@ color: #9981BC !important;
   color: #c96666 !important;
 }
 
-#-webkit-web-inspector .webkit-execution-line{
-  -webkit-animation: pulsate 3s infinite !important;
-  outline: none !important;
+#-webkit-web-inspector .webkit-execution-line.webkit-line-content{
+  background-color: rgba(144,245,162,.8) !important;
+  color: #000 !important;
+  outline: 1px solid #89f5a2 !important;
 }
+
+#-webkit-web-inspector .webkit-execution-line.webkit-line-content *{
+  color: #000 !important;
+  }
 
 /* Set the console tab as the first item */
 #-webkit-web-inspector #toolbar .toolbar-item.console {
