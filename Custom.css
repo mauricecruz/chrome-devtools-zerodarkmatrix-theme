@@ -1659,7 +1659,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element,
 #-webkit-web-inspector #console-messages .console-group-messages .section .header::before,
 #-webkit-web-inspector #console-messages .properties-tree li.parent::before,
-#-webkit-web-inspector .outline-disclosure li.parent::before,
+/*#-webkit-web-inspector .outline-disclosure li.parent::before,*/
 #-webkit-web-inspector #search-results-pane-file-based .parent::before,
 #-webkit-web-inspector .properties-tree li.parent::before,
 #-webkit-web-inspector .section > .header::before,
@@ -1679,7 +1679,7 @@ color: #9981BC !important;
 #-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent .expand-element,
 #-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section .header::before,
 #-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent::before,
-#-webkit-web-inspector.platform-mac .outline-disclosure li.parent::before,
+/*#-webkit-web-inspector.platform-mac .outline-disclosure li.parent::before,*/
 #-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent::before,
 #-webkit-web-inspector.platform-mac .properties-tree li.parent::before,
 #-webkit-web-inspector.platform-mac .section > .header::before,
