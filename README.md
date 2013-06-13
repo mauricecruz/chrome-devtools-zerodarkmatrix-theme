@@ -71,7 +71,7 @@ Copy **Custom.css** and paste in:
 * PC:
 
 ```
-C:\Users\YourUsername\AppData\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
+%APPDATA%\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
 ```
 
 * PC (Windows XP):
