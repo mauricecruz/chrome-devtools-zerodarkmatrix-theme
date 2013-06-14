@@ -1432,11 +1432,11 @@
 }
 
 #-webkit-web-inspector .pane-title-button.add{
-  -webkit-mask-image: url(chrome-devtools://devtools/Images/paneAddButtons.png) !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneAddButtons.png) !important;
 }
 
 .sidebar-pane-toolbar > .pane-title-button.refresh {
-   -webkit-mask-image: url(chrome-devtools://devtools/Images/paneRefreshButtons.png) !important;
+   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneRefreshButtons.png) !important;
 }
 
 #-webkit-web-inspector .panel.elements .sidebar-pane-toolbar > select.select-settings{
@@ -1444,11 +1444,11 @@
   -webkit-background-position: -24px 0 !important;
   background-color: rgba(0,0,0,.8) !important;
   -webkit-mask-repeat: no-repeat !important;
-  -webkit-mask-image: url(chrome-devtools://devtools/Images/paneSettingsButtons.png) !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneSettingsButtons.png) !important;
 }
 
 #-webkit-web-inspector .pane-title-button.element-state{
-   -webkit-mask-image: url(chrome-devtools://devtools/Images/paneElementStateButtons.png) !important;
+   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneElementStateButtons.png) !important;
 }
 
 /**********************************************/
@@ -1667,7 +1667,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .sidebar-pane .parent::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title::before{
   background-image: none !important;
-  -webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -4px -95px !important;
   -webkit-mask-repeat: no-repeat !important;
   color: rgba(0,0,0,0) !important;
@@ -1719,10 +1719,9 @@ color: #9981BC !important;
 #-webkit-web-inspector .section .event-bar.expanded .header::before,
 #-webkit-web-inspector .sidebar-pane .parent.expanded::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title.expanded::before{
-  -webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -20px -95px !important;
-  -webkit-mask-repeat: no-repeat !important;
-  width: 10px !important;
+  -webkit-mask-repeat: no-repeat !important;  
 }
 
 /*pixel adjustment for mac */
@@ -1750,7 +1749,7 @@ color: #9981BC !important;
 /* sort arrows point down*/
 .data-grid th.sort-ascending > div::after{
   background-image: none !important;
-  -webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -20px -96px !important;
   color: rgba(0,0,0,0) !important;
   background-color: #AAB0AF !important;
@@ -1760,7 +1759,7 @@ color: #9981BC !important;
 /* sort arrows point up */
 .data-grid th.sort-descending > div::after{
   background-image: none !important;
-  -webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -4px -108px !important;
   color: rgba(0,0,0,0) !important;
   background-color: #AAB0AF !important;
