@@ -574,8 +574,6 @@
   -webkit-animation: slideInLeftBig .5s ease-in;
 }
 
-
-
 #-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#505050,#383838) !important;
   border-bottom: 1px solid #222 !important;
@@ -673,7 +671,7 @@
 }
 
 #-webkit-web-inspector div.pane.expanded {
-  background-color: #111;
+  background-color: #222;
 }
 
 #-webkit-web-inspector .styles-section.read-only {
@@ -763,7 +761,6 @@
     border-color: #222 !important;
     box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
 }
-
 
 #-webkit-web-inspector .tabbed-pane-header-contents{
   color: #bbb !important;
@@ -1543,6 +1540,14 @@ color: #B92722 !important;
 color: #9981BC !important;
 }
 
+#-webkit-web-inspector .outline-disclosure li.parent::before{
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM4QTVEMjFBQjg2MTFFMkI1RkRFOTU3NDQ1MEI5REEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM4QTVEMjJBQjg2MTFFMkI1RkRFOTU3NDQ1MEI5REEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGQzhBNUQxRkFCODYxMUUyQjVGREU5NTc0NDUwQjlEQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQzhBNUQyMEFCODYxMUUyQjVGREU5NTc0NDUwQjlEQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmZawxQAAAClSURBVHjaYq5pqC9XUlE5e+Hc+T8MaOD///8MjItXLH//8+fPH3dv36l4/uL50gVz5v5BVsAEYrCzs3No6WhPsLS0vFteVRWEbArYBHSjP3748PzhgwdpXe0dR5gYsAAuLi4hTi5ufxAbRcHv339+A3Wuu3jhgl5TXV0pSIwFRPwDgqdPnhx4/vx50eT+CQ+RNbE8f/bs+MsXL0t6u7quYbMOIMAAIDVPudrvVTsAAAAASUVORK5CYII=') !important;
+}
+
+#-webkit-web-inspector .outline-disclosure li.parent.expanded::before{
+  content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjgyMDA1NDFBQjg2MTFFMjlFQTJFRjU3RDYzQjFBN0QiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjgyMDA1NDJBQjg2MTFFMjlFQTJFRjU3RDYzQjFBN0QiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCODIwMDUzRkFCODYxMUUyOUVBMkVGNTdENjNCMUE3RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCODIwMDU0MEFCODYxMUUyOUVBMkVGNTdENjNCMUE3RCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps52y6YAAACCSURBVHjaYjxx7lw5IyODBwMW8P///zYmoOR8IPsPFvmPHOzs+5nMDAxfATmbMXUztOpraf9hghq1CEh9R5J/8ePnj7MgBliBuaHRB6CO1Ui62+wtLP/BFYDAv39/VwElPgNNu2VuaHgZJg5XYGls8hVILQTidmS3MAJ1MOADAAEGAHxsM3sV45NSAAAAAElFTkSuQmCC') !important;
+}
+
 #-webkit-web-inspector #console-messages .console-message, #-webkit-web-inspector .console-user-command {
   border-top: none !important;
   margin: 2px 0;
@@ -1659,7 +1664,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element,
 #-webkit-web-inspector #console-messages .console-group-messages .section .header::before,
 #-webkit-web-inspector #console-messages .properties-tree li.parent::before,
-#-webkit-web-inspector .outline-disclosure li.parent::before,
+/*#-webkit-web-inspector .outline-disclosure li.parent::before,*/
 #-webkit-web-inspector #search-results-pane-file-based .parent::before,
 #-webkit-web-inspector .properties-tree li.parent::before,
 #-webkit-web-inspector .section > .header::before,
@@ -1679,7 +1684,7 @@ color: #9981BC !important;
 #-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent .expand-element,
 #-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section .header::before,
 #-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent::before,
-#-webkit-web-inspector.platform-mac .outline-disclosure li.parent::before,
+/*#-webkit-web-inspector.platform-mac .outline-disclosure li.parent::before,*/
 #-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent::before,
 #-webkit-web-inspector.platform-mac .properties-tree li.parent::before,
 #-webkit-web-inspector.platform-mac .section > .header::before,
@@ -1712,7 +1717,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .styles-section.matched-styles .properties li.parent.expanded .expand-element,
 #-webkit-web-inspector #console-messages .console-group-messages .section.expanded .header::before,
 #-webkit-web-inspector #console-messages .properties-tree li.parent.expanded::before,
-#-webkit-web-inspector .outline-disclosure li.parent.expanded::before,
+/*#-webkit-web-inspector .outline-disclosure li.parent.expanded::before,*/
 #-webkit-web-inspector #search-results-pane-file-based .parent.expanded::before,
 #-webkit-web-inspector .properties-tree li.parent.expanded::before,
 #-webkit-web-inspector .section.expanded > .header::before,
@@ -1728,7 +1733,7 @@ color: #9981BC !important;
 #-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent.expanded .expand-element,
 #-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section.expanded .header::before,
 #-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent.expanded::before,
-#-webkit-web-inspector.platform-mac .outline-disclosure li.parent.expanded::before,
+/*#-webkit-web-inspector.platform-mac .outline-disclosure li.parent.expanded::before,*/
 #-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent.expanded::before,
 #-webkit-web-inspector.platform-mac .properties-tree li.parent.expanded::before,
 #-webkit-web-inspector.platform-mac .section.expanded > .header::before,
@@ -1775,8 +1780,6 @@ color: #9981BC !important;
 #-webkit-web-inspector .properties-tree li.parent {
   background-color: inherit !important;
 }
-
-
 
 #-webkit-web-inspector .console-message-text {
   color: #49a6d2 !important;
