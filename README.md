@@ -38,7 +38,7 @@ Animations may cause performance issues depending on the power of your machine. 
 ![css-highlighting]
 
 #### JS Highlighting
-![css-highlighting]
+![js-highlighting]
 
 ### Console
 ![console]
