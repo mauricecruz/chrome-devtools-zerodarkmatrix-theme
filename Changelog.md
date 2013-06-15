@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6 - 15 June 2013
+* Moved animations to top of doc for easier enable/disable
+* Moved code highlighting selectors to top of document for easier customizing
+* Styled Codemirror editor
+* Removed unused 3rd party code
+
 ## 0.5 - 29 May 2013
 * Updated highlight style in sources panel
 * Fixed snippet renaming input colors
