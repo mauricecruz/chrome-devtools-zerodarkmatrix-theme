@@ -775,14 +775,11 @@
 }
 
 #-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit {
-  background-color: #333 !important;
-  border-right: 5px solid #89F5A2 !important;
-  -webkit-transition: border-right .5s ease-out 0;
-  -webkit-transition: background-color .5s ease-out 0;
-}
-
-#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit:after {
-  background-color: #89F5A2 !important;
+  background-color: #181818 !important;
+  box-shadow: inset 0 1px 5px 0 #000 !important;
+  border-top: 1px solid #000 !important;
+  border-bottom: 1px solid #444 !important;
+  color: #89f5a2 !important;
 }
 
 /*Data Containers aka table views */
