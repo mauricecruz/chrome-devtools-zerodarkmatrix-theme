@@ -55,7 +55,6 @@
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
 #-webkit-web-inspector .CodeMirror-matchingbracket{ border-bottom: 1px solid #89F5A2 !important; color: #ccc !important;}
 
-
 /**********************************************
 /* Animations
 /**********************************************/
@@ -157,7 +156,6 @@
     -webkit-transform: scale(.3);
   }
 
-
   100% {
     -webkit-transform: scale(1);
   }
@@ -226,42 +224,19 @@
  background: #333 !important;
  -webkit-box-shadow: none !important;
 }
-#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:hover {
-    -webkit-border-image: none !important;
+
+#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:active,
+#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:hover,
+#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:decrement,
+#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:increment,
+#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:active,
+#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:hover,
+#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:decrement,
+#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:increment{
+  -webkit-border-image:none !important;
 }
 
-#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-thumb:horizontal:active {
-    -webkit-border-image: none !important;
-}
-
-#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:decrement {
-    -webkit-border-image: none !important;
-}
-
-#-webkit-web-inspector .custom-popup-horizontal-scroll ::-webkit-scrollbar-track-piece:horizontal:increment {
-    -webkit-border-image: none !important;
-}
-
-#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:hover {
-    -webkit-border-image: none !important;
-}
-
-#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-thumb:vertical:active {
-    -webkit-border-image: none !important;
-}
-
-#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:decrement {
-    -webkit-border-image:none !important;
-}
-
-#-webkit-web-inspector .custom-popup-vertical-scroll ::-webkit-scrollbar-track-piece:vertical:increment {
-    -webkit-border-image:none !important;
-}
-
-
-/*
-  Styles
-*/
+/*Styles*/
 #-webkit-web-inspector,
 #-webkit-web-inspector .panel.scripts .split-view-horizontal,
 #-webkit-web-inspector .panel:not(.timeline) .split-view-contents,
@@ -281,10 +256,7 @@
   background-color: #222 !important;
 }
 
-
 /* Animations for Elements Panel */
-
-
 #-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second:not(.metrics-and-computed),
 #-webkit-web-inspector .panel.scripts .split-view-horizontal > .split-view-contents-second.split-view-sidebar{
   -webkit-animation: bounceInUp 1s ease-in-out;
@@ -292,7 +264,6 @@
 }
 
 /* Animations for Sources Panel */
-
 #-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents{
   -webkit-transition: right .5s ease-in-out;
 
@@ -313,8 +284,6 @@
 #-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay{
   -webkit-animation: slideInLeftBig .5s ease-in;
 }
-
-
 
 #-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#505050,#383838) !important;
@@ -372,13 +341,9 @@
   color: #f8f8f8 !important;
 }
 
-
-
 #-webkit-web-inspector.show-toolbar-icons .toolbar-icon{
   display: none !important;
 }
-
-
 
 #-webkit-web-inspector #main {
   top: 34px !important;
@@ -504,7 +469,6 @@
     box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
 }
 
-
 #-webkit-web-inspector .tabbed-pane-header-contents{
   color: #bbb !important;
 }
@@ -583,7 +547,6 @@
 #-webkit-web-inspector .scripts .scripts-debugger-show-hide-button{
   top: 5px !important;
 }
-
 
 #-webkit-web-inspector .help-window-main,
 #-webkit-web-inspector .help-window-main label:hover{
@@ -781,7 +744,6 @@
   text-shadow: none !important;
 }
 
-
 #-webkit-web-inspector .resources.panel .sidebar :focus li.selected .selection,
 #-webkit-web-inspector .resources.panel .sidebar li.selected .selection{
   background-image: none !important;
@@ -865,7 +827,6 @@
   color: #111 !important;
 }
 
-
 /**********************************************
 /* Network Tab
 /**********************************************/
@@ -946,7 +907,6 @@
 #-webkit-web-inspector #network-views{
     -webkit-animation: bounceInRight .5s ease-in-out;
 }
-
 
 /* Network Timing Pane */
 #-webkit-web-inspector .resource-timing-view .network-timing-bar-title{
@@ -1057,7 +1017,6 @@
   border-right: 1px solid #2b2b2b !important;
 }
 
-
 #-webkit-web-inspector body.drawer-visible #drawer {
   background: #222 !important;
 }
@@ -1065,7 +1024,6 @@
 #-webkit-web-inspector .outline-disclosure > ol .source-code {
   color: #49a6d2 !important;
 }
-
 
 #-webkit-web-inspector .breakpoint-list li {
   color: #e6da83 !important;
@@ -1401,7 +1359,6 @@ color: #9981BC !important;
   -webkit-mask-position: -4px -96px !important;
 }
 
-
 /* disable dark background for timeline */
 #-webkit-web-inspector #timeline-graphs,
 #-webkit-web-inspector #memory-counters-graph,
@@ -1433,7 +1390,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title.expanded::before{
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -20px -95px !important;
-  -webkit-mask-repeat: no-repeat !important;  
+  -webkit-mask-repeat: no-repeat !important;
 }
 
 /*pixel adjustment for mac */
@@ -1488,8 +1445,6 @@ color: #9981BC !important;
   background-color: inherit !important;
 }
 
-
-
 #-webkit-web-inspector .console-message-text {
   color: #49a6d2 !important;
 }
@@ -1501,8 +1456,6 @@ color: #9981BC !important;
 #-webkit-web-inspector .console-warning-level .console-message-text {
   color: #db0 !important;
 }
-
-
 
 #-webkit-web-inspector #console-messages .console-user-command::before {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTMzNzdGNUZDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTMzNzdGNjBDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y1REMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y1RUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pia6udAAAAB5SURBVHjaYvz//z8DMYAFxli9ejWI6oByK5AVhYaGIhRCgQsQGwOxIFTxe5gEE5pCVyA+C8RpQLwbqgmrwvdQxauhis6AbMamEASUkEwCabyHTWE51BQlqBNMoDSKQhckX3dCFd3DCB4g2AP16VkoGwUwEhvgAAEGAAzQHBRSxqPRAAAAAElFTkSuQmCC) !important;
@@ -1557,7 +1510,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, #-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children{
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  padding-bottom: 5px !important; 
+  padding-bottom: 5px !important;
   box-shadow: inset 0 0 30px 0 rgba(17,17,17,1);
   border-bottom: 1px solid #333 !important;
 }
@@ -1765,7 +1718,6 @@ color: #9981BC !important;
   color: #eee !important;
 }
 
-
 /***************************************************
 * Search Functions/Selectors in File [Ctrl+Shift+O]
 ****************************************************/
@@ -1774,8 +1726,6 @@ color: #9981BC !important;
   border-color: #222 !important;
   box-shadow: 0px 20px 10px 0px rgba(0,0,0,.5) !important;
 }
-
-
 
 /***************************************************
 * Drawer [Local Modifications]
@@ -1921,8 +1871,6 @@ color: #9981BC !important;
   padding: 0 5px;
 }
 
-
-
 /***************************************************
 * Suggest Box
 ***************************************************/
@@ -1953,21 +1901,3 @@ color: #9981BC !important;
 #-webkit-web-inspector .suggest-box div {
   color: #f60 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
