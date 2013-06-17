@@ -1190,7 +1190,7 @@
   margin-top: 0 !important;
 }
 
-.sidebar-pane-stack > .sidebar-pane.visible:nth-last-of-type(1){
+#-webkit-web-inspector .sidebar-pane-stack > .sidebar-pane.visible:nth-last-of-type(1){
   border-bottom: none !important;
 }
 
@@ -1221,7 +1221,7 @@
 }
 
 #-webkit-web-inspector .pane-title-button.add,
-.sidebar-pane-toolbar > .pane-title-button.refresh,
+#-webkit-web-inspector .sidebar-pane-toolbar > .pane-title-button.refresh,
 #-webkit-web-inspector .pane-title-button.element-state{
   /*background-image: none !important;*/
   -webkit-background-position: -24px 0 !important;
@@ -1233,7 +1233,7 @@
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneAddButtons.png) !important;
 }
 
-.sidebar-pane-toolbar > .pane-title-button.refresh {
+#-webkit-web-inspector .sidebar-pane-toolbar > .pane-title-button.refresh {
    -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneRefreshButtons.png) !important;
 }
 
@@ -1281,7 +1281,7 @@
   line-height: 18px;
 }
 
-#search-results-pane-file-based .show-more-matches{
+#-webkit-web-inspector #search-results-pane-file-based .show-more-matches{
   color: #89F5A2 !important;
 }
 
@@ -1331,11 +1331,11 @@
 /**********************************************/
 /* Console
 /**********************************************/
-#console-messages a:hover {
+#-webkit-web-inspector #console-messages a:hover {
 color: #B92722 !important;
 }
 
-#console-messages .console-message {
+#-webkit-web-inspector #console-messages .console-message {
 color: #9981BC !important;
 }
 
