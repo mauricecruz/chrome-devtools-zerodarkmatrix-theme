@@ -53,21 +53,22 @@
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutters {background: #282828 !important;  border-right: 1px solid #444 !important; }
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
 #-webkit-web-inspector .CodeMirror-matchingbracket{ border-bottom: 1px solid #89F5A2 !important; color: #ccc !important;}
-#-webkit-web-inspector .CodeMirror .CodeMirror-selectedtext {
-  padding: 0 2px;
-  color: #000 !important;
-  border-radius: 2px;
-  font-size: 1em !important;
-  background-color: #89F5A2 !important;
-}
+#-webkit-web-inspector .CodeMirror .CodeMirror-selectedtext {color: #000 !important; background-color: #89f5a2 !important;}
+#-webkit-web-inspector .CodeMirror span.cm-token-highlight{ background-color: transparent !important; padding: 1px !important;}
+#-webkit-web-inspector .CodeMirror span.cm-token-highlight:before{ border-color: #89f5a2 !important; }
+#-webkit-web-inspector .CodeMirror .cm-line-with-selection span.cm-column-with-selection{ color: #000 !important; background-color: #89f5a2 !important; }
+
 #-webkit-web-inspector .CodeMirror .cm-highlight {
   -webkit-animation: "fadeout-revised" 3s 0s !important;
 }
+#-webkit-web-inspector .CodeMirror .cm-highlight *:not(.CodeMirror-linenumber){
+  color: #000 !important;
+}
+
 @-webkit-keyframes fadeout-revised {
     from {background-color: #89F5A2; }
     to { background-color: #222; }
 }
-
 
 /**********************************************
 /* Code Highlighting [WEBKIT]
@@ -160,7 +161,7 @@
 #-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
 #-webkit-web-inspector .webkit-search-result,
 #-webkit-web-inspector .webkit-highlighted-line.webkit-line-content,
-#-webkit-web-inspector .CodeMirror .CodeMirror-selectedtext{
+#-webkit-web-inspector .CodeMirror .cm-line-with-selection span.cm-column-with-selection{
   -webkit-animation: match-animation .5s ease-in-out;
 }
 
@@ -1291,8 +1292,9 @@
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
-#-webkit-web-inspector .webkit-search-result{
-  padding: 0 2px;
+#-webkit-web-inspector .webkit-search-result,
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content,
+#-webkit-web-inspector .CodeMirror .cm-token-highlight{
   color: #000;
   border-radius: 2px;
   font-size: 1em !important;
