@@ -462,7 +462,7 @@ body.platform-windows .toolbar-label{
 #-webkit-web-inspector .split-view-contents,
 #-webkit-web-inspector .split-view,
 #-webkit-web-inspector #scripts-split-view{
-  background-color: #242424;
+  background-color: #222;
 }
 
 
@@ -1660,16 +1660,16 @@ color: #9981BC !important;
 #-webkit-web-inspector #network-views .text-editor-contents,
 #-webkit-web-inspector #script-resource-views .script-view {
   background: #242424 !important;
-  font-size: 12px !important;  
+  font-size: 12px !important;
 }
 
 #-webkit-web-inspector #scripts-editor-container-tabbed-pane .text-editor-contents{
   margin-left: 5px;
 }
 
-#-webkit-web-inspector #elements-content li.selected {  
-  border-radius: 4px;  
-  -webkit-animation: pulsate 3s infinite;
+#-webkit-web-inspector #elements-content li.selected {
+  border-radius: 2px;
+  background-color: #444;
 }
 
 #-webkit-web-inspector #elements-content .highlight {
