@@ -3,7 +3,7 @@
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
 **Custom.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **29.0.1538.1 canary**
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **29.0.1545 canary**
 
 **Custom-Stable.css**
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **27.0.1453**
@@ -14,7 +14,7 @@ All code highlighting has been moved to the top of the stylesheet.  Feel free to
 
 ## Animations
 
-Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet (only on Canary version for now). 
+Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
 
 ## Preview
 
