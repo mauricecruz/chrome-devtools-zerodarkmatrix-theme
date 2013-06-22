@@ -68,6 +68,60 @@
     to { background-color: #222; }
 }
 
+
+/**********************************************
+/* Code Highlighting [WEBKIT]
+/**********************************************/
+
+/*-- HTML --*/
+#-webkit-web-inspector .webkit-html-attribute-name{color:#88AED5!important;}
+#-webkit-web-inspector .webkit-html-attribute-value{color:#F0874F!important;}
+#-webkit-web-inspector .webkit-html-comment{color:#585858!important;font-style:italic;}
+#-webkit-web-inspector .webkit-html-resource-link,
+#-webkit-web-inspector .webkit-html-external-link{color:#e3b959!important;}
+#-webkit-web-inspector .webkit-html-tag,
+#-webkit-web-inspector .webkit-html-tag-name{color:#49a6d2!important;}
+#-webkit-web-inspector .webkit-html-text-node,
+#-webkit-web-inspector .webkit-html-css-node,
+#-webkit-web-inspector .webkit-html-js-node{color:#c2c3c3!important;}
+
+/*-- CSS --*/
+#-webkit-web-inspector .selector-matches{color:#ff9635!important;}
+#-webkit-web-inspector .webkit-css-selector{color:#ff9635!important;}
+#-webkit-web-inspector .webkit-css-at-rule{color:#b094bb!important;}
+#-webkit-web-inspector .webkit-css-color{color:#FFCF67!important;}
+#-webkit-web-inspector .webkit-css-comment{color:#7c7c7c!important;}
+#-webkit-web-inspector .webkit-css-important{color:#b094bb!important;}
+#-webkit-web-inspector .webkit-css-keyword{color:#db925f!important;}
+#-webkit-web-inspector .webkit-css-number{color:#ffcf67!important;}
+#-webkit-web-inspector .webkit-css-property,
+#-webkit-web-inspector .styles-section .properties > li .webkit-css-property {color:#6aedff!important;font-weight:400;}
+#-webkit-web-inspector .webkit-css-string{color:#fd963f!important;}
+#-webkit-web-inspector .webkit-css-url{color:#eec574!important;}
+
+/*-- JAVASCRIPT --*/
+#-webkit-web-inspector .webkit-javascript-ident{color:#fff!important;}
+#-webkit-web-inspector .webkit-javascript-comment{color:#757160!important;}
+#-webkit-web-inspector .webkit-javascript-number{color:#db925f!important;}
+#-webkit-web-inspector .webkit-javascript-keyword{color:#9685dd!important;font-style:italic;}
+#-webkit-web-inspector .webkit-javascript-undef{color:#7B7B7B!important;}
+#-webkit-web-inspector .webkit-javascript-string{color:#ef6e19!important;}
+#-webkit-web-inspector .webkit-javascript-regexp{color:#c96666!important;}
+
+
+/**********************************************
+/* DevTool Chrome
+/**********************************************/
+
+#-webkit-web-inspector .event-bars .event-bar .header .title{text-shadow:none!important;color:#ccc!important;}
+#-webkit-web-inspector .source-frame-debugger-script{background-color:#222!important;}
+#-webkit-web-inspector .webkit-line-content{color:#ddd!important;}
+#-webkit-web-inspector .webkit-highlighted-line,
+#-webkit-web-inspector .webkit-execution-line.webkit-line-content{background-color:rgba(144,245,162,.8)!important;color:#000!important;outline:1px solid #89f5a2!important;}
+#-webkit-web-inspector .webkit-highlighted-line span{color: #000 !important; font-weight:700 !important;}
+#-webkit-web-inspector .webkit-execution-line.webkit-line-content *{color:#000!important;}
+
+
 /**********************************************
 /* Animations
 /* -------------------------------------------
@@ -1492,10 +1546,6 @@ color: #9981BC !important;
   background-color: rgba(213,181,0,.6) !important;
 }
 
-#-webkit-web-inspector .webkit-highlighted-line{
-  background-color: #444 !important;
-}
-
 /* console line where commands are typed */
 #-webkit-web-inspector #console-messages #console-prompt{
   border-top: 1px solid #333 !important;
@@ -1728,135 +1778,6 @@ color: #9981BC !important;
   margin-top: 0 !important;
 }
 
-
-/**********************************************/
-/* HTML
-/**********************************************/
-#-webkit-web-inspector .webkit-html-comment {
-  color: #585858 !important;
-  font-style: italic;
-}
-
-#-webkit-web-inspector .webkit-html-tag {
-  color: #49a6d2 !important;
-}
-
-#-webkit-web-inspector .webkit-html-tag-name {
-  color: #49a6d2 !important;
-}
-
-#-webkit-web-inspector .webkit-html-attribute-name {
-  color: #88AED5 !important;
-}
-
-#-webkit-web-inspector .webkit-html-attribute-value {
-  color: #F0874F !important;
-}
-
-#-webkit-web-inspector .webkit-html-text-node,
-#-webkit-web-inspector .webkit-html-css-node {
-  color: #c2c3c3 !important;
-}
-
-#-webkit-web-inspector .webkit-html-js-node {
-  color: #c2c3c3 !important;
-}
-
-#-webkit-web-inspector .webkit-html-resource-link,
-#-webkit-web-inspector .webkit-html-external-link {
-  color: #e3b959 !important;
-}
-
-/**********************************************/
-/* CSS
-/**********************************************/
-#-webkit-web-inspector .webkit-css-comment {
-  color: #7c7c7c !important;
-}
-
-#-webkit-web-inspector .selector-matches,
-#-webkit-web-inspector .webkit-css-selector {
-  color: #ff9635 !important;
-}
-
-#-webkit-web-inspector .styles-section .properties > li .webkit-css-property,
-#-webkit-web-inspector .webkit-css-property {
-  color: #6aedff !important;
-  font-weight: normal;
-}
-
-#-webkit-web-inspector .webkit-css-keyword {
-  color: #db925f !important;
-}
-
-#-webkit-web-inspector .webkit-css-number {
-  color: #ffcf67 !important;
-}
-
-#-webkit-web-inspector .webkit-css-color {
-  color: #FFCF67 !important;
-}
-
-#-webkit-web-inspector .webkit-css-important,
-#-webkit-web-inspector .webkit-css-at-rule {
-  ccolor: #b094bb !important;
-}
-
-#-webkit-web-inspector .webkit-css-string {
-  color: rgb(253, 150, 63) !important;
-}
-
-#-webkit-web-inspector .webkit-css-url {
-  color: #eec574 !important;
-}
-
-#-webkit-web-inspector .event-bars .event-bar .header .title {
-  text-shadow: none !important;
-  color: #ccc !important;
-}
-
-/**********************************************/
-/* JavaScript
-/**********************************************/
-/*debugger color overlay*/
-#-webkit-web-inspector .source-frame-debugger-script{
-  background-color: #222 !important;
-}
-
-#-webkit-web-inspector .webkit-line-content,
-#-webkit-web-inspector .webkit-javascript-ident {
-  color: #fff !important;
-}
-
-#-webkit-web-inspector .webkit-javascript-keyword {
-  color: #9685dd !important;
-  font-style: italic;
-}
-
-#-webkit-web-inspector .webkit-javascript-comment {
-  color: rgb(117, 113, 96) !important;
-}
-
-#-webkit-web-inspector .webkit-javascript-string {
-  color: #ef6e19 !important;
-}
-
-#-webkit-web-inspector .webkit-javascript-number {
-  color: #db925f !important;
-}
-
-#-webkit-web-inspector .webkit-javascript-regexp {
-  color: #c96666 !important;
-}
-
-#-webkit-web-inspector .webkit-execution-line{
-  outline: none !important;
-}
-
-/* Set the console tab as the first item */
-#-webkit-web-inspector #toolbar .toolbar-item.console {
-  float: left;
-}
 /*************************************
  * Help/Settings Overlay
  *************************************/
