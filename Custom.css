@@ -54,7 +54,7 @@
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
 #-webkit-web-inspector .CodeMirror-matchingbracket{ border-bottom: 1px solid #89F5A2 !important; color: #ccc !important;}
 #-webkit-web-inspector .CodeMirror span.CodeMirror-selectedtext {color: #000 !important; background-color: #89f5a2 !important;}
-#-webkit-web-inspector .CodeMirror span.cm-token-highlight{ background-color: transparent !important; padding: 1px !important;}
+#-webkit-web-inspector .CodeMirror span.cm-token-highlight{ background-color: transparent !important; padding: 0px !important;}
 #-webkit-web-inspector .CodeMirror span.cm-token-highlight:before{ border-color: #89f5a2 !important; }
 #-webkit-web-inspector .CodeMirror .cm-line-with-selection span.cm-column-with-selection{ color: #000 !important; background-color: #89f5a2 !important; }
 
@@ -75,50 +75,58 @@
 /**********************************************/
 
 /*-- HTML --*/
-#-webkit-web-inspector .webkit-html-comment{color:#585858!important;font-style:italic;}
-#-webkit-web-inspector .webkit-html-tag{color:#49a6d2!important;}
-#-webkit-web-inspector .webkit-html-tag-name{color:#49a6d2!important;}
 #-webkit-web-inspector .webkit-html-attribute-name{color:#88AED5!important;}
 #-webkit-web-inspector .webkit-html-attribute-value{color:#F0874F!important;}
-#-webkit-web-inspector .webkit-html-text-node,
-#-webkit-web-inspector .webkit-html-css-node{color:#c2c3c3!important;}
-#-webkit-web-inspector .webkit-html-js-node{color:#c2c3c3!important;}
+#-webkit-web-inspector .webkit-html-comment{color:#585858!important;font-style:italic;}
 #-webkit-web-inspector .webkit-html-resource-link,
 #-webkit-web-inspector .webkit-html-external-link{color:#e3b959!important;}
+#-webkit-web-inspector .webkit-html-tag,
+#-webkit-web-inspector .webkit-html-tag-name{color:#49a6d2!important;}
+#-webkit-web-inspector .webkit-html-text-node,
+#-webkit-web-inspector .webkit-html-css-node,
+#-webkit-web-inspector .webkit-html-js-node{color:#c2c3c3!important;}
 
 /*-- CSS --*/
+#-webkit-web-inspector .selector-matches{color:#ff9635!important;}
+#-webkit-web-inspector .webkit-css-selector{color:#ff9635!important;}
+#-webkit-web-inspector .webkit-css-at-rule{color:#b094bb!important;}
+#-webkit-web-inspector .webkit-css-color{color:#FFCF67!important;}
 #-webkit-web-inspector .webkit-css-comment{color:#7c7c7c!important;}
-#-webkit-web-inspector .selector-matches,#-webkit-web-inspector .webkit-css-selector{color:#ff9635!important;}
-#-webkit-web-inspector .styles-section .properties > li .webkit-css-property,
-#-webkit-web-inspector .webkit-css-property{color:#6aedff!important;font-weight:400;}
+#-webkit-web-inspector .webkit-css-important{color:#b094bb!important;}
 #-webkit-web-inspector .webkit-css-keyword{color:#db925f!important;}
 #-webkit-web-inspector .webkit-css-number{color:#ffcf67!important;}
-#-webkit-web-inspector .webkit-css-color{color:#FFCF67!important;}
-#-webkit-web-inspector .webkit-css-important,
-#-webkit-web-inspector .webkit-css-at-rule{color:#b094bb!important;}
+#-webkit-web-inspector .webkit-css-property,
+#-webkit-web-inspector .styles-section .properties > li .webkit-css-property {color:#6aedff!important;font-weight:400;}
 #-webkit-web-inspector .webkit-css-string{color:#fd963f!important;}
 #-webkit-web-inspector .webkit-css-url{color:#eec574!important;}
-#-webkit-web-inspector .event-bars .event-bar .header .title{text-shadow:none!important;color:#ccc!important;}
 
-/*-- JAVACRIPT --*/
-#-webkit-web-inspector .source-frame-debugger-script{background-color:#222!important;}
-#-webkit-web-inspector .webkit-line-content,
+/*-- JAVASCRIPT --*/
 #-webkit-web-inspector .webkit-javascript-ident{color:#fff!important;}
-#-webkit-web-inspector .webkit-javascript-keyword{color:#9685dd!important;font-style:italic;}
 #-webkit-web-inspector .webkit-javascript-comment{color:#757160!important;}
-#-webkit-web-inspector .webkit-javascript-string{color:#ef6e19!important;}
 #-webkit-web-inspector .webkit-javascript-number{color:#db925f!important;}
+#-webkit-web-inspector .webkit-javascript-keyword{color:#9685dd!important;font-style:italic;}
+#-webkit-web-inspector .webkit-javascript-undef{color:#7B7B7B!important;}
+#-webkit-web-inspector .webkit-javascript-string{color:#ef6e19!important;}
 #-webkit-web-inspector .webkit-javascript-regexp{color:#c96666!important;}
+
+/**********************************************
+/* DevTool Chrome
+/**********************************************/
+
+#-webkit-web-inspector .event-bars .event-bar .header .title{text-shadow:none!important;color:#ccc!important;}
+#-webkit-web-inspector .source-frame-debugger-script{background-color:#222!important;}
+#-webkit-web-inspector .webkit-line-content{color:#ddd!important;}
+#-webkit-web-inspector .webkit-highlighted-line,
 #-webkit-web-inspector .webkit-execution-line.webkit-line-content{background-color:rgba(144,245,162,.8)!important;color:#000!important;outline:1px solid #89f5a2!important;}
+#-webkit-web-inspector .webkit-highlighted-line span{color: #000 !important; font-weight:700 !important;}
 #-webkit-web-inspector .webkit-execution-line.webkit-line-content *{color:#000!important;}
 
 /**********************************************
 /* Animations
 /* -------------------------------------------
-/* If you have experiencing performance issues,
+/* If you are experiencing performance issues,
 /* remove the animations section below.
 /**********************************************/
-
 /*-- SOURCES PANEL --*/
 #-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents{
   -webkit-transition: right .5s ease-in-out;
@@ -144,7 +152,7 @@
 }
 
 #-webkit-web-inspector #toolbar > .toolbar-item.toggleable.toggled-on {
-  -webkit-transition: border .25s ease-out 0;
+  -webkit-transition: border-top .25s ease-out 0;
 }
 
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected,
@@ -175,7 +183,7 @@
 
 /*-- CURRENTLY SELECTED --*/
 #-webkit-web-inspector #elements-content li.selected {
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-animation: pulsate 2.5s infinite;
 }
 
@@ -445,7 +453,6 @@
 
 #-webkit-web-inspector #toolbar > button {
   box-shadow: none !important;
-  line-height: 22px !important;
   padding: 4px 14px 6px !important;
   cursor: pointer !important;
 }
