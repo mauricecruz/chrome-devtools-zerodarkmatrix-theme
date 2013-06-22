@@ -68,10 +68,133 @@
     to { background-color: #222; }
 }
 
-
 /**********************************************
 /* Animations
+/* -------------------------------------------
+/* If you are experiencing performance issues,
+/* remove the animations section below.
 /**********************************************/
+
+
+/*-- SOURCES PANEL --*/
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents{
+  -webkit-transition: right .5s ease-in-out;
+}
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-sidebar{
+  -webkit-animation: slideInRightBig .5s ease-out;
+}
+
+#-webkit-web-inspector .panel.scripts div:not(.split-view-horizontal) .split-view-vertical .split-view-sidebar,
+#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents-first.split-view-sidebar{
+  -webkit-animation: none !important
+}
+
+
+#-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay{
+  -webkit-animation: slideInLeftBig .5s ease-out;
+}
+
+#-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second:not(.metrics-and-computed),
+#-webkit-web-inspector .panel.scripts .split-view-horizontal > .split-view-contents-second.split-view-sidebar{
+  -webkit-animation: bounceInUp 1s ease-in-out;
+  z-index: 99;
+}
+
+#-webkit-web-inspector #toolbar > .toolbar-item.toggleable.toggled-on {
+  -webkit-transition: border .25s ease-out 0;
+}
+
+
+#-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected,
+#-webkit-web-inspector .small .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab.selected{
+  -webkit-transition: border-top .25s ease-out 0;
+}
+
+/*-- NETWORK PANES --*/
+#-webkit-web-inspector #network-views{
+    -webkit-animation: bounceInRight .5s ease-in-out;
+}
+
+/*-- FIND --*/
+#-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
+#-webkit-web-inspector .webkit-search-result,
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content,
+#-webkit-web-inspector .CodeMirror .cm-line-with-selection span.cm-column-with-selection{
+  -webkit-animation: match-animation.5s ease-in-out;
+}
+
+/*-- INACTIVE SELECTORS --*/
+#-webkit-web-inspector .styles-section .properties .overloaded ,
+#-webkit-web-inspector .styles-section .properties .inactive ,
+#-webkit-web-inspector .styles-section .properties .disabled ,
+#-webkit-web-inspector .styles-section .properties .not-parsed-ok {
+  -webkit-transition: opacity .5s ease-in-out 0;
+}
+
+/*-- CURRENTLY SELECTED --*/
+#-webkit-web-inspector #elements-content li.selected {
+  border-radius: 2px;
+  -webkit-animation: pulsate 2.5s infinite;
+}
+
+#-webkit-web-inspector .status-bar .crumbs .crumb.selected {
+  -webkit-transition: border-top .25s ease-out 0;
+}
+
+.styles-section .properties .enabled-button{
+  -webkit-transition: visibility .5s ease-in-out;
+}
+
+/*-- HIGHLIGHT CHILDREN --*/
+#-webkit-web-inspector .parent + .children{
+  -webkit-transition: .25s ease-in .25s;
+}
+
+#-webkit-web-inspector .webkit-execution-line{
+  -webkit-animation: pulsate 2.5s infinite !important;
+  outline: none !important;
+}
+
+
+/*-- POPOVERS --*/
+#-webkit-web-inspector .popover{
+   -webkit-animation: growFadeIn .2s ease-in-out;
+}
+
+#-webkit-web-inspector .popover.top-left-arrow{
+  -webkit-transform-origin: 25% 0%;
+}
+
+#-webkit-web-inspector .popover.top-right-arrow{
+  -webkit-transform-origin: 75% 0%;
+}
+
+#-webkit-web-inspector .popover.bottom-left-arrow{
+  -webkit-transform-origin: 25% 100%;
+}
+
+#-webkit-web-inspector .popover.bottom-right-arrow{
+  -webkit-transform-origin: 75% 100%;
+}
+
+#-webkit-web-inspector .popover.left-top-arrow{
+  -webkit-transform-origin: 0% 10%;
+}
+
+#-webkit-web-inspector .popover.left-bottom-arrow{
+  -webkit-transform-origin: 0% 90%;
+}
+
+#-webkit-web-inspector .popover.right-top-arrow{
+  -webkit-transform-origin: 100% 10%;
+}
+
+#-webkit-web-inspector .popover.right-bottom-arrow{
+  -webkit-transform-origin: 100% 90%;
+}
+
+/* -- KEYFRAME DECLARATIONS -- */
 @-webkit-keyframes match-animation {
       0% { box-shadow: 0 0 0 #222; background-color: #222; color: #222;}
     50% { box-shadow: 0 0 25px #89F5A2;}
@@ -145,21 +268,21 @@
 }
 
 @-webkit-keyframes slideInLeftBig {
-  0% {    
+  0% {
     -webkit-transform: translateX(-500px);
   }
 
-  100% {    
+  100% {
     -webkit-transform: translateX(0);
   }
 }
 
 @-webkit-keyframes slideInRightBig {
-  0% {    
+  0% {
     -webkit-transform: translateX(500px);
   }
 
-  100% {    
+  100% {
     -webkit-transform: translateX(0);
   }
 }
@@ -230,7 +353,7 @@ body.platform-windows .toolbar-label{
   font-size: .9em !important;
 }
 
- 
+
 
 
 
@@ -662,33 +785,7 @@ body.platform-windows .toolbar-label{
 }
 
 
-/* Animations for Elements Panel */
 
-
-#-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second,
-#-webkit-web-inspector .panel.scripts .split-view-horizontal .split-view-contents-second.split-view-sidebar{
-  -webkit-animation: bounceInUp 1s ease-in-out;  
-  z-index: 99;
-}
-
-/* Animations for Sources Panel */
-
-#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents{
-  -webkit-transition: right .5s ease-in-out;  
-
-}
-
-#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-sidebar{
-  -webkit-animation: slideInRightBig .5s ease-out;  
-}
-
-#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents-first.split-view-sidebar{
-  -webkit-animation: none !important
-}
-
-#-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay{
-  -webkit-animation: slideInLeftBig .5s ease-out;
-}
 
 #-webkit-web-inspector #toolbar {
   background: -webkit-linear-gradient(#505050,#383838) !important;  
@@ -714,7 +811,6 @@ body.platform-windows .toolbar-label{
   border: 2px solid #89F5A2 !important;
   border-left: none !important;
   border-right: none !important;
-  -webkit-transition: border .25s ease-out 0;
 }
 
 #-webkit-web-inspector button:hover {
@@ -1043,16 +1139,12 @@ color: #aaa !important;
     background-color: rgba(0,0,0,0) !important;    
     color: #ddd !important;
     cursor: default;
-    -webkit-transition: border-top .25s ease-out 0;       
 }
 
 #-webkit-web-inspector .status-bar .crumbs .crumb.selected:hover {
     color: #ddd !important;
 }
 
-.styles-section .properties .enabled-button{
-  -webkit-transition: visibility .5s ease-in-out;
-}
 
 #-webkit-web-inspector .sidebar-pane .body,
 #-webkit-web-inspector .sidebar-pane .monospace,
@@ -1250,12 +1342,11 @@ color: #aaa !important;
   border-right: 2px solid #333 !important;
 }
 
-#-webkit-web-inspector .styles-section .properties .overloaded , 
-#-webkit-web-inspector .styles-section .properties .inactive , 
-#-webkit-web-inspector .styles-section .properties .disabled , 
+#-webkit-web-inspector .styles-section .properties .overloaded ,
+#-webkit-web-inspector .styles-section .properties .inactive ,
+#-webkit-web-inspector .styles-section .properties .disabled ,
 #-webkit-web-inspector .styles-section .properties .not-parsed-ok {
   opacity: .5 !important;
-  -webkit-transition: opacity .5s ease-in-out 0;  
 }
 
 /**********************************************
@@ -1588,7 +1679,6 @@ color: #aaa !important;
   border-radius: 2px;
   font-size: 1em !important;
   background-color: #89F5A2 !important;
-  -webkit-animation: match-animation.5s ease-in-out;
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .parent .search-result-file-name {
