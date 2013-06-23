@@ -629,7 +629,10 @@ color: #9981BC !important;
 
 #-webkit-web-inspector #console-messages .console-formatted-function {
   color: #BA75FF !important;
-}#-webkit-web-inspector #console-messages .section .properties .name, 
+
+}
+
+#-webkit-web-inspector #console-messages .section .properties .name, 
 #-webkit-web-inspector #console-messages .event-properties .name {
   color: #96cbfe !important;
 }
@@ -678,9 +681,96 @@ color: #9981BC !important;
 }
 
 
-/*
-  Styles
-*/
+/**********************************************
+/* Resources Tab
+/**********************************************/
+
+
+/**********************************************
+/* Resources Sidebar
+/**********************************************/
+
+/*-- default text color --*/
+#-webkit-web-inspector .panel.resources .sidebar-tree,
+#-webkit-web-inspector .panel.resources .base-storage-tree-element-title,
+#-webkit-web-inspector .panel.resources .base-storage-tree-element-subtitle,
+#-webkit-web-inspector .panel.resources .base-navigator-tree-element-title {
+  color: #999 !important;
+}
+
+/*-- currently selected element --*/
+#-webkit-web-inspector .panel.resources .selected .sidebar-tree,
+#-webkit-web-inspector .panel.resources .selected .base-storage-tree-element-title,
+#-webkit-web-inspector .panel.resources .selected .base-storage-tree-element-subtitle,
+#-webkit-web-inspector .panel.resources .selected .base-navigator-tree-element-title {
+  color: #fff !important;
+}
+
+#-webkit-web-inspector .panel.resources .outline-disclosure li.selected .selection{
+  background: #444 !important;  
+}
+
+#-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .selection{
+  background: #89F5A2 !important;  
+  background-image: none !important;
+  text-shadow: none !important;
+  border: none !important;
+}
+
+#-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
+  color: #222 !important;
+  text-shadow: none !important;
+}
+
+#-webkit-web-inspector .panel.resources .sidebar li.selected .selection{
+  background-image: none !important;
+  border: none !important;
+}
+
+
+/*-- RESOURCES CONTENT --*/
+#-webkit-web-inspector .resource-view.image .title {
+  color: #ccc !important;
+}
+
+#-webkit-web-inspector .resource-view.image .infoList dt {
+  color: #666 !important;
+  margin-bottom: 5px !important;
+}
+
+#-webkit-web-inspector .resource-view.image .infoList dd {
+  color: #888 !important;
+  margin-bottom: 5px !important;
+}
+
+#-webkit-web-inspector .section .properties .name,
+#-webkit-web-inspector .event-properties .name{
+  color: #77A8C6 !important;
+}
+
+/* TODO - Fix up/down arrows in table view */
+
+/*-- table styles --*/
+#-webkit-web-inspector .resources.panel .data-grid table.data,
+#-webkit-web-inspector .resources.panel table.header .data-grid th,
+#-webkit-web-inspector .data-grid th {
+  background-image: none !important;
+}
+
+#-webkit-web-inspector .resources.panel .data-grid tr:nth-child(even){
+  background-color: #272727 !important;  
+}
+
+#-webkit-web-inspector .resources.panel .data-grid tr.selected{
+  background-color: #89F5A2 !important;  
+}
+
+#-webkit-web-inspector .resources.panel .data-grid tr.selected td *{
+  color: #000 !important;
+}
+
+
+/* Global background color */
 #-webkit-web-inspector,
 #-webkit-web-inspector .panel.scripts .split-view-horizontal,
 #-webkit-web-inspector .panel:not(.timeline):not(.audits) .split-view-contents,
@@ -753,11 +843,6 @@ color: #9981BC !important;
   font-size: 11px !important;
 }
 
-
-#-webkit-web-inspector .webkit-css-property,
-#-webkit-web-inspector .value {
-  background-color: inherit !important;
-}
 
 #-webkit-web-inspector div.pane.expanded {
   background-color: #111;
@@ -833,11 +918,6 @@ color: #9981BC !important;
     border-bottom: 1px solid #222 !important;
     border-color: #222 !important;
     box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
-}
-
-#-webkit-web-inspector .tabbed-pane,
-#-webkit-web-inspector .tabbed-pane-content{
-  background-color: #222 !important;
 }
 
 #-webkit-web-inspector .tabbed-pane-header-contents{
@@ -1065,101 +1145,6 @@ color: #aaa !important;
   text-shadow: none !important;
   color: #bbb !important;
 }
-
-/**********************************************
-/* Resources Tab
-/**********************************************/
-
-#-webkit-web-inspector .resources.panel .sidebar {
-  background-color: #242424 !important;
-}
-
-#-webkit-web-inspector .sidebar-tree,
-#-webkit-web-inspector .resources.panel .base-storage-tree-element-title,
-#-webkit-web-inspector .resources.panel .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .base-navigator-tree-element-title {
-  color: #999 !important;
-}
-
-#-webkit-web-inspector .selected .sidebar-tree,
-#-webkit-web-inspector .resources.panel .selected .base-storage-tree-element-title,
-#-webkit-web-inspector .resources.panel .selected .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .selected .base-navigator-tree-element-title {
-  color: #fff !important;
-}
-
-#-webkit-web-inspector .resources.panel .data-grid table.data,
-#-webkit-web-inspector .resources.panel table.header .data-grid th,
-#-webkit-web-inspector .data-grid th {
-  background-image: none !important;
-}
-
-#-webkit-web-inspector .resources.panel .data-grid tr.selected,
-#-webkit-web-inspector .resources.panel .data-grid:focus tr.selected {
-  background-color: #444 !important;
-}
-
-/**********************************************
-/* Resources info
-/**********************************************/
-#-webkit-web-inspector .resource-view.image .title {
-  color: #ccc !important;
-}
-
-#-webkit-web-inspector .resource-view.image .infoList dt {
-  color: #666 !important;
-  margin-bottom: 5px !important;
-}
-
-#-webkit-web-inspector .resource-view.image .infoList dd {
-  color: #888 !important;
-  margin-bottom: 5px !important;
-}
-
-#-webkit-web-inspector .resource-view .script-view{
-  background-color: #222 !important;
-}
-
-
-#-webkit-web-inspector .section .properties .name,
-#-webkit-web-inspector .event-properties .name{
-  color: #77A8C6 !important;
-}
-
-/* Scripts */
-#-webkit-web-inspector .scripts.panel .sidebar-overlay {
-  background-color: #242424;
-  border-right: none !important;
-  -webkit-box-shadow: rgba(0,0,0,.5) 10px 2px 25px -7px !important;
-}
-
-#-webkit-web-inspector .scripts.panel .outline-disclosure li.selected .selection,
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected {
-  background: #444 !important;
-}
-
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected{
-  background: #89F5A2 !important;
-  border-radius: 2px !important;
-}
-
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title,
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
-  color: #222 !important;
-  text-shadow: none !important;
-}
-
-#-webkit-web-inspector .scripts.panel .outline-disclosure li.selected .selection,
-#-webkit-web-inspector .outline-disclosure li.selected {
-  background: #444 !important;
-  border-radius: 2px !important;
-}
-
-#-webkit-web-inspector .outline-disclosure li:hover {
-  background: #333 !important;
-}
-
-
 
 /* DOM Breakpoints */
 #-webkit-web-inspector .pane > .body .info {
@@ -1876,8 +1861,3 @@ color: #aaa !important;
 #-webkit-web-inspector .suggest-box .source-code .suffix{
   color: #ddd !important;
 }
-
-
-
-
-
