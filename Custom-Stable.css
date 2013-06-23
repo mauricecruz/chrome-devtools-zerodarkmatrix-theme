@@ -1531,111 +1531,6 @@ color: #aaa !important;
   background-color: #47474B !important;
 }
 
-/**********************************************/
-/* Console
-/**********************************************/
-#-webkit-web-inspector #console-messages a:hover {
-color: #B92722 !important;
-}
-
-#-webkit-web-inspector #console-messages .console-message {
-color: #9981BC !important;
-}
-
-#-webkit-web-inspector #console-messages .console-message, #-webkit-web-inspector .console-user-command {
-  border-top: none !important;
-  margin: 2px 0;
-}
-
-#-webkit-web-inspector #console-messages .console-user-command{
-  background-color: #252525 !important;
-  border-top: 1px solid #2a2a2a !important;
-  border-bottom: 1px solid #1e1e1e !important;
-}
-
-#-webkit-web-inspector .console-message .children li,
-#-webkit-web-inspector .console-user-command .children li{
-   margin: 2px 0 !important;
-}
-
-#-webkit-web-inspector .console-user-command > .console-message-text {
-  color: #C4C7C6 !important;
-}
-
-#-webkit-web-inspector .console-message .source-code{
-  color: #49a6d2 !important;
-}
-
-#-webkit-web-inspector .console-message-text {
-  color: #49a6d2 !important;
-}
-
-#-webkit-web-inspector .console-error-level .console-message-text {
-  color: #db0404 !important;
-}
-
-#-webkit-web-inspector .console-warning-level .console-message-text {
-  color: #db0 !important;
-}
-
-/**********************************************/
-/* Messages
-/**********************************************/
-#-webkit-web-inspector #console-messages {
-  font-family: 'DroidSansMono', Menlo, monospace !important;
-  background: #222;
-  color: #AAA !important;
-}
-
-#-webkit-web-inspector #console-messages a {
-  color: #888 !important;
-}
-
-#-webkit-web-inspector #console-messages a:hover {
-  color: #999 !important;
-}
-
-#-webkit-web-inspector #console-messages .console-message {
-  color: #f1f1f1 !important;
-}
-
-#-webkit-web-inspector #console-messages .console-user-command > .console-message-text {
-  color: #ccc !important;
-}
-
-#-webkit-web-inspector .console-formatted-number {
-  color: #95FDCB !important;
-}
-
-#-webkit-web-inspector .console-formatted-undefined.source-code {
-  color: #AD4E4E !important;
-}
-
-#-webkit-web-inspector .properties-tree .console-formatted-string,
-#-webkit-web-inspector #console-messages .console-formatted-string {
-  color: #FF8737!important;
-}
-
-#-webkit-web-inspector #console-messages .console-formatted-object {
-  color: #7c7c7c !important;
-}
-
-#-webkit-web-inspector #console-messages .console-formatted-function {
-  color: #BA75FF !important;
-}
-
-#-webkit-web-inspector #console-messages .console-formatted-regexp {
-  color: #ff54e8 !important;
-}
-
-#-webkit-web-inspector #console-messages .console-group-messages .section .header .title {
-  color: #f1f1f1 !important;
-}
-
-#-webkit-web-inspector #console-messages .section .properties .name, .event-properties .name {
-  color: #96cbfe !important;
-}
-
 /*exception icon state colors */
 #-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph{
   background-color: rgba(180,3,3,.4) !important;
@@ -1643,12 +1538,6 @@ color: #9981BC !important;
 
 #-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph{
   background-color: rgba(213,181,0,.6) !important;
-}
-
-/* console line where commands are typed */
-#-webkit-web-inspector #console-messages #console-prompt{
-  border-top: 1px solid #333 !important;
-  color: #eee !important;
 }
 
 
