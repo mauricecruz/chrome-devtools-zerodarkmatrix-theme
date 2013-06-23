@@ -201,7 +201,7 @@
 }
 
 /*-- HIGHLIGHT CHILDREN --*/
-#-webkit-web-inspector .parent + .children{
+#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, #-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children{
   -webkit-transition: .25s ease-in .25s;
 }
 
@@ -563,14 +563,134 @@ body.platform-windows .toolbar-label{
   color: #f8f8f8 !important;
 }
 
+/**********************************************/
+/* Console
+/**********************************************/
+
+#-webkit-web-inspector #console-prompt {
+  color: #f1f1f1 !important;
+  border-top: none !important;
+  border-top: 1px solid #333 !important;
+  border-bottom: 1px solid #444 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-message, 
+#-webkit-web-inspector .console-user-command {
+  border-top: none !important;
+  margin: 2px 0;
+}
+
+#-webkit-web-inspector #console-messages .console-user-command{
+  background-color: #252525 !important;
+  border-top: 1px solid #2a2a2a !important;
+  border-bottom: 1px solid #1e1e1e !important;  
+}
+
+#-webkit-web-inspector .console-message .children li,
+#-webkit-web-inspector .console-user-command .children li{
+   margin: 1px 0 !important;
+}
+
+#-webkit-web-inspector .console-user-command > .console-message-text {
+  color: #C4C7C6 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-message {
+color: #9981BC !important;
+}
+
+#-webkit-web-inspector .console-message .source-code{
+  color: #49a6d2 !important;
+}
+
+#-webkit-web-inspector .console-warning-level .console-message-text {
+  color: #db0 !important;
+}
+
+#-webkit-web-inspector .console-error-level .console-message-text {
+  color: #f66 !important;
+}
+
+#-webkit-web-inspector #console-messages a {
+  color: #888 !important;
+}
+
+#-webkit-web-inspector #console-messages a:hover {
+  color: #999 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-message {
+  color: #f1f1f1 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-user-command > .console-message-text {
+  color: #ccc !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-function {
+  color: #BA75FF !important;
+}#-webkit-web-inspector #console-messages .section .properties .name, 
+#-webkit-web-inspector #console-messages .event-properties .name {
+  color: #96cbfe !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-number {
+  color: #95FDCB !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-object{
+  color: #7c7c7c !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-object .name {
+  color: #77A8C6 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-object .console-object-preview{
+  color: #ddd !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-regexp {
+  color: #ff54e8 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-string {
+  color: #FF8737!important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-undefined.source-code {
+  color: #AD4E4E !important;
+}
+
+#-webkit-web-inspector #console-messages .console-group-messages .section .header .title {
+  color: #f1f1f1 !important;
+}
+
+#-webkit-web-inspector #console-messages .section .properties .name, 
+#-webkit-web-inspector #console-messages .event-properties .name {
+  color: #96cbfe !important;
+}
+
+#-webkit-web-inspector #console-messages .parent + .children.expanded{
+  border-left: 1px dashed #444 !important;  
+  position: relative;
+  left: .32em;
+}
+
+
 /*
   Styles
 */
 #-webkit-web-inspector,
-#-webkit-web-inspector .split-view-contents,
-#-webkit-web-inspector .split-view,
-#-webkit-web-inspector #scripts-split-view{
-  background-color: #222;
+#-webkit-web-inspector .panel.scripts .split-view-horizontal,
+#-webkit-web-inspector .panel:not(.timeline):not(.audits) .split-view-contents,
+#-webkit-web-inspector .panel:not(.timeline):not(.audits) .split-view,
+#-webkit-web-inspector #scripts-split-view,
+#-webkit-web-inspector #console-messages,
+#-webkit-web-inspector .tabbed-pane,
+#-webkit-web-inspector .tabbed-pane-content,
+#-webkit-web-inspector body.inactive .sidebar{
+  background-color: #222 !important;
 }
 
 
@@ -634,16 +754,6 @@ body.platform-windows .toolbar-label{
 }
 
 
-
-#-webkit-web-inspector .close-left {
-  margin: 10px 0 0 0 !important;
-}
-
-/* Panes */
-#-webkit-web-inspector #main ol {
-  background-color: #111 !important;
-}
-
 #-webkit-web-inspector .webkit-css-property,
 #-webkit-web-inspector .value {
   background-color: inherit !important;
@@ -678,15 +788,6 @@ body.platform-windows .toolbar-label{
 
 #-webkit-web-inspector .section .properties .dimmed {
   opacity: 0.8 !important;
-}
-
-#-webkit-web-inspector .suggest-box-content-item.source-code {
-  color: #999 !important;
-}
-
-#-webkit-web-inspector .suggest-box-content-item.source-code.selected {
-  color: #FFF !important;
-  background-color: #242424 !important;
 }
 
 
@@ -968,6 +1069,11 @@ color: #aaa !important;
 /**********************************************
 /* Resources Tab
 /**********************************************/
+
+#-webkit-web-inspector .resources.panel .sidebar {
+  background-color: #242424 !important;
+}
+
 #-webkit-web-inspector .sidebar-tree,
 #-webkit-web-inspector .resources.panel .base-storage-tree-element-title,
 #-webkit-web-inspector .resources.panel .base-storage-tree-element-subtitle,
@@ -980,10 +1086,6 @@ color: #aaa !important;
 #-webkit-web-inspector .resources.panel .selected .base-storage-tree-element-subtitle,
 #-webkit-web-inspector .selected .base-navigator-tree-element-title {
   color: #fff !important;
-}
-
-#-webkit-web-inspector .resources.panel .sidebar {
-  background-color: #242424 !important;
 }
 
 #-webkit-web-inspector .resources.panel .data-grid table.data,
@@ -1018,26 +1120,15 @@ color: #aaa !important;
   background-color: #222 !important;
 }
 
-/* Scope Variables */
-#-webkit-web-inspector .console-formatted-object,
-#-webkit-web-inspector .console-formatted-node,
-#-webkit-web-inspector .console-formatted-array {
-  color: #7C7C7C !important;
-}
-
-.console-formatted-node:hover{
-  background-color: transparent !important;
-}
 
 #-webkit-web-inspector .section .properties .name,
-#-webkit-web-inspector .event-properties .name,
-#-webkit-web-inspector .console-formatted-object .name {
+#-webkit-web-inspector .event-properties .name{
   color: #77A8C6 !important;
 }
 
 /* Scripts */
 #-webkit-web-inspector .scripts.panel .sidebar-overlay {
-  background: #242424;
+  background-color: #242424;
   border-right: none !important;
   -webkit-box-shadow: rgba(0,0,0,.5) 10px 2px 25px -7px !important;
 }
@@ -1321,8 +1412,8 @@ color: #aaa !important;
 
 #-webkit-web-inspector .sidebar-pane-stack .section .event-bars,
 #-webkit-web-inspector .sidebar-pane .section .event-bars,
-#-webkit-web-inspector .sidebar-pane-stack .properties-tree,
-#-webkit-web-inspector .sidebar-pane .properties-tree{
+#-webkit-web-inspector .sidebar-pane-stack .section.expanded .properties-tree,
+#-webkit-web-inspector .sidebar-pane .section.expanded .properties-tree{
  background-color: #1f1f1f !important;
 }
 
@@ -1654,41 +1745,7 @@ color: #9981BC !important;
 #-webkit-web-inspector .properties-tree li,
 #-webkit-web-inspector .outline-disclosure li::before,
 #-webkit-web-inspector .properties-tree li.parent {
-  background-color: inherit !important;
-}
-
-#-webkit-web-inspector #main ol {
-  background-color: inherit !important;
-}
-
-#-webkit-web-inspector .console-message-text {
-  color: #49a6d2 !important;
-}
-
-#-webkit-web-inspector #console-messages .console-error-level .console-message-text {
-  color: #f66 !important;
-}
-
-#-webkit-web-inspector .console-warning-level .console-message-text {
-  color: #db0 !important;
-}
-
-#-webkit-web-inspector #console-messages .console-user-command::before {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTMzNzdGNUZDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTMzNzdGNjBDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y1REMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y1RUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pia6udAAAAB5SURBVHjaYvz//z8DMYAFxli9ejWI6oByK5AVhYaGIhRCgQsQGwOxIFTxe5gEE5pCVyA+C8RpQLwbqgmrwvdQxauhis6AbMamEASUkEwCabyHTWE51BQlqBNMoDSKQhckX3dCFd3DCB4g2AP16VkoGwUwEhvgAAEGAAzQHBRSxqPRAAAAAElFTkSuQmCC) !important;
-}
-
-/**********************************************/
-/* Prompt
-/**********************************************/
-#-webkit-web-inspector #console-prompt {
-  color: #f1f1f1 !important;
-  border-top: none !important;
-  border-bottom: 1px solid #444 !important;
-}
-
-#-webkit-web-inspector #console-prompt::before {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjRGNTc2MTZDMTA2MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjRGNTc2MTdDMTA2MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y2MUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y2MkMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plf0eOsAAAB4SURBVHjaYvz//z8DMYAFxph+BqyhA8qtQFaUacKIUAgFLkBsDMSCUMXvYRJMaApdgfgsEKcB8W6oJqwK30MVr4YqOgPEodgUgoASkkkgjfewKSyHmqIEdYIJlEZR6ILk606oonsYwQMEe6A+PQtlowBGYgMcIMAAF2wcFPVNZx8AAAAASUVORK5CYII=) !important;
-  color: #fff !important;
+  background-color: #inherit !important;
 }
 
 /**********************************************/
@@ -1711,14 +1768,6 @@ color: #9981BC !important;
 #-webkit-web-inspector #network-views .script-view,
 #-webkit-web-inspector #script-resource-views .script-view {
   color: #ccc !important;
-}
-
-#-webkit-web-inspector #storage-views .script-view,
-#-webkit-web-inspector #elements-content,
-#-webkit-web-inspector #network-views .text-editor-contents,
-#-webkit-web-inspector #script-resource-views .script-view {
-  background: #242424 !important;
-  font-size: 12px !important;
 }
 
 #-webkit-web-inspector #scripts-editor-container-tabbed-pane .text-editor-contents{
@@ -1775,11 +1824,6 @@ color: #9981BC !important;
   margin-top: -46px !important;
   padding: 4px 0 !important;
   border-bottom: 1px solid #666 !important;
-}
-
-#-webkit-web-inspector .body {
-  background: #222 !important;
-
 }
 
 #-webkit-web-inspector .styles-element-state-pane.expanded {
@@ -1944,9 +1988,7 @@ color: #9981BC !important;
   color: #ddd !important;
 }
 
-#-webkit-web-inspector .suggest-box div {
-  color: #f60 !important;
-}
+
 
 
 
