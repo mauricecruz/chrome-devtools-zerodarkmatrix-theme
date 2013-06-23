@@ -4,7 +4,6 @@
 /* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
 /*************************************************************************/
 
-
 /**********************************************
 /* Code Highlighting [CODEMIRROR]
 /**********************************************/
@@ -466,7 +465,6 @@
   color: #999 !important;
 }
 
-
 /* Global background color */
 #-webkit-web-inspector,
 #-webkit-web-inspector .panel.scripts .split-view-horizontal,
@@ -557,14 +555,6 @@
   opacity: 0.8 !important;
 }
 
-#-webkit-web-inspector .suggest-box-content-item.source-code {
-  color: #999 !important;
-}
-
-#-webkit-web-inspector .suggest-box-content-item.source-code.selected {
-  color: #FFF !important;
-  background-color: #242424 !important;
-}
 
 #-webkit-web-inspector .styles-element-state-pane.expanded {
   border-bottom: 1px solid #333 !important;
@@ -1835,8 +1825,3 @@ color: #9981BC !important;
 #-webkit-web-inspector .suggest-box .source-code .suffix{
   color: #ddd !important;
 }
-
-#-webkit-web-inspector .suggest-box div {
-  color: #f60 !important;
-}
-
