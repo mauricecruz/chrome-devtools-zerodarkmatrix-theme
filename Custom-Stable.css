@@ -680,53 +680,56 @@ color: #9981BC !important;
   left: .32em;
 }
 
-
 /**********************************************
-/* Resources Tab
-/**********************************************/
-
-
-/**********************************************
-/* Resources Sidebar
+/* Resources & Sources Sidebar
 /**********************************************/
 
 /*-- default text color --*/
-#-webkit-web-inspector .panel.resources .sidebar-tree,
 #-webkit-web-inspector .panel.resources .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .panel.resources .base-navigator-tree-element-title {
+#-webkit-web-inspector .panel.scripts .base-navigator-tree-element-title { 
   color: #999 !important;
 }
 
 /*-- currently selected element --*/
-#-webkit-web-inspector .panel.resources .selected .sidebar-tree,
 #-webkit-web-inspector .panel.resources .selected .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources .selected .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .panel.resources .selected .base-navigator-tree-element-title {
+#-webkit-web-inspector .panel.scripts .selected .base-navigator-tree-element-title {
   color: #fff !important;
 }
 
-#-webkit-web-inspector .panel.resources .outline-disclosure li.selected .selection{
+#-webkit-web-inspector .outline-disclosure li.selected .selection{
   background: #444 !important;  
 }
 
-#-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .selection{
+#-webkit-web-inspector .outline-disclosure li:hover .selection{
+  display: block !important;
+  background: #333 !important;  
+}
+
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .selection{
   background: #89F5A2 !important;  
   background-image: none !important;
   text-shadow: none !important;
   border: none !important;
 }
 
-#-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .base-storage-tree-element-title{
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title,
+#-webkit-web-inspector .panel.resources ol:focus .selected .base-storage-tree-element-subtitle,
+#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title{
   color: #222 !important;
   text-shadow: none !important;
 }
 
-#-webkit-web-inspector .panel.resources .sidebar li.selected .selection{
+#-webkit-web-inspector .sidebar li.selected .selection{
   background-image: none !important;
   border: none !important;
 }
 
+
+/**********************************************
+/* Resources Tab
+/**********************************************/
 
 /*-- RESOURCES CONTENT --*/
 #-webkit-web-inspector .resource-view.image .title {
@@ -777,12 +780,11 @@ color: #9981BC !important;
 #-webkit-web-inspector .panel:not(.timeline):not(.audits) .split-view,
 #-webkit-web-inspector #scripts-split-view,
 #-webkit-web-inspector #console-messages,
-#-webkit-web-inspector .tabbed-pane,
 #-webkit-web-inspector .tabbed-pane-content,
-#-webkit-web-inspector body.inactive .sidebar{
+#-webkit-web-inspector .styles-section{
   background-color: #222 !important;
+  z-index: 1;
 }
-
 
 /*cursor color*/
 #-webkit-web-inspector .text-editor-editable:focus,
@@ -848,9 +850,6 @@ color: #9981BC !important;
   background-color: #111;
 }
 
-#-webkit-web-inspector .styles-section.read-only {
-  background-color: #222 !important;
-}
 
 #-webkit-web-inspector .styles-section {
   padding: 4px 0 !important;
@@ -1470,9 +1469,7 @@ color: #aaa !important;
   border-right: 1px solid #555 !important;
 }
 
-#-webkit-web-inspector .search-results{
-  background-color: #222 !important;
-}
+
 
 #-webkit-web-inspector .search-match-content{
   color: #A3A3A3 !important;
@@ -1794,10 +1791,6 @@ color: #aaa !important;
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#333), to(#3c3c3c)) !important;
   box-shadow: 0 50px 30px rgba(0,0,0,.6) !important;
   border: 1px solid #666 !important;
-}
-
-#-webkit-web-inspector .dialog .dialog-contents, #-webkit-web-inspector .dialog .fill{
-  background-color: #222 !important;
 }
 
 #-webkit-web-inspector .dialog .fill{
