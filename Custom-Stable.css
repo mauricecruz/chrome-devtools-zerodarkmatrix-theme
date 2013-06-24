@@ -781,9 +781,10 @@ color: #9981BC !important;
 #-webkit-web-inspector #scripts-split-view,
 #-webkit-web-inspector #console-messages,
 #-webkit-web-inspector .tabbed-pane-content,
-#-webkit-web-inspector .styles-section{
+#-webkit-web-inspector .styles-section,
+#-webkit-web-inspector .help-window-main{
   background-color: #222 !important;
-  z-index: 1;
+  z-index: 0;
 }
 
 /*cursor color*/
