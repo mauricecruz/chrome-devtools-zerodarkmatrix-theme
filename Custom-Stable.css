@@ -182,8 +182,7 @@
 }
 
 /*-- CURRENTLY SELECTED --*/
-#-webkit-web-inspector #elements-content li.selected {
-  border-radius: 2px;
+#-webkit-web-inspector .panel.elements .outline-disclosure ol:focus li.selected .selection{  
   -webkit-animation: pulsate 2.5s infinite;
 }
 
@@ -198,6 +197,11 @@
 /*-- HIGHLIGHT CHILDREN --*/
 #-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, #-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children{
   -webkit-transition: .25s ease-in .25s;
+}
+
+#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children > :last-child *, 
+#-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children > :last-child *{
+    -webkit-transition: opacity .5s ease-in-out .25s;
 }
 
 /*-- POPOVERS --*/
@@ -644,6 +648,50 @@ color: #9981BC !important;
   position: relative;
   left: .32em;
 }
+
+/**********************************************
+/* Element Highlighter
+/**********************************************/
+#-webkit-web-inspector .panel.elements .outline-disclosure ol:focus li.selected .selection{
+  border-radius: 2px;
+  outline: 1px solid #555 !important;
+  background-color: #444;
+}
+
+#-webkit-web-inspector .panel.elements .outline-disclosure li.selected .selection{
+  border-radius: 2px;
+  background-color: #444 !important;
+  outline: 1px solid #555 !important;
+}
+
+#-webkit-web-inspector .panel.elements .outline-disclosure li.hovered:not(.selected) .selection{
+  border-radius: 0 !important;
+  background-color: #2d2d2d !important;
+}
+
+#-webkit-web-inspector .panel.elements .editing {
+  background-color: #333 !important;
+  outline: 1px solid #89f5a2 !important;
+  color: #CCC !important;
+}
+
+/* highlight children */
+#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, 
+#-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 5px !important;
+  box-shadow: inset 0 0 30px 0 rgba(17,17,17,1);
+  border-bottom: 1px solid #333 !important;
+}
+
+/* fade closing tag of parent */
+#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children > :last-child *, 
+#-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children > :last-child *{    
+  opacity: .6;  
+}
+
+
 
 /**********************************************
 /* Resources & Sources Sidebar
@@ -1591,50 +1639,6 @@ color: #aaa !important;
 
 #-webkit-web-inspector #scripts-editor-container-tabbed-pane .text-editor-contents{
   margin-left: 5px;
-}
-
-#-webkit-web-inspector #elements-content li.selected {
-  border-radius: 2px;
-  background-color: #444;
-}
-
-/* highlight children */
-#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children, #-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children{
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding-bottom: 5px !important;
-  box-shadow: inset 0 0 30px 0 rgba(17,17,17,1);
-  border-bottom: 1px solid #333 !important;
-}
-
-#-webkit-web-inspector #elements-content .highlight {
-  color: #f1f1f1;
-}
-
-/*hover over selection on whole line*/
-#-webkit-web-inspector #elements-content li.hovered:not(.selected) .selection {
-
-}
-
-/*hover over selection on element only*/
-#-webkit-web-inspector #elements-content li:hover {
-  background: #333 !important;
-  border-radius: 4px !important;
-  z-index: 999999 !important;
-
-}
-
-#-webkit-web-inspector #elements-content ol:focus li.selected .selection {
-  background: #444 !important;
-}
-
-#-webkit-web-inspector #elements-content .selected {
-  background-color: #333 !important;
-}
-
-#-webkit-web-inspector #elements-content .editing {
-  background-color: #333 !important;
-  color: #CCC !important;
 }
 
 #-webkit-web-inspector .styles-element-state-pane {
