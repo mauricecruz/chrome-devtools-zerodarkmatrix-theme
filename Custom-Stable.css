@@ -711,26 +711,31 @@ color: #9981BC !important;
   color: #fff !important;
 }
 
-#-webkit-web-inspector .outline-disclosure li.selected .selection{
-  background: #444 !important;  
+#-webkit-web-inspector .panel.resources .outline-disclosure li.selected .selection,
+#-webkit-web-inspector .panel.scripts .outline-disclosure li.selected .selection{
+  background-image: -webkit-gradient(linear, left top, left bottom, 
+      from(#666), to(#444)) !important;
+  
 }
 
-#-webkit-web-inspector .outline-disclosure li:hover .selection{
+#-webkit-web-inspector .panel.resources .outline-disclosure li:hover:not(.selected) .selection,
+#-webkit-web-inspector .panel.scripts .outline-disclosure li:hover:not(.selected) .selection{
   display: block !important;
-  background: #333 !important;  
+  background: #333 !important;
+  
 }
 
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .selection{
-  background: #89F5A2 !important;  
-  background-image: none !important;
+#-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .selection,
+#-webkit-web-inspector .panel.scripts .outline-disclosure ol:focus li.selected .selection{  
+  background-image: -webkit-gradient(linear, left top, left bottom, 
+      from(#A7F8B9), to(#89f5a2)) !important;
   text-shadow: none !important;
-  border: none !important;
 }
 
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-storage-tree-element-title,
+#-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources ol:focus .selected .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title{
-  color: #222 !important;
+#-webkit-web-inspector .panel.scripts .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title{
+  color: #000 !important;
   text-shadow: none !important;
 }
 
