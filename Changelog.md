@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.7 - 26 June 2013
+* Reorganized styles into sections
+** Code Highlighting [CODEMIRROR]
+** Code Highlighting [WEBKIT]
+** DevTool Chrome
+** Animations
+** Scrollbars
+** Main Toolbar
+** Console
+** Element Highlighter
+** Resources & Sources Sidebar
+** Resources Tab
+* Updated highlighting style of elements
+* Reduced opacity of closing tag in child highlighter to emphasize children
+
 ## 0.6 - 15 June 2013
 * Moved animations to top of doc for easier enable/disable
 * Moved code highlighting selectors to top of document for easier customizing
