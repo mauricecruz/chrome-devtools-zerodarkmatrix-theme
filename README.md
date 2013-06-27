@@ -75,6 +75,12 @@ Copy **Custom.css** and paste in:
 ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css
 ```
 
+* Ubuntu (Google Chrome): 
+
+```
+~/.config/google-chrome/Default/User\ StyleSheets/Custom.css
+```
+
 * Ubuntu (Chromium): 
 
 ```
