@@ -1060,6 +1060,10 @@ color: #9981BC !important;
   color: #89f5a2 !important;
 }
 
+#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-list li:hover {
+  background-color: rgba(137,245,162,.2) !important;
+}
+
 /*Data Containers aka table views */
 #-webkit-web-inspector .data-container td{
   border-right: 2px solid #333 !important;
