@@ -716,7 +716,13 @@ color: #9981BC !important;
 }
 
 #-webkit-web-inspector .resources.panel .data-grid tr.selected td *{
-  color: #000 !important;
+	color: #000 !important;
+}
+
+/*SOURCES */
+#-webkit-web-inspector .panel.scripts .sidebar-overlay{
+	border-right: 1px solid #282828 !important;
+	box-shadow: rgb(20,20,20) 5px 0px 22px 3px !important;
 }
 
 /* Global background color */
