@@ -721,19 +721,20 @@ color: #9981BC !important;
 
 /* Global background color */
 #-webkit-web-inspector,
-#-webkit-web-inspector .panel.scripts .split-view-horizontal,
-#-webkit-web-inspector .panel:not(.timeline):not(.audits) .split-view-contents,
-#-webkit-web-inspector .panel:not(.timeline):not(.audits) .split-view,
-#-webkit-web-inspector #scripts-split-view,
-#-webkit-web-inspector #console-messages,
-#-webkit-web-inspector .tabbed-pane-content,
-#-webkit-web-inspector .styles-section,
-#-webkit-web-inspector .styles-section.computed-style .properties-tree,
-#-webkit-web-inspector .drawer-contents,
-#-webkit-web-inspector .help-window-main{
-  background-color: #222 !important;
-  z-index: 0;
+#-webkit-web-inspector #drawer,
+#-webkit-web-inspector .help-window-main,
+#-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler),
+#-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler) .split-view-contents{
+	background-color: #222 !important;
+	z-index: 0;
 }
+
+/* force inherit for read-only panes in elements vertical sidebar */
+#-webkit-web-inspector .styles-section.read-only {
+	background: inherit !important;
+
+}
+
 
 /*cursor color*/
 #-webkit-web-inspector .text-editor-editable:focus,
@@ -1604,8 +1605,8 @@ color: #9981BC !important;
 /**********************************************/
 /* Elements/Network
 /**********************************************/
-#-webkit-web-inspector .data-grid table {
-  color: white !important;
+#-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler) table {
+	color: white !important;
 }
 
 #-webkit-web-inspector .network-graph-bar,
