@@ -798,6 +798,7 @@ body.platform-windows .toolbar-label {
 #-webkit-web-inspector,
 #-webkit-web-inspector #drawer,
 #-webkit-web-inspector .help-window-main,
+#-webkit-web-inspector .sidebar-overlay,
 #-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler),
 #-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler), .split-view-contents {
 	background-color: #222 !important;
