@@ -30,6 +30,7 @@
 #-webkit-web-inspector .CodeMirror .cm-variable-2 { color: #ccc !important; }
 #-webkit-web-inspector .CodeMirror .cm-execution-line { background-color: rgba(137,245,162,.8) !important; outline: 1px solid #89f5a2 !important;}
 #-webkit-web-inspector .CodeMirror .cm-execution-line  * { color: #000 !important;}
+#-webkit-web-inspector .CodeMirror-linenumber{ border-right: none !important;}
 
 /*--CSS--*/
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-atom { color: #ccc !important; }
