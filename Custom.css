@@ -941,27 +941,6 @@
 	color: #77A8C6 !important;
 }
 
-/*table styles*/
-#-webkit-web-inspector .resources.panel .data-grid table.data,
-#-webkit-web-inspector .resources.panel table.header .data-grid th,
-#-webkit-web-inspector .data-grid th {
-	background-image: none !important;
-}
-
-#-webkit-web-inspector .resources.panel .data-grid tr:nth-child(even){
-	background-color: #272727 !important;
-}
-
-#-webkit-web-inspector .resources.panel .data-grid tr.selected {
-	background-color: #89F5A2 !important;
-}
-
-#-webkit-web-inspector .resources.panel .data-grid tr.selected td * {
-	color: #000 !important;
-}
-
-
-
 /*************************************
  * Help/Settings Overlay
  *************************************/
@@ -1205,6 +1184,64 @@
 	background-color: #47474B !important;
 }
 
+/**********************************************/
+/* Tables
+/**********************************************/
+#-webkit-web-inspector .data-grid .data,
+#-webkit-web-inspector .data-grid th {
+	background-image: none !important;
+}
+
+#-webkit-web-inspector .data-grid {
+	background-color: transparent !important;
+	background-image: none !important;
+}
+
+#-webkit-web-inspector .data-grid .data-container a{
+	text-decoration: none;
+	color: #db0 !important;
+}
+
+#-webkit-web-inspector .data-grid .data-container tr:nth-child(odd) {
+	background-color: #242424 !important;
+}
+
+#-webkit-web-inspector .data-grid .data-container tr:nth-child(even) {
+	background-color: #2b2b2b !important;
+}
+
+#-webkit-web-inspector .data-grid .header {
+	background-image: -webkit-linear-gradient(top, #505050, #383838);
+}
+
+#-webkit-web-inspector .data-grid .header th {
+	color: #89f5a2 !important;
+}
+
+#-webkit-web-inspector .data-grid .header .key-column,
+#-webkit-web-inspector .data-grid .header .value-column {
+	border: none !important;
+}
+
+#-webkit-web-inspector .data-grid .data-container tr:not(.selected):not(.filler):hover{
+	background-color: #444 !important;
+	outline: 1px solid #545454 !important;
+}
+
+#-webkit-web-inspector .data-grid .data-container tr.selected {
+	background-color: rgba(150,255,150,.2) !important;
+	outline: 1px solid rgba(150,255,150,.3);
+}
+
+#-webkit-web-inspector .data-grid tr td *{
+	color: #bbb !important;
+}
+
+#-webkit-web-inspector .data-grid tr.selected td *{
+	color: #ddd !important;
+}
+
+
 /*- UNORGANIZED SECTION BELOW */
 
 #-webkit-web-inspector .split-view-sidebar-right .pane .sidebar-separator {
@@ -1328,11 +1365,6 @@
 	background-color: rgba(137,245,162,.2) !important;
 }
 
-/*Data Containers aka table views */
-#-webkit-web-inspector .data-container td {
-	border-right: 2px solid #333 !important;
-}
-
 #-webkit-web-inspector .styles-section .properties .overloaded ,
 #-webkit-web-inspector .styles-section .properties .inactive ,
 #-webkit-web-inspector .styles-section .properties .disabled ,
@@ -1372,8 +1404,20 @@
 }
 
 /**********************************************
-/* Network Tab
+/* Network Tab (uses table styles)
 /**********************************************/
+#-webkit-web-inspector #network-container:not(.brief-mode) .network-log-grid.data-grid td.name-column:hover {
+	text-decoration: none !important;
+}
+
+#-webkit-web-inspector .network-summary-bar {
+	background-image: -webkit-linear-gradient(top, #646464, #353535);
+}
+
+#-webkit-web-inspector .network-summary-bar td{
+	color: #aaa !important;
+}
+
 #-webkit-web-inspector #network-container .network-summary-bar td {
 	border-right: none !important;
 }
@@ -1486,10 +1530,6 @@
 	background-color: #242424 !important;
 }
 
-#-webkit-web-inspector .data-grid td > div {
-	color: #CCC !important;
-}
-
 #-webkit-web-inspector #profile-views .data-grid td > div {
 	color: #333 !important;
 }
@@ -1511,10 +1551,7 @@
 	font-size: 12px !important;
 }
 
-#-webkit-web-inspector .data-grid:focus tr.selected,
-#-webkit-web-inspector .data-grid tr.selected {
-	background: #444 !important;
-}
+
 
 /**********************************************
 /* Timeline Tab
@@ -1818,9 +1855,10 @@
 #-webkit-web-inspector #script-resource-views .script-view {
 	color: #ccc !important;
 }
-
 */
 
 #-webkit-web-inspector #floating-status-bar-container {
 	z-index: 100 !important;
 }
+
+/*
