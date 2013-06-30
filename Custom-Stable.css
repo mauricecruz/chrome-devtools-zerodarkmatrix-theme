@@ -757,41 +757,53 @@ body.platform-windows .toolbar-label {
 	color: #ccc !important;
 }
 
-#-webkit-web-inspector #console-messages .console-formatted-function {
-	color: #BA75FF !important;
-
-}
-
 #-webkit-web-inspector #console-messages .section .properties .name,
 #-webkit-web-inspector #console-messages .event-properties .name {
 	color: #96cbfe !important;
 }
 
-#-webkit-web-inspector .console-formatted-number {
+#-webkit-web-inspector #console-messages .console-formatted-array,
+#-webkit-web-inspector .sidebar-pane .console-formatted-array {
+	color: #49A6D2 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-function,
+#-webkit-web-inspector .sidebar-pane .console-formatted-function {
+	color: #BA75FF !important;
+}
+
+#-webkit-web-inspector #console-messages .console-formatted-number,
+#-webkit-web-inspector .sidebar-pane .console-formatted-number {
 	color: #95FDCB !important;
 }
 
-#-webkit-web-inspector .console-formatted-object {
+#-webkit-web-inspector #console-messages .console-formatted-object,
+#-webkit-web-inspector .sidebar-pane .console-formatted-object {
 	color: #7c7c7c !important;
 }
 
-#-webkit-web-inspector .console-formatted-object .name {
+#-webkit-web-inspector #console-messages .console-formatted-object .name,
+#-webkit-web-inspector .sidebar-pane .name {
 	color: #77A8C6 !important;
 }
 
-#-webkit-web-inspector .console-formatted-object .console-object-preview {
+#-webkit-web-inspector #console-messages .console-formatted-object .console-object-preview,
+#-webkit-web-inspector .sidebar-pane .console-formatted-object .console-object-preview {
 	color: #ddd !important;
 }
 
-#-webkit-web-inspector .console-formatted-regexp {
+#-webkit-web-inspector #console-messages .console-formatted-regexp,
+#-webkit-web-inspector .sidebar-pane .console-formatted-regexp {
 	color: #ff54e8 !important;
 }
 
-#-webkit-web-inspector .console-formatted-string {
-	color: #FF8737!important;
+#-webkit-web-inspector #console-messages .console-formatted-string,
+#-webkit-web-inspector .sidebar-pane .console-formatted-string {
+	color: #FF8737 !important;
 }
 
-#-webkit-web-inspector .console-formatted-undefined.source-code {
+#-webkit-web-inspector #console-messages .console-formatted-undefined.source-code,
+#-webkit-web-inspector .sidebar-pane .console-formatted-undefined.source-code {
 	color: #AD4E4E !important;
 }
 
@@ -804,10 +816,11 @@ body.platform-windows .toolbar-label {
 	color: #96cbfe !important;
 }
 
-#-webkit-web-inspector #console-messages .parent + .children.expanded {
+#-webkit-web-inspector #console-messages .parent + .children.expanded,
+#-webkit-web-inspector .sidebar-pane .parent + .children.expanded {
 	border-left: 1px dashed #444 !important;
 	position: relative;
-	left: .32em;
+	left: 4.4px;
 }
 
 /**********************************************
@@ -1762,10 +1775,6 @@ body.platform-windows .toolbar-label {
 	content: "\25B2" !important;
 	color: #A3A6A7 !important;
 	font-size: .8em;
-}
-
-#-webkit-web-inspector .properties-tree .name {
-	color: #f50 !important;
 }
 
 #-webkit-web-inspector .properties-tree li,
