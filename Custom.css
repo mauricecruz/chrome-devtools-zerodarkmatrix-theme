@@ -1647,6 +1647,7 @@
 #-webkit-web-inspector .sidebar-pane-toolbar .sidebar-pane-subtitle,
 #-webkit-web-inspector .sidebar-pane {
 	color: #bbb !important;
+	text-shadow: none !important;
 }
 
 /*pane colors*/
@@ -1655,6 +1656,7 @@
 	color: rgb(204, 204, 204);
 	border-top: #333 !important;
 	border-bottom: #333 !important;
+	text-shadow: none !important;
 }
 
 #-webkit-web-inspector .pane-title-button.add,
