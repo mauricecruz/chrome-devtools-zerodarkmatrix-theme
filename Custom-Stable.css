@@ -347,53 +347,6 @@
 }
 
 /************************************************
-/* Port Fonts from v.28
-/************************************************/
-
-
-body.platform-mac .monospace, body.platform-mac .source-code {
-	font-size: 11px !important;
-	font-family: Menlo, monospace;
-}
-
-body.platform-mac.platform-mac-tiger .monospace,
-body.platform-mac.platform-mac-tiger .source-code {
-	font-size: 10px !important;
-	font-family: Monaco, monospace;
-}
-
-body.platform-windows .monospace, body.platform-windows .source-code {
-	font-size: 12px !important;
-	font-family: Consolas, Lucida Console, monospace;
-}
-
-body.platform-linux .monospace, body.platform-linux .source-code {
-	font-size: 11px !important;
-	font-family: dejavu sans mono, monospace;
-}
-
-body.platform-linux {
-	color: rgb(48, 57, 66);
-	font-family: Ubuntu, Arial, sans-serif;
-	font-size: 12px;
-}
-
-body.platform-mac {
-	color: rgb(48, 57, 66);
-	font-family: 'Lucida Grande', sans-serif;
-	font-size: 12px;
-}
-
-body.platform-windows, body.platform-windows .toolbar-label {
-	font-family: 'Segoe UI', Tahoma, sans-serif !important;
-	font-size: 12px;
-}
-
-body.platform-windows .toolbar-label {
-	font-size: .9em !important;
-}
-
-/************************************************
 /* Scrollbars
 /************************************************/
 #-webkit-web-inspector ::-webkit-scrollbar-track:horizontal {
