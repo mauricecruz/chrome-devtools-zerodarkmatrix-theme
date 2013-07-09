@@ -1755,24 +1755,6 @@
 	-webkit-mask-position: -4px -96px !important;
 }
 
-/* disable dark background for timeline */
-#-webkit-web-inspector #timeline-graphs,
-#-webkit-web-inspector #memory-counters-graph,
-#-webkit-web-inspector #counter-values-bar {
-	background-color: #eee !important;
-}
-
-/* ***disabled until timeline background is fixed***
-/* lighter arrows
-#-webkit-web-inspector #resources-container-content #timeline-graphs .timeline-expandable-collapsed {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTkwMjMzQTRBNTJCMTFFMjkwRDA4RDMwNkEwMzRDNDciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTkwMjMzQTVBNTJCMTFFMjkwRDA4RDMwNkEwMzRDNDciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1OTAyMzNBMkE1MkIxMUUyOTBEMDhEMzA2QTAzNEM0NyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1OTAyMzNBM0E1MkIxMUUyOTBEMDhEMzA2QTAzNEM0NyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqV9kOoAAABWSURBVHjaYvz//z8DsYCJgQTAAmMcPnxYEEi9J9bkNCDeDcQuxDrDBaoBqyZcbsaqiZAHUTQRGxr3QJiFgKJZQNwJVczAQowijHDGpwgGGEmJboAAAwAPGRiAHhEthgAAAABJRU5ErkJggg==) !important;
-}
-
-#-webkit-web-inspector #resources-container-content #timeline-graphs .timeline-expandable-expanded {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYxIDY0LjE0MDk0OSwgMjAxMC8xMi8wNy0xMDo1NzowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNS4xIFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTg1NzY5NjdBNTJCMTFFMkIyQTBFOTdDMUUyOERDNTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTg1NzY5NjhBNTJCMTFFMkIyQTBFOTdDMUUyOERDNTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBODU3Njk2NUE1MkIxMUUyQjJBMEU5N0MxRTI4REM1MCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBODU3Njk2NkE1MkIxMUUyQjJBMEU5N0MxRTI4REM1MCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PtQNkNoAAABqSURBVHjaYvz//z8DsYCJgQTAAiIOHTqkBKSU8Kh7b2dnd5YFSWA3HsUVQHwW5ox7QDwLl6kwOWQ3d+JQ3AnVgKIYm+nvkcWYsJiC1VRsipFNf49uExMON2KYikvxPahCjNBhJCW6AQIMAPBWHhzjBh3WAAAAAElFTkSuQmCC) !important;
-}
-
-*/
 /* hide/expand point arrow down */
 #-webkit-web-inspector .styles-section.matched-styles .properties li.parent.expanded .expand-element,
 #-webkit-web-inspector #console-messages .console-group-messages .section.expanded .header::before,
@@ -1812,7 +1794,7 @@
 }
 
 /* sort arrows point down*/
-.data-grid th.sort-ascending > div::after {
+#-webkit-web-inspector .data-grid th.sort-ascending > div::after {
 	background-image: none !important;
 	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -20px -96px !important;
@@ -1822,7 +1804,7 @@
 }
 
 /* sort arrows point up */
-.data-grid th.sort-descending > div::after {
+#-webkit-web-inspector .data-grid th.sort-descending > div::after {
 	background-image: none !important;
 	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -4px -108px !important;
