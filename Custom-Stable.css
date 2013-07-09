@@ -1482,6 +1482,15 @@
 	font-size: 12px !important;
 }
 
+/**********************************************
+/* Timeline Tab
+/**********************************************/
+#-webkit-web-inspector .timeline-category-statusbar-item,
+#-webkit-web-inspector .timeline-records-stats {
+	text-shadow: none !important;
+	color: #ccc !important;
+}
+
 /* Timeline */
 #-webkit-web-inspector .sidebar-tree-section {
 	text-shadow: none !important;
