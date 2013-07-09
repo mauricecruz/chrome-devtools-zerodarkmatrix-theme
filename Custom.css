@@ -9,42 +9,42 @@
 /**********************************************/
 
 /*--JAVASCRIPT--*/
-#-webkit-web-inspector .CodeMirror .cm-atom { color: #FFF5B4 !important; }
-#-webkit-web-inspector .CodeMirror .cm-attribute { color: #4e87bf !important; }
-#-webkit-web-inspector .CodeMirror .cm-builtin { color: #8DA6CE !important; }
-#-webkit-web-inspector .CodeMirror .cm-comment { color: #676767 !important; font-style: italic; }
-#-webkit-web-inspector .CodeMirror .cm-def { color: #49a6d2 !important; }
-#-webkit-web-inspector .CodeMirror .cm-error { background: #9D1E15 !important; color: #F8F8F8 !important; }
-#-webkit-web-inspector .CodeMirror .cm-header { color: #FF6400 !important; }
-#-webkit-web-inspector .CodeMirror .cm-hr { color: #AEAEAE !important; }
-#-webkit-web-inspector .CodeMirror .cm-keyword { color: #8b6ccf !important; font-style: italic; }
-#-webkit-web-inspector .CodeMirror .cm-link { color: #8DA6CE !important; }
-#-webkit-web-inspector .CodeMirror .cm-meta { color: #D8FA3C !important; }
-#-webkit-web-inspector .CodeMirror .cm-number { color: #DB925F !important; }
-#-webkit-web-inspector .CodeMirror .cm-operator { color: #FBDE2D !important;}
-#-webkit-web-inspector .CodeMirror .cm-property { color: #CDB943 !important; }
-#-webkit-web-inspector .CodeMirror .cm-string { color: #f07b3c !important; }
-#-webkit-web-inspector .CodeMirror .cm-string-2 { color: #f07b3c !important; }
-#-webkit-web-inspector .CodeMirror .cm-tag { color: #49a6d2 !important; }
-#-webkit-web-inspector .CodeMirror .cm-variable { color: #ccc !important; }
-#-webkit-web-inspector .CodeMirror .cm-variable-2 { color: #ccc !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-atom { color: #FFF5B4 !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-attribute { color: #4e87bf !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-builtin { color: #8DA6CE !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-comment { color: #676767 !important; font-style: italic; }
+#-webkit-web-inspector .CodeMirror .cm-js-def { color: #49a6d2 !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-error { background: #9D1E15 !important; color: #F8F8F8 !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-header { color: #FF6400 !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-hr { color: #AEAEAE !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-keyword { color: #8b6ccf !important; font-style: italic; }
+#-webkit-web-inspector .CodeMirror .cm-js-link { color: #8DA6CE !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-meta { color: #D8FA3C !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-number { color: #DB925F !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-operator { color: #FBDE2D !important;}
+#-webkit-web-inspector .CodeMirror .cm-js-property { color: #CDB943 !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-string { color: #f07b3c !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-string-2 { color: #f07b3c !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-tag { color: #49a6d2 !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-variable { color: #ccc !important; }
+#-webkit-web-inspector .CodeMirror .cm-js-variable-2 { color: #ccc !important; }
 #-webkit-web-inspector .CodeMirror .cm-execution-line { background-color: rgba(137,245,162,.8) !important; outline: 1px solid #89f5a2 !important;}
 #-webkit-web-inspector .CodeMirror .cm-execution-line * { color: #000 !important;}
 #-webkit-web-inspector .CodeMirror-linenumber { border-right: none !important;}
 
 /*--CSS--*/
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-atom { color: #ccc !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-builtin { color: #FF9635 !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-meta { color: #6AEDFF !important;}
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-number { color: #ccc !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-operator { color: #ccc !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-property { color: #6AEDFF !important;}
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-qualifier { color: #FF9635 !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-string { color: #e3b959 !important;}
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-string-2 { color: #ccc !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-tag { color: #FF9635 !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-variable { color: #FF9635 !important; }
-#-webkit-web-inspector .cm-s-web-inspector-css span.cm-variable-2 { color: #FF9635 !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-atom { color: #ccc !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-builtin { color: #FF9635 !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-meta { color: #6AEDFF !important;}
+#-webkit-web-inspector .CodeMirror .cm-css-number { color: #ccc !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-operator { color: #ccc !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-property { color: #6AEDFF !important;}
+#-webkit-web-inspector .CodeMirror .cm-css-qualifier { color: #FF9635 !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-string { color: #e3b959 !important;}
+#-webkit-web-inspector .CodeMirror .cm-css-string-2 { color: #ccc !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-tag { color: #FF9635 !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-variable { color: #FF9635 !important; }
+#-webkit-web-inspector .CodeMirror .cm-css-variable-2 { color: #FF9635 !important; }
 
 /*--GLOBAL EDITOR STYLES--*/
 #-webkit-web-inspector .CodeMirror { background: #222 !important; color: #EEE; }
@@ -53,7 +53,7 @@
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutter-elt { color: #888 !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutters {background: #282828 !important; border-right: 2px solid #2b2b2b !important; }
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
-#-webkit-web-inspector .CodeMirror-matchingbracket { border-bottom: 1px solid #89F5A2 !important; color: #ccc !important;}
+#-webkit-web-inspector .CodeMirror-matchingbracket { background-color: #db0404 !important; border-radius: 4px; color: #ccc !important;}
 #-webkit-web-inspector .CodeMirror span.CodeMirror-selectedtext {color: #000 !important; background-color: #89f5a2 !important;}
 #-webkit-web-inspector .CodeMirror span.cm-token-highlight { background-color: transparent !important; padding: 0px !important;}
 #-webkit-web-inspector .CodeMirror span.cm-token-highlight:before { border-color: #89f5a2 !important; }
