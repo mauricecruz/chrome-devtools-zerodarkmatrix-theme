@@ -553,6 +553,10 @@
 	text-shadow: none !important;
 }
 
+#-webkit-web-inspector select.status-bar-item option{
+	background-color: #282828 !important;
+}
+
 #-webkit-web-inspector .status-bar button.status-bar-item {
 	border-right: 1px solid #666 !important;
 	border-left: 1px solid #666 !important;
