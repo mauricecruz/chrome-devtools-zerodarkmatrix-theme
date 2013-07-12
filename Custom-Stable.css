@@ -1515,10 +1515,6 @@
 	background: #222 !important;
 }
 
-#-webkit-web-inspector .outline-disclosure > ol .source-code {
-	color: #000 !important;
-}
-
 #-webkit-web-inspector #drawer-contents .webkit-line-number {
 	background: #2d2d2d !important;
 	border-right: 1px solid #444 !important;
