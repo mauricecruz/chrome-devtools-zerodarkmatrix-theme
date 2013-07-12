@@ -1488,6 +1488,10 @@
 	font-size: 12px !important;
 }
 
+#-webkit-web-inspector #network-views .text-editor{
+	background-color: #333 !important;	
+}
+
 /**********************************************
 /* Timeline Tab
 /**********************************************/

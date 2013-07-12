@@ -1561,6 +1561,11 @@
 	font-size: 12px !important;
 }
 
+#-webkit-web-inspector #network-views .script-view-fallback{
+	background-color: #333 !important;
+	color: #ddd !important;
+}
+
 
 
 /**********************************************
