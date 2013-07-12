@@ -1136,12 +1136,13 @@
 	color: #A3A3A3 !important;
 }
 
-#-webkit-web-inspector #search-results-pane-file-based .parent {
-	background-color: #2D2D2D;
+#-webkit-web-inspector #search-results-pane-file-based .search-result{
+	background-color: #2D2D2D !important;
 	color: #ddd !important;
-	border-top: 1px solid #5d5d5d;
-	border-bottom: 1px solid #111;
-	line-height: 18px;
+	border-top: 1px solid #5d5d5d !important;
+	border-bottom: 1px solid #111 !important;
+	line-height: 18px !important;	
+	margin: 0 !important
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .show-more-matches {
