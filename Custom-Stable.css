@@ -28,9 +28,9 @@
 #-webkit-web-inspector .CodeMirror .cm-tag { color: #49a6d2 !important; }
 #-webkit-web-inspector .CodeMirror .cm-variable { color: #ccc !important; }
 #-webkit-web-inspector .CodeMirror .cm-variable-2 { color: #ccc !important; }
-#-webkit-web-inspector .CodeMirror .cm-execution-line { background-color: rgba(137,245,162,.8) !important; outline: 1px solid #89f5a2 !important;}
-#-webkit-web-inspector .CodeMirror .cm-execution-line * { color: #000 !important;}
+#-webkit-web-inspector .CodeMirror .cm-execution-line { background-color: rgba(137,245,162,.2) !important; outline: 1px solid #181818 !important;}
 #-webkit-web-inspector .CodeMirror-linenumber { border-right: none !important;}
+#-webkit-web-inspector .CodeMirror .source-frame-eval-expression{ background-color: rgba(137,245,162,.4) !important; border-color: #89F5A2 !important;}
 
 /*--CSS--*/
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-atom { color: #ccc !important; }
@@ -116,9 +116,8 @@
 #-webkit-web-inspector .source-frame-debugger-script {background-color:#222!important;}
 #-webkit-web-inspector .webkit-line-content {color:#ddd!important;}
 #-webkit-web-inspector .webkit-highlighted-line,
-#-webkit-web-inspector .webkit-execution-line.webkit-line-content {background-color:rgba(144,245,162,.8)!important;color:#000!important;outline:1px solid #89f5a2!important;}
+#-webkit-web-inspector .webkit-execution-line.webkit-line-content {background-color: rgba(137,245,162,.2) !important; outline: 1px solid #181818 !important;}
 #-webkit-web-inspector .webkit-highlighted-line span {color: #000 !important; font-weight:700 !important;}
-#-webkit-web-inspector .webkit-execution-line.webkit-line-content * {color:#000!important;}
 
 /**********************************************
 /* Animations
