@@ -969,6 +969,43 @@
 	color: #77A8C6 !important;
 }
 
+/*-- WEB SQL --*/
+
+#-webkit-web-inspector .database-query-prompt {
+	color: #eee !important;	
+}
+
+#-webkit-web-inspector .database-user-query {
+	border-top: 1px solid #2a2a2a !important;
+	border-bottom: 1px solid #1e1e1e !important;	
+	padding-bottom: 10px !important;
+}
+
+#-webkit-web-inspector .database-user-query + span {
+	padding: 2px 0 !important;
+	border-top: 1px solid #2a2a2a !important;
+	border-bottom: 1px solid #1e1e1e !important;
+	background-color: #252525 !important;
+	width: 100% !important;
+}
+
+#-webkit-web-inspector .database-user-query .database-query-text {
+	color: #aaa !important;
+	width: 100% !important;		
+	display: inline-block !important;
+	margin-bottom: 5px;
+	margin-top: 2px;
+}
+
+#-webkit-web-inspector .database-user-query::before, 
+ #-webkit-web-inspector .database-query-result::before{
+ 	margin-top: -5px !important;
+ }
+
+#-webkit-web-inspector .database-user-query .error {
+	color: #f66 !important;
+}
+
 /**********************************************
 /* Help/Settings Overlay
 /**********************************************/
