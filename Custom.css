@@ -655,12 +655,31 @@
 	color: #49a6d2 !important;
 }
 
-#-webkit-web-inspector .console-warning-level .console-message-text {
+#-webkit-web-inspector #console-messages .console-log-level .console-message-text,
+#-webkit-web-inspector #console-messages .console-log-level .console-message-url {
+	color: #49a6d2 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-log-level .children div:hover * {
+	color: #337492 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-warning-level .console-message-text,
+#-webkit-web-inspector #console-messages .console-warning-level .console-message-url {
 	color: #db0 !important;
 }
 
-#-webkit-web-inspector .console-error-level .console-message-text {
+#-webkit-web-inspector #console-messages .console-warning-level .children div:hover * {
+	color: #9D8500 !important;	
+}
+
+#-webkit-web-inspector #console-messages .console-error-level .console-message-text, 
+#-webkit-web-inspector #console-messages .console-error-level .console-message-url {
 	color: #f66 !important;
+}
+
+#-webkit-web-inspector #console-messages .console-error-level .children div:hover * {
+	color: #bf4c4c !important;
 }
 
 #-webkit-web-inspector #console-messages a {
