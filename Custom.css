@@ -1607,7 +1607,7 @@
 }
 
 #-webkit-web-inspector #profile-views .data-grid td > div {
-	color: #333 !important;
+	color: #fff !important;
 }
 
 #-webkit-web-inspector .network-cell-subtitle {
