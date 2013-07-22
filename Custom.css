@@ -684,7 +684,7 @@
 	color: #9D8500 !important;	
 }
 
-#-webkit-web-inspector #console-messages .console-error-level .console-message-text, 
+#-webkit-web-inspector #console-messages .console-error-level .console-message-text,
 #-webkit-web-inspector #console-messages .console-error-level .console-message-url {
 	color: #f66 !important;
 }
@@ -1552,6 +1552,15 @@
 	color: #bbb !important;
 }
 
+/*-- Preview & Response Tab [JSON] -- */
+#-webkit-web-inspector .json .console-formatted-array { color: ##49A6D2 !important;}
+#-webkit-web-inspector .json .console-formatted-number { color: #95FDCB !important;}
+#-webkit-web-inspector .json .console-formatted-object { color: #7c7c7c !important;}
+#-webkit-web-inspector .json .console-formatted-object .name{ color: #77A8C6 !important;}
+#-webkit-web-inspector .json .console-formatted-object .console-object-preview { color: #db0 !important;}
+#-webkit-web-inspector .json .console-formatted-string { color: #FF8737 !important;}
+#-webkit-web-inspector .json .title { color: #f1f1f1; !important;}
+
 /*Cookies Pane table*/
 #-webkit-web-inspector #network-views .resource-cookies-view.visible tr:nth-child(even){
 	background-color: #282828 !important;
@@ -1585,7 +1594,7 @@
 	color: #222 !important;
 }
 
-#-webkit-web-inspector #network-views .parent {
+#-webkit-web-inspector #network-views .resource-headers-view .parent {
 	background-color: #2D2D2D;
 	color: #ddd !important;
 	border-top: 1px solid #5d5d5d;
@@ -1860,11 +1869,11 @@
 }
 
 #-webkit-web-inspector .resource-view .properties-tree li.parent::before {
-	-webkit-mask-position: -4px -93px !important;
+	-webkit-mask-position: -4px -95px !important;
 }
 
 #-webkit-web-inspector .resource-view .properties-tree li.parent.expanded::before {
-	-webkit-mask-position: -20px -93px !important;
+	-webkit-mask-position: -20px -95px !important;
 }
 
 /* sort arrows point down*/
