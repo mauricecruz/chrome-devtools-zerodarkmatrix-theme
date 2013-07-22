@@ -1557,9 +1557,10 @@
 #-webkit-web-inspector .json .console-formatted-number { color: #95FDCB !important;}
 #-webkit-web-inspector .json .console-formatted-object { color: #7c7c7c !important;}
 #-webkit-web-inspector .json .console-formatted-object .name{ color: #77A8C6 !important;}
-#-webkit-web-inspector .json .console-formatted-object .console-object-preview { color: #db0 !important;}
+#-webkit-web-inspector .json .console-formatted-object .console-object-preview { color: #ddd !important;}
 #-webkit-web-inspector .json .console-formatted-string { color: #FF8737 !important;}
 #-webkit-web-inspector .json .title { color: #f1f1f1; !important;}
+#-webkit-web-inspector .json .separator { color: #7c7c7c; !important;}
 
 /*Cookies Pane table*/
 #-webkit-web-inspector #network-views .resource-cookies-view.visible tr:nth-child(even){
