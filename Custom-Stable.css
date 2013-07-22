@@ -35,6 +35,7 @@
 /*--CSS--*/
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-atom { color: #ccc !important; }
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-builtin { color: #FF9635 !important; }
+#-webkit-web-inspector .cm-s-web-inspector-css span.cm-css-comment { color: #676767 !important; font-style: italic; }
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-meta { color: #6AEDFF !important;}
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-number { color: #ccc !important; }
 #-webkit-web-inspector .cm-s-web-inspector-css span.cm-operator { color: #ccc !important; }
