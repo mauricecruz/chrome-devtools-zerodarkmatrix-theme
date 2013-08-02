@@ -1053,6 +1053,10 @@
 	color: #bbb !important;
 }
 
+#-webkit-web-inspector .settings-tab-container .help-key-cell .help-key{
+	color: #111 !important;
+}
+
 #-webkit-web-inspector .settings-tab-container .help-key-cell span {
 	color: #eee !important;
 }
