@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.9 - 22 July 2013
+* differentiate nested messages in url (thanks @outdooricon)
+* styled websql in resources panel
+* styled codemirror html
+* added codemirror css comment style 
+* fixed style for json network preview
+
+## 0.8 - 12 July 2013
+* restyled tables
+* removed ported fonts from chrome stable
+* removed text shadows from timeline labels
+* styled bg color of option elements
+* changed matching bracket highlight style
+
 ## 0.7 - 26 June 2013
 * Reorganized styles into sections
   * Code Highlighting [CODEMIRROR]
