@@ -5,6 +5,28 @@
 /*************************************************************************/
 
 /**********************************************
+/* Readability
+/* -------------------------------------------
+/* Adjust the line height for elements|sources
+/* tab, find, and console.  Adjust margin-top
+/* to line up expand/collapse arrow in
+/* elements panel
+/**********************************************/
+
+#-webkit-web-inspector .outline-disclosure ol li,
+#-webkit-web-inspector .text-editor .inner-container .webkit-line-content,
+#-webkit-web-inspector .text-editor-lines .inner-container .webkit-line-number,
+#-webkit-web-inspector .CodeMirror-lines,
+#-webkit-web-inspector #search-results-pane-file-based .search-match,
+#-webkit-web-inspector #console-view .console-message {
+    line-height: 14px !important;
+}
+
+#-webkit-web-inspector .panel.elements .outline-disclosure li.parent::before{
+	margin-top: 1px;
+}
+
+/**********************************************
 /* Code Highlighting [CODEMIRROR]
 /**********************************************/
 

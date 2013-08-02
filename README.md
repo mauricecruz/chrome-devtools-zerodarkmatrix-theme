@@ -12,6 +12,13 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 
 All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
 
+## Readability
+
+You can adjust the line height for the Elements/Sources Tab, Find, and Console interfaces.  It's the first set of selectors in the stylesheet. [More info...](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/issues/29)
+
+Thanks to @orloxx for the suggestion.
+
+
 ## Animations
 
 Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
