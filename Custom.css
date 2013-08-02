@@ -1841,25 +1841,11 @@
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title::before {
 	background-image: none !important;
 	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
-	-webkit-mask-position: -4px -95px !important;
+	-webkit-mask-position: -4px -96px !important;
 	-webkit-mask-repeat: no-repeat !important;
 	color: rgba(0,0,0,0) !important;
 	background-color: #AAB0AF !important;
 	opacity: 1 !important;
-}
-
-/*pixel adjustment for mac */
-#-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent .expand-element,
-#-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section .header::before,
-#-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent::before,
-#-webkit-web-inspector.platform-mac .outline-disclosure li.parent::before,
-#-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent::before,
-#-webkit-web-inspector.platform-mac .properties-tree li.parent::before,
-#-webkit-web-inspector.platform-mac .section > .header::before,
-#-webkit-web-inspector.platform-mac .section .event-bar .header::before,
-#-webkit-web-inspector.platform-mac .sidebar-pane .parent::before,
-#-webkit-web-inspector.platform-mac .sidebar-pane-stack .sidebar-pane-title::before {
-	-webkit-mask-position: -4px -96px !important;
 }
 
 /* hide/expand point arrow down */
@@ -1874,30 +1860,8 @@
 #-webkit-web-inspector .sidebar-pane .parent.expanded::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title.expanded::before {
 	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
-	-webkit-mask-position: -20px -95px !important;
+	-webkit-mask-position: -20px -96px !important;
 	-webkit-mask-repeat: no-repeat !important;
-}
-
-/*pixel adjustment for mac */
-#-webkit-web-inspector.platform-mac .styles-section.matched-styles .properties li.parent.expanded .expand-element,
-#-webkit-web-inspector.platform-mac #console-messages .console-group-messages .section.expanded .header::before,
-#-webkit-web-inspector.platform-mac #console-messages .properties-tree li.parent.expanded::before,
-#-webkit-web-inspector.platform-mac .outline-disclosure li.parent.expanded::before,
-#-webkit-web-inspector.platform-mac #search-results-pane-file-based .parent.expanded::before,
-#-webkit-web-inspector.platform-mac .properties-tree li.parent.expanded::before,
-#-webkit-web-inspector.platform-mac .section.expanded > .header::before,
-#-webkit-web-inspector.platform-mac .section .event-bar.expanded .header::before,
-#-webkit-web-inspector.platform-mac .sidebar-pane .parent.expanded::before,
-#-webkit-web-inspector.platform-mac .sidebar-pane-stack .sidebar-pane-title.expanded::before {
-	 -webkit-mask-position: -20px -96px !important;
-}
-
-#-webkit-web-inspector .resource-view .properties-tree li.parent::before {
-	-webkit-mask-position: -4px -95px !important;
-}
-
-#-webkit-web-inspector .resource-view .properties-tree li.parent.expanded::before {
-	-webkit-mask-position: -20px -95px !important;
 }
 
 /* sort arrows point down*/
