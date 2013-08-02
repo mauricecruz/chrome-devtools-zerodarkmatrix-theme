@@ -464,8 +464,8 @@
 #-webkit-web-inspector .help-window-main,
 #-webkit-web-inspector .tabbed-pane-content.has-no-tabs,
 #-webkit-web-inspector .sidebar-overlay,
-#-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler),
-#-webkit-web-inspector .panel:not(.timeline):not(.audits):not(.profiles):not(.cpu-profiler):not(.css-profiler):not(.heap-profiler):not(.canvas-profiler) .split-view-contents {
+#-webkit-web-inspector .panel:not(.timeline),
+#-webkit-web-inspector .panel:not(.timeline) .split-view-contents {
 	background-color: #222 !important;
 	z-index: 0;
 }
@@ -1565,10 +1565,6 @@
 	background-color: #242424 !important;
 }
 
-#-webkit-web-inspector #profile-views .data-grid td > div {
-	color: #333 !important;
-}
-
 #-webkit-web-inspector .network-cell-subtitle {
 	color: #888 !important;
 }
@@ -1886,3 +1882,24 @@
 	color: #ddd !important;
 }
 
+/**********************************************
+/* Profilers
+/**********************************************/
+#-webkit-web-inspector #profile-views .data-grid td > div {
+	color: #aaa !important;
+}
+
+#-webkit-web-inspector #profile-views .data-grid button{
+	color: #333 !important;
+}
+
+#-webkit-web-inspector .profile-launcher-view-tree-item,
+#-webkit-web-inspector .sidebar-tree-section,
+#-webkit-web-inspector .panel:not(.timeline) .sidebar-tree-item {
+	color: #ddd !important;
+}
+
+#-webkit-web-inspector .heap-snapshot-view tr:not(.selected) td.object-column span.highlight {
+	background-color: #2E542F !important;	
+	border-radius: 3px;
+}
