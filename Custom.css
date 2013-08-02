@@ -1329,7 +1329,7 @@
 }
 
 #-webkit-web-inspector .data-grid .data-container tr.selected {
-	background-color: rgba(150,255,150,.2) !important;
+	background-color: #2C2C2C !important;
 	outline: 1px solid rgba(150,255,150,.3);
 }
 
@@ -1641,7 +1641,7 @@
 }
 
 #-webkit-web-inspector #profile-views .data-grid td > div {
-	color: #333 !important;
+	color: #fff !important;
 }
 
 #-webkit-web-inspector .network-cell-subtitle {
