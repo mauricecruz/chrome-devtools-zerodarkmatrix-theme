@@ -62,7 +62,8 @@
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutter-elt { color: #888 !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutters {background: #282828 !important;  border-right: 2px solid #2b2b2b !important; }
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
-#-webkit-web-inspector .CodeMirror-matchingbracket { border-bottom: 1px solid #89F5A2 !important; color: #ccc !important;}
+#-webkit-web-inspector .CodeMirror-matchingbracket { border: 1px solid #15CA1A !important; border-radius: 4px; color: #ccc !important;}
+#-webkit-web-inspector .CodeMirror-nonmatchingbracket { border: 1px solid #db0404 !important; border-radius: 4px; color: #ccc !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-selectedtext {
 	padding: 0 2px;
 	color: #000 !important;
