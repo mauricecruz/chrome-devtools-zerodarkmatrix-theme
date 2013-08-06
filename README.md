@@ -23,6 +23,12 @@ Thanks to @orloxx for the suggestion.
 
 Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
 
+## Styles for Extensions
+Some extensions don't display well with this theme so I modified the css to improve the presentation.  Copy the css file into its respective extension folder.
+
+#### [Livestyle] (http://livestyle.emmet.io/)
+![livestyle]
+
 ## Preview
 
 ### Elements
@@ -60,6 +66,7 @@ Animations may cause performance issues depending on the power of your machine. 
 [css-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-css-highlight.png?raw=true "CSS-Highlight"
 [js-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-js-highlight.png?raw=true "JS-Highlight"
 [console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
+[livestyle]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/extensions/LiveStyle/preview.png "LiveStyle"
 
 ## Features
 * Majority of inspector chrome re-styled
