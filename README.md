@@ -66,7 +66,7 @@ Some extensions don't display well with this theme so I modified the css to impr
 [css-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-css-highlight.png?raw=true "CSS-Highlight"
 [js-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-js-highlight.png?raw=true "JS-Highlight"
 [console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
-[livestyle]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/extensions/LiveStyle/preview.png "LiveStyle"
+[livestyle]: https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/extensions/LiveStyle/preview.png "LiveStyle"
 
 ## Features
 * Majority of inspector chrome re-styled
