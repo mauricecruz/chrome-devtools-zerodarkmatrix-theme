@@ -464,6 +464,8 @@
 #-webkit-web-inspector .help-window-main,
 #-webkit-web-inspector .tabbed-pane-content.has-no-tabs,
 #-webkit-web-inspector .sidebar-overlay,
+#-webkit-web-inspector .split-view-vertical .sidebar-pane.composite .styles-section.read-only,
+#-webkit-web-inspector .split-view-vertical .sidebar-pane.composite .properties-tree,
 #-webkit-web-inspector .panel:not(.timeline),
 #-webkit-web-inspector .panel:not(.timeline) .split-view-contents {
 	background-color: #222 !important;

@@ -466,6 +466,8 @@
 #-webkit-web-inspector .help-window-main,
 #-webkit-web-inspector .tabbed-pane-content.has-no-tabs,
 #-webkit-web-inspector .sidebar-overlay,
+#-webkit-web-inspector .split-view-vertical .sidebar-pane.composite .styles-section.read-only,
+#-webkit-web-inspector .split-view-vertical .sidebar-pane.composite .properties-tree,
 #-webkit-web-inspector .panel:not(.timeline):not(.profiles),
 #-webkit-web-inspector .panel:not(.timeline):not(.profiles) .split-view-contents {
 	background-color: #222 !important;
@@ -905,8 +907,7 @@
 
 /*-- STATE DISPLAY --*/
 #-webkit-web-inspector .styles-element-state-pane {
-	background: #333 !important;
-	margin-top: -46px !important;
+	background: #333 !important;	
 	padding: 4px 0 !important;
 	border-bottom: 1px solid #666 !important;
 }
