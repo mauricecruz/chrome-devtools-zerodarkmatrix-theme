@@ -712,6 +712,7 @@
 }
 
 #-webkit-web-inspector #console-messages .console-error-level .console-message-text,
+#-webkit-web-inspector #console-messages .console-error-level .title > span,
 #-webkit-web-inspector #console-messages .console-error-level .console-message-url {
 	color: #f66 !important;
 }
