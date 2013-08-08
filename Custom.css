@@ -1421,8 +1421,10 @@
 	color: #999 !important;
 }
 
+
 /* adjustment for horizontal split tabs */
 #-webkit-web-inspector .panel.elements .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tabs {
+	margin-top: 1px !important;
 	top: -2px !important;
 	position: relative;
 }
