@@ -88,8 +88,7 @@
 #-webkit-web-inspector .CodeMirror-nonmatchingbracket { border: 1px solid #db0404 !important; border-radius: 4px; color: #ccc !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-selectedtext {
 	padding: 0 2px;
-	color: #000 !important;
-	border-radius: 2px;
+	color: #000 !important;	
 	font-size: 1em !important;
 	background-color: #89F5A2 !important;
 }

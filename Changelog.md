@@ -6,6 +6,7 @@
 * updated bracket highlighting styles
 * styled profilers (except timeline)
 * added section for 3rd party devtools plugins
+* restyled breakpoints and call stack 
 
 ## 0.9 - 22 July 2013
 * differentiate nested messages in url (thanks @outdooricon)
