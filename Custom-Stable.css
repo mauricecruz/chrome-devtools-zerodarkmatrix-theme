@@ -1667,6 +1667,10 @@
 	margin-top: 0 !important;
 }
 
+#-webkit-web-inspector .sidebar-pane .section.expanded > .header{
+	border-bottom: 1px solid #1b1b1b !important;
+}
+
 #-webkit-web-inspector .sidebar-pane-stack > .sidebar-pane.visible:nth-last-of-type(1){
 	border-bottom: none !important;
 }
