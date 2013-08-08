@@ -1870,6 +1870,8 @@
 	background-image: none !important;
 	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -4px -96px !important;
+	-webkit-transform: rotate(0deg);
+	-webkit-transition: -webkit-transform .10s ease-in-out;
 	-webkit-mask-repeat: no-repeat !important;
 	color: rgba(0,0,0,0) !important;
 	background-color: #AAB0AF !important;
@@ -1888,7 +1890,9 @@
 #-webkit-web-inspector .sidebar-pane .parent.expanded::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title.expanded::before {
 	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
-	-webkit-mask-position: -20px -96px !important;
+	-webkit-mask-position: -4px -96px !important;
+	-webkit-transform: rotate(90deg);
+	-webkit-transition: -webkit-transform .10s ease-in-out;
 	-webkit-mask-repeat: no-repeat !important;
 }
 
