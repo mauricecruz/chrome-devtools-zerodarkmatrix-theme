@@ -470,9 +470,11 @@
 	z-index: 0;
 }
 
-/* read only sections should inherit bg color */
 #-webkit-web-inspector .styles-section.read-only {
-	background: inherit !important;
+	background-color: #2d2d2d !important;
+	margin: 0;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
 }
 
 /*CURSOR/INSERTION POINT*/
