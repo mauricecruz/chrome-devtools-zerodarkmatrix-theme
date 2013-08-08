@@ -19,7 +19,7 @@
 #-webkit-web-inspector .CodeMirror-lines,
 #-webkit-web-inspector #search-results-pane-file-based .search-match,
 #-webkit-web-inspector #console-view .console-message {
-    line-height: 14px !important;
+	line-height: 14px !important;
 }
 
 #-webkit-web-inspector .panel.elements .outline-disclosure li.parent::before{
@@ -706,7 +706,7 @@
 }
 
 #-webkit-web-inspector #console-messages .console-warning-level .children div:hover * {
-	color: #9D8500 !important;	
+	color: #9D8500 !important;
 }
 
 #-webkit-web-inspector #console-messages .console-error-level .console-message-text,
@@ -1008,12 +1008,12 @@
 /*-- WEB SQL --*/
 
 #-webkit-web-inspector .database-query-prompt {
-	color: #eee !important;	
+	color: #eee !important;
 }
 
 #-webkit-web-inspector .database-user-query {
 	border-top: 1px solid #2a2a2a !important;
-	border-bottom: 1px solid #1e1e1e !important;	
+	border-bottom: 1px solid #1e1e1e !important;
 	padding-bottom: 10px !important;
 }
 
@@ -1027,15 +1027,15 @@
 
 #-webkit-web-inspector .database-user-query .database-query-text {
 	color: #aaa !important;
-	width: 100% !important;		
+	width: 100% !important;
 	display: inline-block !important;
 	margin-bottom: 5px;
 	margin-top: 2px;
 }
 
-#-webkit-web-inspector .database-user-query::before, 
+#-webkit-web-inspector .database-user-query::before,
  #-webkit-web-inspector .database-query-result::before{
- 	margin-top: -5px !important;
+	margin-top: -5px !important;
  }
 
 #-webkit-web-inspector .database-user-query .error {
@@ -1255,7 +1255,7 @@
 	color: #ddd !important;
 	border-top: 1px solid #5d5d5d !important;
 	border-bottom: 1px solid #111 !important;
-	line-height: 18px !important;	
+	line-height: 18px !important;
 	margin: 0 !important
 }
 
@@ -1365,7 +1365,7 @@
 }
 
 #-webkit-web-inspector .heap-snapshot-view tr:not(.selected) td.object-column span.highlight {
-	background-color: #2E542F !important;	
+	background-color: #2E542F !important;
 	border-radius: 3px;
 }
 
@@ -1689,8 +1689,6 @@
 	color: #ddd !important;
 }
 
-
-
 /**********************************************
 /* Timeline Tab
 /**********************************************/
@@ -1940,5 +1938,3 @@
 #-webkit-web-inspector #floating-status-bar-container {
 	z-index: 100 !important;
 }
-
-/*
