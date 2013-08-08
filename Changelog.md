@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0 - 8 Aug 2013
+* animated parent/child tree arrows
+* updated style for read-only css panes
+* updated bracket highlighting styles
+* styled profilers (except timeline)
+* added section for 3rd party devtools plugins
+
 ## 0.9 - 22 July 2013
 * differentiate nested messages in url (thanks @outdooricon)
 * styled websql in resources panel
