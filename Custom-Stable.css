@@ -1414,18 +1414,6 @@
 	font-style: normal;
 }
 
-#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit {
-	background-color: #181818 !important;
-	box-shadow: inset 0 1px 5px 0 #000 !important;
-	border-top: 1px solid #000 !important;
-	border-bottom: 1px solid #444 !important;
-	color: #89f5a2 !important;
-}
-
-#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-list li:hover {
-	background-color: rgba(137,245,162,.2) !important;
-}
-
 #-webkit-web-inspector .styles-section .properties .overloaded ,
 #-webkit-web-inspector .styles-section .properties .inactive ,
 #-webkit-web-inspector .styles-section .properties .disabled ,
@@ -1605,7 +1593,16 @@
 	text-shadow: none !important;
 }
 
-/* Sources */
+/**********************************************
+/* Sources Tab
+/**********************************************/
+/*placeholder text when no file is open*/
+#-webkit-web-inspector .tabbed-pane-placeholder {
+	text-shadow: 0 1px 0 #000 !important;
+	color: #999 !important;
+}
+
+/*line numbers */
 #-webkit-web-inspector .text-editor-lines {
 	background-color: #282828 !important;
 	border-right: 2px solid #2b2b2b !important;
@@ -1632,9 +1629,26 @@
 }
 
 #-webkit-web-inspector .breakpoint-list li {
-	color: #e6da83 !important;
+	color: #89f5a2 !important;
 }
 
+#-webkit-web-inspector .breakpoints-list-deactivated{
+	background-color: rgba(0,0,0,0) !important;
+	opacity: .3 !important;	
+}
+
+#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit {
+	background: #364C3B !important;		
+	border-top: 1px solid #181818 !important;
+	border-bottom: 1px solid  #181818 !important;
+	color: #eee !important;
+}
+
+#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-list li:hover {
+	background-color: #333!important;
+}
+
+/* Call Stack */
 #-webkit-web-inspector .sidebar-pane > .body .info,
 #-webkit-web-inspector .sidebar-label,
 #-webkit-web-inspector .placard .title,
@@ -1642,15 +1656,19 @@
 	color: #AAA !important;
 }
 
-/* Call Stack */
-#-webkit-web-inspector .placard.selected {
-	background: #333 !important;
-	border-top: 0 !important;
+#-webkit-web-inspector .placard:nth-of-type(2n) {
+	background: #282828 !important;	
 }
 
-#-webkit-web-inspector .placard:nth-of-type(2n) {
-	background: #444 !important;
-	border-top: 0 !important;
+#-webkit-web-inspector .placard.selected {
+	background: #364C3B !important;	
+	color: #fff !important;
+	border-top: 1px solid #181818 !important;
+	border-bottom: 1px solid  #181818 !important;
+}
+
+#-webkit-web-inspector .placard.selected * {	
+	color: #eee !important;	
 }
 
 #-webkit-web-inspector .sidebar-pane > .body .placard + .info {
