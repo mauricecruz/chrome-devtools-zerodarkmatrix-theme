@@ -1643,8 +1643,8 @@
 	color: #eee !important;
 }
 
-#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-list li:hover {
-	background-color: #333!important;
+#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-list li:not(.breakpoint-hit):hover {
+	background-color: #333 !important;
 }
 
 /* Call Stack */
@@ -1728,11 +1728,11 @@
 }
 
 #-webkit-web-inspector .pane-title-button.add {
-	-webkit-mask-image: url(chrome-devtools://devtools/Images/paneAddButtons.png) !important;
+	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneAddButtons.png) !important;
 }
 
 #-webkit-web-inspector .sidebar-pane-toolbar > .pane-title-button.refresh {
-	 -webkit-mask-image: url(chrome-devtools://devtools/Images/paneRefreshButtons.png) !important;
+	 -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneRefreshButtons.png) !important;
 }
 
 #-webkit-web-inspector .panel.elements .sidebar-pane-toolbar > select.select-settings {
@@ -1740,11 +1740,11 @@
 	-webkit-background-position: -24px 0 !important;
 	background-color: rgba(0,0,0,.8) !important;
 	-webkit-mask-repeat: no-repeat !important;
-	-webkit-mask-image: url(chrome-devtools://devtools/Images/paneSettingsButtons.png) !important;
+	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneSettingsButtons.png) !important;
 }
 
 #-webkit-web-inspector .pane-title-button.element-state {
-	 -webkit-mask-image: url(chrome-devtools://devtools/Images/paneElementStateButtons.png) !important;
+	 -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneElementStateButtons.png) !important;
 }
 
 /*exception icon state colors */
@@ -1768,7 +1768,7 @@
 #-webkit-web-inspector .sidebar-pane .parent::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title::before {
 	background-image: none !important;
-	-webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -4px -96px !important;
 	-webkit-transform: rotate(0deg);
 	-webkit-transition: -webkit-transform .10s ease-in-out;
@@ -1789,7 +1789,7 @@
 #-webkit-web-inspector .section .event-bar.expanded .header::before,
 #-webkit-web-inspector .sidebar-pane .parent.expanded::before,
 #-webkit-web-inspector .sidebar-pane-stack .sidebar-pane-title.expanded::before {
-	-webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -4px -96px !important;
 	-webkit-transform: rotate(90deg);
 	-webkit-transition: -webkit-transform .10s ease-in-out;
@@ -1807,7 +1807,7 @@
 /* sort arrows point down*/
 #-webkit-web-inspector .data-grid th.sort-ascending > div::after {
 	background-image: none !important;
-	-webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -20px -96px !important;
 	color: rgba(0,0,0,0) !important;
 	background-color: #AAB0AF !important;
@@ -1817,7 +1817,7 @@
 /* sort arrows point up */
 #-webkit-web-inspector .data-grid th.sort-descending > div::after {
 	background-image: none !important;
-	-webkit-mask-image: url(chrome-devtools://devtools/Images/statusbarButtonGlyphs.png) !important;
+	-webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
 	-webkit-mask-position: -4px -108px !important;
 	color: rgba(0,0,0,0) !important;
 	background-color: #AAB0AF !important;
