@@ -3,10 +3,10 @@
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
 **Custom.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **30.0.1590.2 canary**
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **31.0.1608.1 canary**
 
 **Custom-Stable.css**
-Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **28.0.1500.95 m**
+Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **29.0.1547.57 m m**
 
 ## Code Highlighting
 
