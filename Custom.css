@@ -1115,6 +1115,10 @@
 	background-color: #222 !important;
 }
 
+#-webkit-web-inspector #drawer-footer td label{
+	color: #bbb !important;
+}
+
 #-webkit-web-inspector .revision-history-drawer ol[tabindex="0"] > .parent {
 	background-color: #2D2D2D !important;
 	color: #ddd !important;
