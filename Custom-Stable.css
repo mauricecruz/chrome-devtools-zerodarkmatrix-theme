@@ -1246,7 +1246,7 @@
 	border-top: 1px solid #5d5d5d !important;
 	border-bottom: 1px solid #111 !important;
 	line-height: 18px !important;
-	margin: 0 !important
+	margin: 0 !important;
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .show-more-matches {
@@ -1640,11 +1640,11 @@
 
 #-webkit-web-inspector .breakpoints-list-deactivated{
 	background-color: rgba(0,0,0,0) !important;
-	opacity: .3 !important;	
+	opacity: .3 !important;
 }
 
 #-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit {
-	background: #364C3B !important;		
+	background: #364C3B !important;
 	border-top: 1px solid #181818 !important;
 	border-bottom: 1px solid  #181818 !important;
 	color: #eee !important;
@@ -1663,18 +1663,18 @@
 }
 
 #-webkit-web-inspector .placard:nth-of-type(2n) {
-	background: #282828 !important;	
+	background: #282828 !important;
 }
 
 #-webkit-web-inspector .placard.selected {
-	background: #364C3B !important;	
+	background: #364C3B !important;
 	color: #fff !important;
 	border-top: 1px solid #181818 !important;
 	border-bottom: 1px solid  #181818 !important;
 }
 
-#-webkit-web-inspector .placard.selected * {	
-	color: #eee !important;	
+#-webkit-web-inspector .placard.selected * {
+	color: #eee !important;
 }
 
 #-webkit-web-inspector .sidebar-pane > .body .placard + .info {
