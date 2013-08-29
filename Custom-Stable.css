@@ -86,12 +86,13 @@
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
 #-webkit-web-inspector .CodeMirror-matchingbracket { border: 1px solid #15CA1A !important; border-radius: 4px; color: #ccc !important;}
 #-webkit-web-inspector .CodeMirror-nonmatchingbracket { border: 1px solid #db0404 !important; border-radius: 4px; color: #ccc !important;}
-#-webkit-web-inspector .CodeMirror .CodeMirror-selectedtext {
-	padding: 0 2px;
-	color: #000 !important;	
-	font-size: 1em !important;
-	background-color: #89F5A2 !important;
-}
+#-webkit-web-inspector .CodeMirror span.CodeMirror-selectedtext { background-color: #383838 !important;}
+#-webkit-web-inspector .CodeMirror .cm-search-highlight-start:before { border-color: #89f5a2 !important;}
+#-webkit-web-inspector .CodeMirror .cm-search-highlight-end:before { border-color: #89f5a2 !important;}
+#-webkit-web-inspector .CodeMirror .cm-search-highlight:before { border-color: #89f5a2 !important; padding: 2px !important;}
+#-webkit-web-inspector .CodeMirror span.cm-token-highlight { padding: 0px !important; border-radius: 2px !important;}
+#-webkit-web-inspector .CodeMirror span.cm-token-highlight:before { border-color: #89f5a2 !important; }
+#-webkit-web-inspector .CodeMirror .cm-line-with-selection span.cm-token-highlight { background-color: #89f5a2 !important; color: #000 !important; }
 #-webkit-web-inspector .CodeMirror .cm-highlight {
 	-webkit-animation: "fadeout-revised" 3s 0s !important;
 }
