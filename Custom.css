@@ -83,6 +83,7 @@
 #-webkit-web-inspector .CodeMirror { background: #222 !important; color: #EEE; }
 #-webkit-web-inspector .CodeMirror .cm-breakpoint .CodeMirror-gutter-elt { color: #000 !important; font-weight: 700 !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-cursor { border-left: 1px solid #FFF !important; }
+#-webkit-web-inspector .CodeMirror .cm-error { background: #9D1E15 !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutter-elt { color: #888 !important;}
 #-webkit-web-inspector .CodeMirror .CodeMirror-gutters {background: #282828 !important; border-right: 2px solid #2b2b2b !important; }
 #-webkit-web-inspector .CodeMirror .CodeMirror-selected { background: #383838 !important; color: #eee !important; }
