@@ -1904,7 +1904,6 @@
 #-webkit-web-inspector #console-messages .console-group-messages .section.expanded .header::before,
 #-webkit-web-inspector #console-messages .properties-tree li.parent.expanded::before,
 #-webkit-web-inspector .outline-disclosure li.parent.expanded::before,
-#-webkit-web-inspector #search-results-pane-file-based .parent.expanded::before,
 #-webkit-web-inspector .properties-tree li.parent.expanded::before,
 #-webkit-web-inspector .section.expanded > .header::before,
 #-webkit-web-inspector .section .event-bar.expanded .header::before,
@@ -1915,6 +1914,11 @@
 	-webkit-transform: rotate(90deg);
 	-webkit-transition: -webkit-transform .10s ease-in-out;
 	-webkit-mask-repeat: no-repeat !important;
+}
+
+/* BUG?? Arrows won't rotate in find [ctrl/cmd + F] results */
+#-webkit-web-inspector #search-results-pane-file-based .parent.expanded::before{
+		-webkit-mask-position: -20px -96px !important;
 }
 
 /* sort arrows point down*/
