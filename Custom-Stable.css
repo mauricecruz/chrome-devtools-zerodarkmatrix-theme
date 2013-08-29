@@ -1259,12 +1259,14 @@
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
-#-webkit-web-inspector .webkit-search-result {
-	padding: 0 2px;
-	color: #000;
-	border-radius: 2px;
+#-webkit-web-inspector .webkit-search-result,
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content,
+#-webkit-web-inspector .CodeMirror .cm-token-highlight {
+	color: #000 !important;
+	border-radius: 2px !important;
 	font-size: 1em !important;
 	background-color: #89F5A2 !important;
+	box-shadow: rgba(0, 0, 0, 0.498039) 3px 3px 4px 0px !important;
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .parent .search-result-file-name {
