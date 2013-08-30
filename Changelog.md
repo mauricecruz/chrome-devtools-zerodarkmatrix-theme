@@ -1,6 +1,13 @@
 # Changelog
 
-## 1.0 - 8 Aug 2013
+## 0.11 - 30 Aug 2013
+* updated image paths for v.29 stable
+* restyled text selection in sources panel
+* restyled selected element in navigation tree
+* fixed highlighting style for [find] function
+* styled error state in syntax highlighting
+
+## 0.10 - 8 Aug 2013
 * animated parent/child tree arrows
 * updated style for read-only css panes
 * updated bracket highlighting styles
