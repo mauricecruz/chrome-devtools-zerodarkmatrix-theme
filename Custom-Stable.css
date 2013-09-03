@@ -464,6 +464,7 @@
 #-webkit-web-inspector .help-window-main,
 #-webkit-web-inspector .tabbed-pane-content.has-no-tabs,
 #-webkit-web-inspector .sidebar-overlay,
+#-webkit-web-inspector .styles-section.read-only,
 #-webkit-web-inspector .split-view-vertical .sidebar-pane.composite .properties-tree,
 #-webkit-web-inspector .panel:not(.timeline),
 #-webkit-web-inspector .panel:not(.timeline) .split-view-contents {
@@ -471,7 +472,7 @@
 	z-index: 0;
 }
 
-#-webkit-web-inspector .styles-section.read-only {
+#-webkit-web-inspector .styles-section.read-only:not(.computed-style){
 	background-color: #2d2d2d !important;
 	margin: 0;
 	padding-left: 10px !important;

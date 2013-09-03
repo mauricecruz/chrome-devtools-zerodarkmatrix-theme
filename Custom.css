@@ -478,7 +478,7 @@
 	z-index: 0;
 }
 
-#-webkit-web-inspector .styles-section.read-only {
+#-webkit-web-inspector .styles-section.read-only:not(.computed-style){
 	background-color: #2d2d2d !important;
 	margin: 0;
 	padding-left: 10px !important;
