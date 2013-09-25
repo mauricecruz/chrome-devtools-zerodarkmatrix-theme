@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.12 - 25 Sep 2013
+* [bugfix] updated classnames on Canary 
+
 ## 0.11 - 30 Aug 2013
 * updated image paths for v.29 stable
 * restyled text selection in sources panel
