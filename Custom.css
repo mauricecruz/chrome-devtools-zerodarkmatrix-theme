@@ -93,6 +93,7 @@
 #-webkit-web-inspector .cm-search-highlight-start:before { border-color: #89f5a2 !important;}
 #-webkit-web-inspector .cm-search-highlight-end:before { border-color: #89f5a2 !important;}
 #-webkit-web-inspector .cm-search-highlight:before { border-color: #89f5a2 !important; padding: 2px !important;}
+#-webkit-web-inspector .cm-line-with-selection .cm-column-with-selection.cm-search-highlight:before { background-color: #89f5a2 !important; border-radius: 2px !important;}
 #-webkit-web-inspector span.cm-token-highlight { background-color: transparent !important; padding: 0px !important;}
 #-webkit-web-inspector span.cm-token-highlight:before { border-color: #89f5a2 !important; }
 #-webkit-web-inspector .cm-line-with-selection span.cm-column-with-selection { color: #000 !important; background-color: #89f5a2 !important; }
