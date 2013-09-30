@@ -1288,8 +1288,7 @@
 
 #-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
 #-webkit-web-inspector .highlighted-search-result,
-#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content,
-#-webkit-web-inspector .cm-token-highlight {
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content{
 	color: #000 !important;
 	border-radius: 2px !important;
 	font-size: 1em !important;
