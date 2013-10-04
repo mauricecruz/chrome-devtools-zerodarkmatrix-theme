@@ -933,7 +933,6 @@
 /*-- STATE DISPLAY --*/
 #-webkit-web-inspector .styles-element-state-pane {
 	background: #333 !important;
-	margin-top: -46px !important;
 	padding: 4px 0 !important;
 	border-bottom: 1px solid #666 !important;
 }
@@ -1330,6 +1329,7 @@
 
 /* adjustment for horizontal split tabs */
 #-webkit-web-inspector .panel.elements .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tabs {
+	margin-top: 1px !important;
 	top: -2px !important;
 	position: relative;
 }
