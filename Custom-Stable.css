@@ -1268,8 +1268,7 @@
 
 #-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
 #-webkit-web-inspector .webkit-search-result,
-#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content,
-#-webkit-web-inspector .CodeMirror .cm-token-highlight {
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content{
 	color: #000 !important;
 	border-radius: 2px !important;
 	font-size: 1em !important;
@@ -1763,6 +1762,24 @@
 
 #-webkit-web-inspector .pane-title-button.element-state {
 	 -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneElementStateButtons.png) !important;
+}
+
+#-webkit-web-inspector #drawer-contents .search-match-line-number {
+	background: #2d2d2d !important;
+	border-right: 1px solid #444 !important;
+	padding: 1px 5px 1px 0 !important;
+	display: inline-block;
+	color: #999 !important;
+
+}
+
+/* Highlight in Scripts  */
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content {
+	border-radius: 2px;
+}
+
+#-webkit-web-inspector .webkit-highlighted-line.webkit-line-content * {
+	color: #000 !important;
 }
 
 /*exception icon state colors */
