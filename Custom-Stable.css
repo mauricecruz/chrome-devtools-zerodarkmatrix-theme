@@ -1267,7 +1267,7 @@
 }
 
 #-webkit-web-inspector #search-results-pane-file-based .search-match .highlighted-match,
-#-webkit-web-inspector .webkit-search-result,
+#-webkit-web-inspector .highlighted-search-result,
 #-webkit-web-inspector .webkit-highlighted-line.webkit-line-content{
 	color: #000 !important;
 	border-radius: 2px !important;
