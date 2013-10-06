@@ -96,6 +96,7 @@
 #-webkit-web-inspector span.cm-token-highlight:before { border-color: #89f5a2 !important; }
 #-webkit-web-inspector .cm-line-with-selection span.cm-column-with-selection { color: #000 !important; background-color: #89f5a2 !important; }
 #-webkit-web-inspector .cm-whitespace:before { color: #555 !important;}
+#-webkit-web-inspector .cm-tab:before { border-bottom: 1px solid #555 !important;}
 
 
 #-webkit-web-inspector .cm-highlight {
