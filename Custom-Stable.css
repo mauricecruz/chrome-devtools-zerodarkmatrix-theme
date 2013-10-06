@@ -1646,24 +1646,29 @@
 	color: #999 !important;
 }
 
+/* Breakpoints/Dom Breakpoints */
 #-webkit-web-inspector .breakpoint-list li {
 	color: #89f5a2 !important;
+	border-top: 1px solid #282828;
+	border-bottom: 1px solid #181818;
 }
 
-#-webkit-web-inspector .breakpoints-list-deactivated{
-	background-color: rgba(0,0,0,0) !important;
-	opacity: .3 !important;
-}
-
-#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-hit {
+#-webkit-web-inspector .sidebar-pane .breakpoint-hit {
 	background: #364C3B !important;
 	border-top: 1px solid #181818 !important;
 	border-bottom: 1px solid  #181818 !important;
 	color: #eee !important;
 }
 
-#-webkit-web-inspector #scripts-debug-sidebar-contents .breakpoint-list li:not(.breakpoint-hit):hover {
-	background-color: #333 !important;
+#-webkit-web-inspector .sidebar-pane .breakpoint-list li:not(.breakpoint-hit):hover {
+	background-color: #333!important;
+	border-bottom: 1px solid #282828;
+	border-top: 1px solid #181818;
+}
+
+#-webkit-web-inspector .breakpoints-deactivated .breakpoint-list {
+	background-color: rgba(0,0,0,0) !important;
+	opacity: .3 !important;
 }
 
 /* Call Stack */
