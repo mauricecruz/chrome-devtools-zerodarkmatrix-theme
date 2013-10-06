@@ -816,9 +816,9 @@
 	color: #FF8737 !important;
 }
 
-#-webkit-web-inspector .popover .console-formatted-undefined.source-code,
-#-webkit-web-inspector #console-messages .console-formatted-undefined.source-code,
-#-webkit-web-inspector .sidebar-pane .console-formatted-undefined.source-code {
+#-webkit-web-inspector .popover .console-formatted-undefined,
+#-webkit-web-inspector #console-messages .console-formatted-undefined,
+#-webkit-web-inspector .sidebar-pane .console-formatted-undefined {
 	color: #AD4E4E !important;
 }
 
