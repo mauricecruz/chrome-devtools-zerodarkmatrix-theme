@@ -3,15 +3,33 @@
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
 **Custom.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **28.0.1486.0 canary**
-
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **32.0.1659.2 canary**
 
 **Custom-Stable.css**
-Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **26.0.1410.64 m**
+Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **30.0.1599.69 m**
 
+## Code Highlighting
+
+All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
+
+## Readability
+
+You can adjust the line height for the Elements/Sources Tab, Find, and Console interfaces.  It's the first set of selectors in the stylesheet. [More info...](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/issues/29)
+![readability]
+Thanks to @orloxx for the suggestion.
+
+
+## Animations
+
+Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
+
+## Styles for Extensions
+Some extensions don't display well with this theme so I modified the css to improve the presentation.  Copy the css file into its respective extension folder.
+
+#### [Livestyle] (http://livestyle.emmet.io/)
+![livestyle]
 
 ## Preview
-
 
 ### Elements
 ![elements]
@@ -24,8 +42,16 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 ###Network
 ![network]
 
+![network-headers]
+
 ### Sources
 ![sources]
+
+#### CSS Highlighting
+![css-highlighting]
+
+#### JS Highlighting
+![js-highlighting]
 
 ### Console
 ![console]
@@ -35,8 +61,13 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 [elements2]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/elements2.png?raw=true "Elements"
 [resources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/resources.png?raw=true "Resources"
 [network]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network.png?raw=true "Network"
+[network-headers]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/network-headers.png?raw=true "Network"
 [sources]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/sources.png?raw=true "Sources"
+[css-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-css-highlight.png?raw=true "CSS-Highlight"
+[js-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-js-highlight.png?raw=true "JS-Highlight"
 [console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
+[livestyle]: https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/extensions/LiveStyle/preview.png "LiveStyle"
+[readability]: https://f.cloud.github.com/assets/1640686/904010/be9d14b4-fbb9-11e2-8de0-1e846a533d31.png "readability"
 
 ## Features
 * Majority of inspector chrome re-styled
@@ -47,6 +78,7 @@ Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/
 ** elements/sources/network panels
 * Subtle pulsating element selection
 * Re-styled Popovers (PSD files included)
+* Child element styling in elements panel
 
 ## Instructions
 
@@ -58,6 +90,12 @@ Copy **Custom.css** and paste in:
 ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css
 ```
 
+* Ubuntu (Google Chrome): 
+
+```
+~/.config/google-chrome/Default/User\ StyleSheets/Custom.css
+```
+
 * Ubuntu (Chromium): 
 
 ```
@@ -67,7 +105,7 @@ Copy **Custom.css** and paste in:
 * PC:
 
 ```
-C:\Users\YourUsername\AppData\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
+%APPDATA%\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
 ```
 
 * PC (Windows XP):
@@ -77,9 +115,6 @@ C:\Documents and Settings\YourUsername\Local Settings\Application Data\Google\Ch
 ```
 
 ## Todos
-
-* Clean up unused code.
-* Organize sections.
 * Style Timeline
 * Style Profiles
 * Style Audits
