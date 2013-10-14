@@ -1098,14 +1098,27 @@
 	color: #eee !important;
 }
 
+#-webkit-web-inspector .help-window-main .settings-list-container {
+	background-color: rgba(0,0,0,0) !important;
+}
+
 #-webkit-web-inspector .help-window-main .settings-list {
 	border: 1px solid #444 !important;
 }
 
 #-webkit-web-inspector .help-window-main .settings-list-item,
 #-webkit-web-inspector .help-window-main .settings-list-item:hover{
-	background-color: #555 !important;
-	border-bottom: 1px solid #333 !important;
+	background-color: #333 !important;
+	border-top: 1px solid #484848 !important;
+	border-bottom: 1px solid #282828 !important;
+}
+
+#-webkit-web-inspector .help-window-main .settings-list-item.selected{
+	background-color: rgba(150, 255, 150, 0.2) !important;	
+}
+
+#-webkit-web-inspector .help-window-main .settings-list-item:nth-child(1){
+	border-top: none !important;
 }
 
 #-webkit-web-inspector .help-window-main .settings-list-item:last-child{
@@ -1113,14 +1126,66 @@
 }
 
 
-#-webkit-web-inspector .help-window-main .file-system-path-name{
-	color: #bbb !important;
+#-webkit-web-inspector .dialog-contents .header {
+	color: #89f5a2 !important;	
+}
+
+#-webkit-web-inspector .help-window-main .file-system-path {
+	color: #ccc !important;
+}
+
+#-webkit-web-inspector .help-window-main .file-system-path-name {
+	color: #89f5a2 !important;
 }
 
 #-webkit-web-inspector .help-window-main .help-block select {
 	color: #666 !important;
 }
 
+
+/***************************************************
+/* Dialog Box [Help]
+****************************************************/
+#-webkit-web-inspector #glass-pane{
+	background-color: rgba(0,0,0,.4) !important;
+}
+
+#-webkit-web-inspector .settings-dialog {
+	border: 1px solid #444 !important;
+	background-color: #333 !important;
+	border-radius: 4px !important;
+}
+
+#-webkit-web-inspector .dialog-contents .header {
+	color: #ccc !important;	
+}
+
+#-webkit-web-inspector .dialog-contents .block-header {
+	color: #89f5a2 !important;	
+}
+
+#-webkit-web-inspector .settings-dialog .settings-list-container {
+	background-color: rgba(0,0,0,0) !important;
+}
+
+#-webkit-web-inspector .settings-dialog .settings-list {
+	border: 1px solid #484848 !important;
+	border-top: 2px solid #282828 !important;
+	border-bottom: 1px solid #585858 !important;
+	border-radius: 2px !important;	
+}
+
+#-webkit-web-inspector .settings-dialog .settings-list-item,
+#-webkit-web-inspector .settings-dialog .settings-list-item:hover {
+	background-color: #444 !important;	
+	border-top: 1px solid #4e4e4e !important;	
+	border-bottom: none !important;	
+	color: #ccc!important;
+}
+
+#-webkit-web-inspector .settings-dialog .file-mappings-list .settings-list-item:first-child {
+	border-top: none !important;
+}
 
 /***************************************************
 /* Search Functions/Selectors in File [Ctrl+Shift+O]
