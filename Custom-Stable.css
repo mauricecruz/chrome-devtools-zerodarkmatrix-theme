@@ -1100,18 +1100,47 @@
 /**********************************************
 /* Help/Settings Overlay
 /**********************************************/
-#-webkit-web-inspector .help-window-main .tabbed-pane-header {
-	background-color: #222 !important;
-}
-
 #-webkit-web-inspector .settings-tab .help-section-title,
 #-webkit-web-inspector .settings-tab-container .help-section-title {
 	color: #89F5A2 !important;
 }
 
+#-webkit-web-inspector .help-window-main,
+#-webkit-web-inspector .help-window-main label:hover {
+	color: #bbb !important;
+}
+
+#-webkit-web-inspector .settings-tab-container .help-key-cell .help-key{
+	color: #111 !important;
+}
+
 #-webkit-web-inspector .settings-tab-container .help-key-cell span {
 	color: #eee !important;
 }
+
+#-webkit-web-inspector .help-window-main .settings-list {
+	border: 1px solid #444 !important;
+}
+
+#-webkit-web-inspector .help-window-main .settings-list-item,
+#-webkit-web-inspector .help-window-main .settings-list-item:hover{
+	background-color: #555 !important;
+	border-bottom: 1px solid #333 !important;
+}
+
+#-webkit-web-inspector .help-window-main .settings-list-item:last-child{
+	border-bottom: none !important;
+}
+
+
+#-webkit-web-inspector .help-window-main .file-system-path-name{
+	color: #bbb !important;
+}
+
+#-webkit-web-inspector .help-window-main .help-block select {
+	color: #666 !important;
+}
+
 
 /**********************************************
 /* Drawer [Local Modifications]
