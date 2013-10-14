@@ -769,6 +769,12 @@
 	color: #95FDCB !important;
 }
 
+#-webkit-web-inspector .popover .console-formatted-boolean,
+#-webkit-web-inspector #console-messages .console-formatted-boolean,
+#-webkit-web-inspector .sidebar-pane .console-formatted-boolean {
+	color: #95FDCB !important;
+}
+
 #-webkit-web-inspector .popover .console-formatted-object,
 #-webkit-web-inspector #console-messages .console-formatted-object,
 #-webkit-web-inspector .sidebar-pane .console-formatted-object {
@@ -1627,7 +1633,8 @@
 
 /*-- Preview & Response Tab [JSON] -- */
 #-webkit-web-inspector .json .console-formatted-array { color: #49A6D2 !important;}
-#-webkit-web-inspector .json .console-formatted-number { color: #95FDCB !important;}
+#-webkit-web-inspector .json .console-formatted-number,
+#-webkit-web-inspector .json .console-formatted-boolean { color: #95FDCB !important;}
 #-webkit-web-inspector .json .console-formatted-object { color: #7c7c7c !important;}
 #-webkit-web-inspector .json .console-formatted-object .name{ color: #77A8C6 !important;}
 #-webkit-web-inspector .json .console-formatted-object .console-object-preview { color: #ddd !important;}
