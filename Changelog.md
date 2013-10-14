@@ -1,37 +1,38 @@
 # Changelog
 
 ## 0.13 - 06 Oct 2013
-* [bugfix] fixed inline display of script and styles in elements panel
+* `bugfix` fixed inline display of script and styles in elements panel
 * updated style of selected element in find module
 * updated styling of css errors
 * selector updates to reflect changes in devtools code
 * expanded selector scope of (dom)breakpoints to elements panel
-* [feature] styled whitespace/tab characters
+* `feature` styled whitespace/tab characters
+* `feature` styled 'Edit as HTML' in elements panel
 
 ## 0.12 - 25 Sep 2013
-* [bugfix] updated classnames on Canary 
+* `bugfix` updated classnames on Canary 
 
 ## 0.11 - 30 Aug 2013
-* [bugfix] updated image paths for v.29 stable
+* `bugfix` updated image paths for v.29 stable
 * restyled text selection in sources panel
 * restyled selected element in navigation tree
-* [bugfix] fixed highlighting style for [find] function
-* [feature] styled error state in syntax highlighting
+* `bugfix` fixed highlighting style for [find] function
+* `feature` styled error state in syntax highlighting
 
 ## 0.10 - 8 Aug 2013
-* [feature] animated parent/child tree arrows
+* `feature` animated parent/child tree arrows
 * updated style for read-only css panes
 * updated bracket highlighting styles
-* [feature] styled profilers (except timeline)
-* [feature] added section for 3rd party devtools plugins
+* `feature` styled profilers (except timeline)
+* `feature` added section for 3rd party devtools plugins
 * restyled breakpoints and call stack 
 
 ## 0.9 - 22 July 2013
-* [feature] differentiate nested messages in url (thanks @outdooricon)
-* [feature] styled websql in resources panel
-* [feature] styled codemirror html
-* [feature] added codemirror css comment style 
-* [bugfix] fixed style for json network preview
+* `feature` differentiate nested messages in url (thanks @outdooricon)
+* `feature` styled websql in resources panel
+* `feature` styled codemirror html
+* `feature` added codemirror css comment style 
+* `bugfix` fixed style for json network preview
 
 ## 0.8 - 12 July 2013
 * restyled tables
