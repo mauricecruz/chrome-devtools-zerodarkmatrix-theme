@@ -57,6 +57,7 @@
 /*--CSS--*/
 #-webkit-web-inspector .cm-css-atom { color: #ccc !important; }
 #-webkit-web-inspector .cm-css-builtin { color: #FF9635 !important; }
+#-webkit-web-inspector .cm-css-def { color: #FF9635 !important; }
 #-webkit-web-inspector .cm-css-comment { color: #676767 !important; font-style: italic; }
 #-webkit-web-inspector .cm-css-meta { color: #6AEDFF !important;}
 #-webkit-web-inspector .cm-css-number { color: #ccc !important; }
@@ -72,10 +73,12 @@
 
 /*--HTML--*/
 #-webkit-web-inspector .cm-xml-comment { color: #7c7c7c !important; font-style: italic !important; }
+#-webkit-web-inspector .cm-xml-error { color: #bf4c4c  !important; }
 #-webkit-web-inspector .cm-xml-string { color: #F0874F !important; }
 #-webkit-web-inspector .cm-xml-tag { color: #49a6d2 !important; }
 #-webkit-web-inspector .cm-xml-attribute { color: #88AED5 !important; }
 #-webkit-web-inspector .cm-xml-link { color: #db0 !important; }
+
 
 /*--GLOBAL EDITOR STYLES--*/
 #-webkit-web-inspector { background: #222 !important; color: #EEE; }
@@ -1166,8 +1169,6 @@
 #-webkit-web-inspector .help-window-main .file-system-path-name {
 	color: #89f5a2 !important;
 }
-
-
 
 #-webkit-web-inspector .help-window-main .help-block select {
 	color: #666 !important;
