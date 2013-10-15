@@ -79,6 +79,14 @@
 #-webkit-web-inspector .cm-xml-attribute { color: #88AED5 !important; }
 #-webkit-web-inspector .cm-xml-link { color: #db0 !important; }
 
+/*BUG? selectors don't have xml prefix when editing html without viewing code in sources panel first */
+#-webkit-web-inspector .cm-comment { color: #7c7c7c !important; font-style: italic !important; }
+#-webkit-web-inspector .cm-error { color: #bf4c4c  !important; }
+#-webkit-web-inspector .cm-string { color: #F0874F !important; }
+#-webkit-web-inspector .cm-tag { color: #49a6d2 !important; }
+#-webkit-web-inspector .cm-attribute { color: #88AED5 !important; }
+#-webkit-web-inspector .cm-link { color: #db0 !important; }
+
 
 /*--GLOBAL EDITOR STYLES--*/
 #-webkit-web-inspector { background: #222 !important; color: #EEE; }
