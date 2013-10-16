@@ -943,9 +943,13 @@
 /**********************************************/
 
 #-webkit-web-inspector .styles-section {
-	padding: 4px 0 !important;
-	margin-left: 5px;
-	border-top: 1px solid #444 !important;
+	padding: 4px 10px !important;	
+	border-top: 1px solid #383838 !important;
+	border-bottom: none !important;
+}
+
+#-webkit-web-inspector .styles-section:first-child {	
+	border-top: none !important;	
 }
 
 #-webkit-web-inspector .styles-section .value {
