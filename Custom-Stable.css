@@ -628,6 +628,10 @@
 	text-shadow: none !important;
 }
 
+#-webkit-web-inspector .scope-bar li{
+	border-bottom: 1px solid rgba(0,0,0,0);
+}
+
 #-webkit-web-inspector select.status-bar-item option{
 	background-color: #282828 !important;
 }
@@ -635,6 +639,10 @@
 #-webkit-web-inspector .status-bar button.status-bar-item {
 	border-right: 1px solid #666 !important;
 	border-left: 1px solid #666 !important;
+}
+
+#-webkit-web-inspector .scope-bar-divider {
+	background-color: rgba(128, 128, 128, 0.6);
 }
 
 #-webkit-web-inspector .scope-bar li.selected {
