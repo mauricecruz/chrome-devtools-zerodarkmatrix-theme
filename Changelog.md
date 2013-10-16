@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.14 - 16 Oct 2013
+* `feature` styled boolean values
+* `feature` styled workspaces
+* `feature` styled scopebar filters
+* updated additional markup selectors
+
 ## 0.13 - 06 Oct 2013
 * `bugfix` fixed inline display of script and styles in elements panel
 * updated style of selected element in find module
