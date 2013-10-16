@@ -8,6 +8,7 @@ Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/
 **Custom-Stable.css**
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **30.0.1599.69 m**
 
+
 ## Code Highlighting
 
 All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
@@ -23,11 +24,44 @@ Thanks to @orloxx for the suggestion.
 
 Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
 
-## Styles for Extensions
-Some extensions don't display well with this theme so I modified the css to improve the presentation.  Copy the css file into its respective extension folder.
+## Installation Instructions
+A quick copy/paste in your terminal should do it.  
 
-#### [Livestyle] (http://livestyle.emmet.io/)
-![livestyle]
+###Mac 
+Canary
+```
+curl -o ~/Library/Application\ Support/Google/Chrome\ Canary/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
+```
+Stable
+```
+curl -o ~/Library/Application\ Support/Google/Chrome\ Canary/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
+```
+
+###PC (Windows Vista / 7 / 8)
+Canary
+```
+powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\..\Local\Google\Chrome SxS\User Data\Default\User StyleSheets\Custom.css""")}"
+```
+Stable
+```
+powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
+```
+
+###PC (Windows XP)
+Canary
+```
+powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\Google\Chrome SxS\User Data\Default\User StyleSheets\Custom.css""")}"
+```
+Stable
+```
+powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
+```
+
+###Ubuntu: (Chromium) 
+
+```
+curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
+```
 
 ## Preview
 
@@ -69,6 +103,13 @@ Some extensions don't display well with this theme so I modified the css to impr
 [livestyle]: https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/extensions/LiveStyle/preview.png "LiveStyle"
 [readability]: https://f.cloud.github.com/assets/1640686/904010/be9d14b4-fbb9-11e2-8de0-1e846a533d31.png "readability"
 
+
+## Styles for Extensions
+Some extensions don't display well with this theme so I modified the css to improve the presentation.  Copy the css file into its respective extension folder.
+
+#### [Livestyle] (http://livestyle.emmet.io/)
+![livestyle]
+
 ## Features
 * Majority of inspector chrome re-styled
 * Customized Scrollbars
@@ -79,46 +120,6 @@ Some extensions don't display well with this theme so I modified the css to impr
 * Subtle pulsating element selection
 * Re-styled Popovers (PSD files included)
 * Child element styling in elements panel
-
-## Instructions
-
-Copy **Custom.css** and paste in:
-
-* Mac: 
-
-```
-~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css
-```
-
-* Ubuntu (Google Chrome): 
-
-```
-~/.config/google-chrome/Default/User\ StyleSheets/Custom.css
-```
-
-* Ubuntu (Chromium): 
-
-```
-~/.config/chromium/Default/User\ StyleSheets/Custom.css
-```
-    
-* PC:
-
-```
-%APPDATA%\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
-```
-
-* PC (Windows XP):
-
-```
-C:\Documents and Settings\YourUsername\Local Settings\Application Data\Google\Chrome\User Data\Default\User StyleSheets\Custom.css
-```
-
-## Todos
-* Style Timeline
-* Style Profiles
-* Style Audits
-
 
 ## Credits
 
