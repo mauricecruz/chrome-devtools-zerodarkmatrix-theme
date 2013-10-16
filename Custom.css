@@ -610,7 +610,29 @@
 }
 
 #-webkit-web-inspector .scope-bar li.selected {
-	color: white !important;
+	color: #eee !important;
+	text-shadow: 0 1px 2px rgba(0,0,0,.5) !important;
+	border-bottom: 1px solid #555 !important;
+}
+
+#-webkit-web-inspector .scope-bar .selected.error{
+	background: #951e15 !important;
+}
+
+#-webkit-web-inspector .scope-bar .selected.warning{
+	background: #9D8500 !important;
+}
+
+#-webkit-web-inspector .scope-bar .selected.log{
+	background: #89f5a2 !important;
+}
+
+#-webkit-web-inspector .scope-bar .selected.log{
+	background: #8b6ccf !important;
+}
+
+#-webkit-web-inspector .scope-bar .selected.debug{
+	background: #49a6d2 !important;
 }
 
 #-webkit-web-inspector .status-bar-items {
