@@ -140,3 +140,4 @@ Some extensions don't display well with this theme so I modified the css to impr
 * [Todd Werth's IR_Black](http://blog.toddwerth.com/entries/2)
 * [toolbar code from Harris Novick](https://gist.github.com/4316646)
 * Inspired by [Darcy Clarke's blog post](http://darcyclarke.me/design/skin-your-chrome-inspector/)
+* Automatic rake file [Rodolfo Puig](https://github.com/simonowendesign/SO-Dark-Monokai-v3/pull/21)
