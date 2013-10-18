@@ -34,7 +34,7 @@ curl -o ~/Library/Application\ Support/Google/Chrome\ Canary/Default/User\ Style
 ```
 Stable
 ```
-curl -o ~/Library/Application\ Support/Google/Chrome\ Canary/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
+curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
 ```
 
 ###PC (Windows Vista / 7 / 8)
