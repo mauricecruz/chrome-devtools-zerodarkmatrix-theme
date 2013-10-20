@@ -1706,7 +1706,9 @@
 }
 
 #-blink-dev-tools .network-summary-bar {
-	background-image: -webkit-linear-gradient(top, #646464, #353535);
+	background-image: -webkit-linear-gradient(top, #505050, #383838) !important;
+	border-top: 1px solid #646464 !important;
+	color: #ddd !important;
 }
 
 #-blink-dev-tools .network-summary-bar td{
