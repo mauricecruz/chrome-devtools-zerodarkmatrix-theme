@@ -470,7 +470,7 @@
 /************************************************/
 
 /*Default Text Color*/
-body {
+#-blink-dev-tools body {
 	color: #bbb !important;
 }
 
