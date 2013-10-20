@@ -619,16 +619,6 @@
 /* Status bar
 /************************************************/
 
-/*relocate to sources section*/
-#-blink-dev-tools #scripts-debug-toolbar {
-	background: -webkit-linear-gradient(#505050,#383838) !important;
-	border-top: 1px solid #222 !important;
-	border-bottom: 1px solid #222 !important;
-	border-color: #222 !important;
-	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
-}
-
-
 /*console/network elements that are not panel selectors*/
 #-blink-dev-tools select.status-bar-item,
 #-blink-dev-tools select.status-bar-item:hover,
@@ -1082,6 +1072,24 @@
 #-blink-dev-tools .panel.sources .sidebar-overlay {
 	border-right: 1px solid #282828 !important;
 	box-shadow: rgb(20,20,20) 5px 0px 22px 3px !important;
+}
+
+/**********************************************
+/* Sources Panel Controls
+/**********************************************/
+#-blink-dev-tools .scripts-status-bar {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	box-shadow: inset 0 1px 0 #585858, inset 0 -1px 0 #484848;
+	border-top: none !important;
+}
+
+#-blink-dev-tools #scripts-debug-toolbar {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	border-top: 1px solid #222 !important;
+	border-bottom: 1px solid #222 !important;
+	border-color: #222 !important;
+	box-shadow: inset 0 1px 0 #6E6E6E;
+	margin-top: 0 !important;
 }
 
 /**********************************************
