@@ -1109,6 +1109,11 @@ body {
 /**********************************************
 /* Resources Tab
 /**********************************************/
+#-blink-dev-tools .resources-status-bar .status-bar{
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	box-shadow: inset 0 1px 0 #585858;
+	border-top: none !important;
+}
 
 /*-- RESOURCES CONTENT --*/
 #-blink-dev-tools .resource-view.image .title {
