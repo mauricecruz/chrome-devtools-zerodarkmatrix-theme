@@ -933,6 +933,7 @@
 	padding: 4px 0 !important;
 	margin: 0 10px;
 	border-top: 1px solid #444 !important;
+	border-bottom: none !important;
 }
 
 #-blink-dev-tools .styles-section .value {
