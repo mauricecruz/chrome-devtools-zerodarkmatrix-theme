@@ -469,6 +469,13 @@
 /* Browser Chrome
 /************************************************/
 
+/*Default Text Color*/
+body {
+	color: #bbb !important;
+}
+
+
+
 /* GLOBAL BACKGROUND COLOR */
 #-blink-dev-tools,
 #-blink-dev-tools #drawer,
