@@ -578,12 +578,10 @@
 	border-top: 1px solid #222 !important;
 	border-bottom: 1px solid #222 !important;
 	border-color: #222 !important;
-	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
 	height: 22px !important;
 }
 
 #-blink-dev-tools #elements-crumbs .crumbs {
-	background: -webkit-linear-gradient(#505050,#383838) !important;
 	text-shadow: none !important;
 	color: #bbb !important;
 }
@@ -591,6 +589,8 @@
 #-blink-dev-tools #elements-crumbs .crumbs .crumb {
 	border-top: 3px solid #505050 !important;
 	-webkit-border-image: none !important;
+	border-left: 1px solid #505050 !important;
+	border-right: 1px solid #404040 !important;
 	padding: 0 10px !important;
 	margin: 0 !important;
 	line-height: 18px !important;
@@ -681,7 +681,7 @@
 #-blink-dev-tools select.status-bar-item,
 #-blink-dev-tools select.status-bar-item:hover {
 	border-left: 1px solid #333 !important;
-	border-right: 1px solid #AAA !important;
+	border-right: 1px solid #333 !important;
 }
 
 #-blink-dev-tools .split-view-sidebar-right {
