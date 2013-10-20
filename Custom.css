@@ -936,6 +936,10 @@
 	border-bottom: none !important;
 }
 
+#-blink-dev-tools .styles-section:first-child {
+	border-top: none !important;
+}
+
 #-blink-dev-tools .styles-section .value {
 	color: #ccc !important;
 }
