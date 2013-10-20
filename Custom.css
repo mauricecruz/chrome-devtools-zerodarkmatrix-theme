@@ -718,6 +718,12 @@
 /* Console
 /**********************************************/
 
+#-blink-dev-tools .console-status-bar {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	box-shadow: inset 0 1px 0 #585858, inset 0 -1px 0 #484848;
+	border-bottom: none !important;
+}
+
 #-blink-dev-tools #console-prompt {
 	color: #f1f1f1 !important;
 	border-top: none !important;
