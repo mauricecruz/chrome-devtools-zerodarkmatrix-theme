@@ -130,6 +130,7 @@
 #-blink-dev-tools .webkit-html-text-node,
 #-blink-dev-tools .webkit-html-css-node,
 #-blink-dev-tools .webkit-html-js-node {color:#c2c3c3!important;}
+#-blink-dev-tools .webkit-html-pseudo-element {color:#49a5d2 !important;}
 
 /*-- CSS --*/
 #-blink-dev-tools .selector-matches {color:#ff9635!important;}
@@ -245,7 +246,7 @@
 
 #-blink-dev-tools .panel.elements .parent.selected.expanded + .children > :last-child *,
 #-blink-dev-tools .panel.elements .parent.hovered.expanded + .children > :last-child * {
-\-webkit-transition: opacity .5s ease-in-out .25s;
+	-webkit-transition: opacity .5s ease-in-out .25s;
 }
 
 /*-- POPOVERS --*/
@@ -924,6 +925,12 @@ body {
 	padding-bottom: 5px !important;
 	box-shadow: inset 0 0 30px 0 rgba(17,17,17,1);
 	border-bottom: 1px solid #333 !important;
+}
+
+/*highlight respective pseudo-selectors*/
+#-blink-dev-tools .panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
+#-blink-dev-tools .panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child{
+	color: #A6371A !important;
 }
 
 /* fade closing tag of parent */
