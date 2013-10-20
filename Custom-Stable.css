@@ -1191,14 +1191,14 @@
 	border: 1px solid #484848 !important;
 	border-top: 2px solid #282828 !important;
 	border-bottom: 1px solid #585858 !important;
-	border-radius: 2px !important;	
+	border-radius: 2px !important;
 }
 
 #-webkit-web-inspector .help-window-main .file-mappings-list .settings-list-item,
 #-webkit-web-inspector .help-window-main .file-mappings-list .settings-list-item:hover {
-	background-color: #444 !important;	
-	border-top: 1px solid #555 !important;	
-	border-bottom: none !important;	
+	background-color: #444 !important;
+	border-top: 1px solid #555 !important;
+	border-bottom: none !important;
 }
 
 #-webkit-web-inspector .help-window-main .file-mappings-list .settings-list-item:first-child {
