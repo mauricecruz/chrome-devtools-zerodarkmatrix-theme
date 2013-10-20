@@ -230,7 +230,7 @@
 	-webkit-animation: pulsate 2.5s infinite;
 }
 
-#-blink-dev-tools .status-bar .crumbs .crumb.selected {
+#-blink-dev-tools #elements-crumbs .crumbs .crumb.selected {
 	-webkit-transition: border-top .25s ease-out 0;
 }
 
@@ -555,44 +555,64 @@
 	top: 5px !important;
 }
 
-/*--FLOATING STATUS BAR --*/
 
-/* element crumbs */
-#-blink-dev-tools .status-bar .crumbs {
+/************************************************
+/* Elements Crumbs
+/************************************************/
+#-blink-dev-tools #elements-crumbs {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	border-top: 1px solid #222 !important;
+	border-bottom: 1px solid #222 !important;
+	border-color: #222 !important;
+	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
+	height: 22px !important;
+}
+
+#-blink-dev-tools #elements-crumbs .crumbs {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
 	text-shadow: none !important;
 	color: #bbb !important;
 }
 
-#-blink-dev-tools .status-bar .crumbs .crumb {
+#-blink-dev-tools #elements-crumbs .crumbs .crumb {
 	border-top: 3px solid #505050 !important;
-	border-right: 1px solid #333 !important;
-	border-left: 1px solid #666 !important;
 	-webkit-border-image: none !important;
 	padding: 0 10px !important;
 	margin: 0 !important;
 	line-height: 18px !important;
 }
 
-#-blink-dev-tools .status-bar .crumbs .crumb:hover {
+#-blink-dev-tools #elements-crumbs .crumbs .crumb:hover {
 	color: #89F5A2 !important;
+	border-top-color: rgba(0,0,0,0) !important;
+	background-color: rgba(0,0,0,0) !important;
 	cursor: pointer;
 }
 
-#-blink-dev-tools .status-bar .crumbs .crumb.selected {
-	border-left: 1px solid rgba(0,0,0,0);
-	border-right: 1px solid rgba(0,0,0,0);
-	border-top: 3px solid #89F5A2 !important;
+#-blink-dev-tools #elements-crumbs .crumbs .crumb.selected {
+	border-top: 2px solid #89F5A2 !important;
 	background-color: rgba(0,0,0,0) !important;
 	color: #ddd !important;
 	cursor: default;
 }
 
-#-blink-dev-tools .status-bar .crumbs .crumb.selected:hover {
+#-blink-dev-tools #elements-crumbs .crumbs .crumb.selected:hover {
 	color: #ddd !important;
 }
 
-/*-- BOTTOM STATUS BAR --*/
+/************************************************
+/* Status bar
+/************************************************/
+#-blink-dev-tools .status-bar {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	border-top: 1px solid #222 !important;
+	border-bottom: 1px solid #222 !important;
+	border-color: #222 !important;
+	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
+}
 
+
+/*console/network elements that are not panel selectors*/
 #-blink-dev-tools select.status-bar-item,
 #-blink-dev-tools select.status-bar-item:hover,
 #-blink-dev-tools .scope-bar li {
@@ -600,23 +620,17 @@
 	text-shadow: none !important;
 }
 
-#-blink-dev-tools .scope-bar li{
-	border-bottom: 1px solid rgba(0,0,0,0);
-}
 
 #-blink-dev-tools select.status-bar-item option{
 	background-color: #282828 !important;
 }
 
-#-blink-dev-tools .status-bar button.status-bar-item {
-	border-right: 1px solid #666 !important;
-	border-left: 1px solid #666 !important;
-}
-
+/*separator between all | rest of options*/
 #-blink-dev-tools .scope-bar-divider {
 	background-color: rgba(128, 128, 128, 0.6);
 }
 
+/*filter options in console/network panel*/
 #-blink-dev-tools .scope-bar li.selected {
 	color: #eee !important;
 	text-shadow: 0 1px 2px rgba(0,0,0,.5) !important;
@@ -916,13 +930,9 @@
 /**********************************************/
 
 #-blink-dev-tools .styles-section {
-	padding: 4px 10px !important;
-	border-top: 1px solid #383838 !important;
-	border-bottom: none !important;
-}
-
-#-blink-dev-tools .styles-section:first-child {
-	border-top: none !important;
+	padding: 4px 0 !important;
+	margin: 0 10px;
+	border-top: 1px solid #444 !important;
 }
 
 #-blink-dev-tools .styles-section .value {
@@ -1535,7 +1545,7 @@
 /*****************************************
 /* Tabbed Panes
 /*****************************************/
-#-blink-dev-tools .status-bar, #-blink-dev-tools .tabbed-pane:not(.help-window-main) .tabbed-pane-header {
+#-blink-dev-tools .tabbed-pane:not(.help-window-main) .tabbed-pane-header {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
 	border-top: 1px solid #222 !important;
 	border-bottom: 1px solid #222 !important;
