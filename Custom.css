@@ -583,9 +583,8 @@ body {
 #-blink-dev-tools #elements-crumbs {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
 	border-top: 1px solid #222 !important;
-	border-bottom: 1px solid #222 !important;
 	border-color: #222 !important;
-	height: 22px !important;
+	height: 19px !important;
 }
 
 #-blink-dev-tools #elements-crumbs .crumbs {
@@ -594,7 +593,6 @@ body {
 }
 
 #-blink-dev-tools #elements-crumbs .crumbs .crumb {
-	border-top: 3px solid #505050 !important;
 	-webkit-border-image: none !important;
 	border-left: 1px solid #505050 !important;
 	border-right: 1px solid #404040 !important;
@@ -602,17 +600,18 @@ body {
 	margin: 0 !important;
 	line-height: 18px !important;
 }
-
+#-blink-dev-tools #elements-crumbs .crumbs .crumb span {
+	text-shadow: 0 1px 1px rgba(0,0,0,.6) !important;
+}
 #-blink-dev-tools #elements-crumbs .crumbs .crumb:hover {
 	color: #89F5A2 !important;
-	border-top-color: rgba(0,0,0,0) !important;
 	background-color: rgba(0,0,0,0) !important;
 	cursor: pointer;
 }
 
 #-blink-dev-tools #elements-crumbs .crumbs .crumb.selected {
-	border-top: 2px solid #89F5A2 !important;
-	background-color: rgba(0,0,0,0) !important;
+	background-color: rgba(137,245,162,.2) !important;
+	text-shadow: none !important;
 	color: #ddd !important;
 	cursor: default;
 }
@@ -620,7 +619,6 @@ body {
 #-blink-dev-tools #elements-crumbs .crumbs .crumb.selected:hover {
 	color: #ddd !important;
 }
-
 
 /************************************************
 /* Status bar
@@ -1109,7 +1107,6 @@ body {
 	border-bottom: 1px solid #222 !important;
 	border-color: #222 !important;
 	box-shadow: inset 0 1px 0 #6E6E6E;
-	margin-top: 0 !important;
 }
 
 /**********************************************
@@ -1652,10 +1649,8 @@ body {
 /*****************************************/
 #-blink-dev-tools .tabbed-pane:not(.help-window-main) .tabbed-pane-header {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
-	border-top: 1px solid #222 !important;
+	border-top: 1px solid #6e6e6e !important;
 	border-bottom: 1px solid #222 !important;
-	border-color: #222 !important;
-	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
 }
 
 #-blink-dev-tools .tabbed-pane-header-contents {
@@ -1677,6 +1672,10 @@ body {
 
 
 /* adjustment for horizontal split tabs */
+#-blink-dev-tools .split-view-horizontal > .split-view-sidebar.split-view-contents-second:not(.maximized) {
+	border-top: none !important;
+}
+
 #-blink-dev-tools .panel.elements .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tabs {
 	margin-top: 1px !important;
 	top: -2px !important;
