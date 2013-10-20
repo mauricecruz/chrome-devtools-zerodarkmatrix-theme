@@ -1451,13 +1451,27 @@ body {
 /**********************************************/
 /* Find Module  [ctrl+shift+F / cmd+shift+F]
 /**********************************************/
-#-blink-dev-tools #search-input-field.search-replace,
-#-blink-dev-tools .search-results-matches {
-	color: #333 !important;
+
+#-blink-dev-tools .search-status-bar-summary {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	border-top: 1px solid #6e6e6e !important;
 }
 
-#-blink-dev-tools .status-bar-item .search-drawer-header {
-	margin-left: 5px;
+#-blink-dev-tools .search-drawer-header {
+
+
+}
+
+#-blink-dev-tools .search-drawer-header .search-config-search {
+	border-radius: 2px !important;
+}
+
+#-blink-dev-tools .search-drawer-header input[type="checkbox"].search-config-checkbox {
+	vertical-align: middle !important;
+}
+
+#-blink-dev-tools .search-drawer-header label.search-config-label{
+	color: #bbb !important;
 }
 
 #-blink-dev-tools .drawer-header {
@@ -1506,6 +1520,18 @@ body {
 
 #-blink-dev-tools .search-match:hover {
 	background-color: #47474B !important;
+}
+
+/*CTRL/CMD F*/
+#-blink-dev-tools #search-input-field.search-replace,
+#-blink-dev-tools .search-results-matches {
+	color: #333 !important;
+}
+
+
+#-blink-dev-tools .inspector-footer{
+	background-color: #383838 !important;
+	border-top: none !important;
 }
 
 /**********************************************/
