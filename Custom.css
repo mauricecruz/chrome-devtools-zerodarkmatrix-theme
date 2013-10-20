@@ -511,7 +511,7 @@
 
 /*override inline css, set by js*/
 #-blink-dev-tools #panel-status-bar:not(.hidden) + #main {
-	top: 58px !important;
+	top: 57px !important;
 }
 
 #-blink-dev-tools.show-toolbar-icons .toolbar-icon {
@@ -565,10 +565,9 @@
 /************************************************/
 #-blink-dev-tools #panel-status-bar {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
-	border-bottom: 1px solid #222 !important;
-	border-color: #222 !important;
-	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0 1px 0 #585858, inset 0 -1px 0 #484848;
 	top: 34px !important;
+	height: 48px;
 }
 
 /************************************************
