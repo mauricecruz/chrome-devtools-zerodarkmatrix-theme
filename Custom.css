@@ -1327,8 +1327,14 @@
 	color: #49a6d2 !important;
 }
 
+#-blink-dev-tools .popover .content .network-timing-bar {
+	background-color: #89f5a2 !important;
+	border-left-color: #89f5a2 !important;
+}
+
 #-blink-dev-tools .popover .content .network-timing-bar-title {
 	color: #ddd !important;
+	text-shadow: 0 1px 1px #333;
 }
 
 /**********************************************
