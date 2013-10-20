@@ -505,8 +505,13 @@
 
 #-blink-dev-tools #toolbar {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
-	border-bottom: 1px solid #282828 !important;
+	border-bottom: 1px solid #383838 !important;
 	height: 34px !important;
+}
+
+/*override inline css, set by js*/
+#-blink-dev-tools #panel-status-bar:not(.hidden) + #main {
+	top: 58px !important;
 }
 
 #-blink-dev-tools.show-toolbar-icons .toolbar-icon {
@@ -555,6 +560,16 @@
 	top: 5px !important;
 }
 
+/************************************************
+/* Panel Status Bar
+/************************************************/
+#-blink-dev-tools #panel-status-bar {
+	background: -webkit-linear-gradient(#505050,#383838) !important;
+	border-bottom: 1px solid #222 !important;
+	border-color: #222 !important;
+	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4);
+	top: 34px !important;
+}
 
 /************************************************
 /* Elements Crumbs
@@ -600,10 +615,13 @@
 	color: #ddd !important;
 }
 
+
 /************************************************
 /* Status bar
 /************************************************/
-#-blink-dev-tools .status-bar {
+
+/*relocate to sources section*/
+#-blink-dev-tools #scripts-debug-toolbar {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
 	border-top: 1px solid #222 !important;
 	border-bottom: 1px solid #222 !important;
