@@ -1467,7 +1467,7 @@
 /**********************************************/
 #-blink-dev-tools .data-grid .data,
 #-blink-dev-tools .data-grid th {
-	background-image: none !important;
+	background: none !important;
 }
 
 #-blink-dev-tools .data-grid {
