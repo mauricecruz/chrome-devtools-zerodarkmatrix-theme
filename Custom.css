@@ -190,8 +190,7 @@
 	-webkit-animation: slideInLeftBig .5s ease-in;
 }
 
-#-blink-dev-tools .panel.elements .split-view-horizontal .split-view-contents-second:not(.metrics-and-computed),
-#-blink-dev-tools .panel.sources .split-view-horizontal > .split-view-contents-second.split-view-sidebar {
+#-blink-dev-tools .panel.elements .split-view-horizontal > .split-view-contents-second {
 	-webkit-animation: bounceInUp 1s ease-in-out;
 	z-index: 99;
 }
