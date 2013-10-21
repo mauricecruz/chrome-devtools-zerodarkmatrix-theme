@@ -469,13 +469,6 @@
 /* Browser Chrome
 /************************************************/
 
-/*Default Text Color*/
-#-blink-dev-tools body {
-	color: #bbb !important;
-}
-
-
-
 /* GLOBAL BACKGROUND COLOR */
 #-blink-dev-tools,
 #-blink-dev-tools #drawer,
@@ -1185,7 +1178,9 @@
 
 #-blink-dev-tools .help-window-main,
 #-blink-dev-tools .help-window-main label:hover,
-#-blink-dev-tools .settings-tab .help-block label:hover {
+#-blink-dev-tools .settings-tab .help-block label,
+#-blink-dev-tools .settings-tab .help-block label:hover,
+#-blink-dev-tools .settings-tab .help-block td  {
 	color: #bbb !important;
 }
 
