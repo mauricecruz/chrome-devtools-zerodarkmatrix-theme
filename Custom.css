@@ -1329,6 +1329,11 @@
 	margin-top: 0 !important
 }
 
+#-blink-dev-tools #drawer-contents .tabbed-pane-header,
+#-blink-dev-tools.inactive #drawer-contents .tabbed-pane-header {
+	border-top: none !important;
+	border-bottom: #222 !important;
+}
 
 /**********************************************
 /* Popovers
@@ -1644,7 +1649,7 @@
 /*****************************************/
 #-blink-dev-tools .tabbed-pane:not(.help-window-main) .tabbed-pane-header {
 	background: -webkit-linear-gradient(#505050,#383838) !important;
-	border-top: 1px solid #6e6e6e !important;
+	box-shadow: inset 0 1px 0 #6e6e6e;
 	border-bottom: 1px solid #222 !important;
 }
 
