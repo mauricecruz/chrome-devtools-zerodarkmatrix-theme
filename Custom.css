@@ -1091,6 +1091,7 @@
 	background: -webkit-linear-gradient(#505050,#383838) !important;
 	box-shadow: inset 0 1px 0 #585858;
 	border-top: none !important;
+	overflow: none !important;
 
 }
 
