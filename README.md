@@ -1,3 +1,5 @@
+**NOTE**: Canary is going through some major restructuring of their layout.  Seems like new changes are coming out everyday.  I'm going to wait till the dust settles before I start updating the Canary theme.  Please log an issue for any problems you find in the meantime.  Thanks.
+
 # ZeroDarkMatrix Theme for Chrome
 
 A highly customized dark theme for Google Chrome. There are 2 versions:
