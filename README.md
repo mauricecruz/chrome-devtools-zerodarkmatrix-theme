@@ -11,28 +11,16 @@ Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **30.0.1599.101 m**
 
 
-## Code Highlighting
-
-All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
-
-## Readability
-
-You can adjust the line height for the Elements/Sources Tab, Find, and Console interfaces.  It's the first set of selectors in the stylesheet. [More info...](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/issues/29)
-![readability]
-Thanks to @orloxx for the suggestion.
-
-
-## Animations
-
-Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
-
-
 ## Installation Instructions
-A quick copy/paste in your terminal should do it.
+There are two installation methods:
 
-## Automatic Installation
+##### Rakefile
+Requires you to have Ruby and Rake installed.  Clone this repo and run rake.  
+ 
+This will install the theme on all profiles for both Stable & Canary.  It will backup any existing one to `Custom-backup.css` prior to overwriting.
 
-Run `rake` to copy the files to the correct locations.
+##### Copy/Paste
+Pick from the snippets below.
 
 ### Mac
 Canary
@@ -69,6 +57,22 @@ powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https:/
 ```
 curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
 ```
+
+
+## Code Highlighting
+
+All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
+
+## Readability
+
+You can adjust the line height for the Elements/Sources Tab, Find, and Console interfaces.  It's the first set of selectors in the stylesheet. [More info...](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/issues/29)
+![readability]
+Thanks to @orloxx for the suggestion.
+
+
+## Animations
+
+Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
 
 
 ## Preview
