@@ -26,10 +26,15 @@ Thanks to @orloxx for the suggestion.
 
 Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
 
-## Installation Instructions
-A quick copy/paste in your terminal should do it.  
 
-###Mac 
+## Installation Instructions
+A quick copy/paste in your terminal should do it.
+
+## Automatic Installation
+
+Run `rake` to copy the files to the correct locations.
+
+### Mac
 Canary
 ```
 curl -o ~/Library/Application\ Support/Google/Chrome\ Canary/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
@@ -39,7 +44,7 @@ Stable
 curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
 ```
 
-###PC (Windows Vista / 7 / 8)
+### PC (Windows Vista / 7 / 8)
 Canary
 ```
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\..\Local\Google\Chrome SxS\User Data\Default\User StyleSheets\Custom.css""")}"
@@ -49,7 +54,7 @@ Stable
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
 
-###PC (Windows XP)
+### PC (Windows XP)
 Canary
 ```
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\Google\Chrome SxS\User Data\Default\User StyleSheets\Custom.css""")}"
@@ -59,11 +64,12 @@ Stable
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
 
-###Ubuntu: (Chromium) 
+### Ubuntu: (Chromium)
 
 ```
 curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
 ```
+
 
 ## Preview
 
@@ -72,10 +78,10 @@ curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.gith
 
 ![elements2]
 
-###Resources
+### Resources
 ![resources]
 
-###Network
+### Network
 ![network]
 
 ![network-headers]
@@ -112,10 +118,11 @@ Some extensions don't display well with this theme so I modified the css to impr
 #### [Livestyle] (http://livestyle.emmet.io/)
 ![livestyle]
 
+
 ## Features
 * Majority of inspector chrome re-styled
 * Customized Scrollbars
-* Animations for 
+* Animations for
 ** finding elements
 ** setting elements inactive
 ** elements/sources/network panels
@@ -123,14 +130,16 @@ Some extensions don't display well with this theme so I modified the css to impr
 * Re-styled Popovers (PSD files included)
 * Child element styling in elements panel
 
+
 ## Credits
 
 * Thanks to Simon Owen for the base styles.  I used his [So-Dark-Monokai-v3](https://github.com/simonowendesign/SO-Dark-Monokai-v3) as a starting point.
-* CSS Tricks for the [tutorial on customized scrollbars](http://css-tricks.com/custom-scrollbars-in-webkit/). 
+* CSS Tricks for the [tutorial on customized scrollbars](http://css-tricks.com/custom-scrollbars-in-webkit/).
 * [Animate.css](https://github.com/daneden/animate.css) for some of the animations.
 
 *Simon's version also used samples from other templates so I will thank them as well!*
-* [IR_Dark_Monokai](http://www.andrespagella.com/customising-chrome-devtools) - Designed and developed by Andres Pagella (@mapagella) 
+* [IR_Dark_Monokai](http://www.andrespagella.com/customising-chrome-devtools) - Designed and developed by Andres Pagella (@mapagella)
 * [Todd Werth's IR_Black](http://blog.toddwerth.com/entries/2)
 * [toolbar code from Harris Novick](https://gist.github.com/4316646)
 * Inspired by [Darcy Clarke's blog post](http://darcyclarke.me/design/skin-your-chrome-inspector/)
+* Automatic rake file [Rodolfo Puig](https://github.com/simonowendesign/SO-Dark-Monokai-v3/pull/21)
