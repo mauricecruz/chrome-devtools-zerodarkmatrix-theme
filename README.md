@@ -1,4 +1,4 @@
-**NOTE**: Canary is going through some major restructuring of their layout.  Seems like new changes are coming out everyday.  I'm going to wait till the dust settles before I start updating the Canary theme.  Please log an issue for any problems you find in the meantime.  Thanks.
+**NOTE**: The Canary version of the theme is being rewritten in LESS.  I'm still restyling/reorganizing a bunch of things but I managed to band-aid the current theme.  The generated output is no longer commented because comments will remain in the LESS source.
 
 # ZeroDarkMatrix Theme for Chrome
 
