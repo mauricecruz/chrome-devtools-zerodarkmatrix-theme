@@ -85,7 +85,7 @@
     background-color: #3c3c3c;
   }
   50% {
-    background-color: #555555;
+    background-color: #484848;
   }
   100% {
     background-color: #3c3c3c;
@@ -164,7 +164,6 @@
     -webkit-transform: scale(1);
   }
 }
-
 #-blink-dev-tools .event-bars .event-bar .header .title {
   text-shadow: none!important;
   color: #ccc!important;
@@ -315,7 +314,7 @@
   -webkit-box-shadow: inset 1px 5px 6px rgba(0, 0, 0, 0.3) !important;
 }
 #-blink-dev-tools ::-webkit-scrollbar-thumb {
-  border-radius: 4px !important;
+  border-radius: 8px !important;
   background-color: #555555 !important;
   border: 1px solid #080808 !important;
 }
@@ -419,19 +418,14 @@
   border-top: none !important;
 }
 #-blink-dev-tools .panel.elements .editing {
-  background-color: #3c3c3c !important;
+  background-color: #222222 !important;
   outline: 1px solid #89f5a2 !important;
   color: #cccccc !important;
 }
-#-blink-dev-tools .panel.elements .outline-disclosure .panel.elements .outline-disclosure {
-  border-radius: 2px;
-  outline: 1px solid #555555 !important;
-  background-color: #3c3c3c;
-}
+#-blink-dev-tools .panel.elements .outline-disclosure ol:focus li.selected .selection,
 #-blink-dev-tools .panel.elements .outline-disclosure li.selected .selection {
-  border-radius: 2px;
-  background-color: #555555 !important;
-  outline: 1px solid #6f6f6f !important;
+  outline: 1px solid #555555 !important;
+  background-color: #3c3c3c !important;
 }
 #-blink-dev-tools .panel.elements .outline-disclosure li.hovered:not(.selected) .selection {
   border-radius: 0 !important;
@@ -442,9 +436,8 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding-bottom: 5px !important;
-  box-shadow: inset 0 0 30px 0 #111111;
-  border-bottom: 1px solid #555555 !important;
-  /* fade closing tag of parent */
+  box-shadow: inset 0 0 30px 0 #080808;
+  border-bottom: 1px solid #3c3c3c !important;
 }
 #-blink-dev-tools .panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
 #-blink-dev-tools .panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
@@ -526,149 +519,127 @@
   border-color: #89F5A2 !important;
 }
 #-blink-dev-tools .cm-css-atom {
-  color: #ccc !important;
+  color: #cccccc !important;
 }
 #-blink-dev-tools .cm-css-builtin {
-  color: #FF9635 !important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .cm-css-def {
-  color: #FF9635 !important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .cm-css-comment {
   color: #676767 !important;
   font-style: italic;
 }
 #-blink-dev-tools .cm-css-meta {
-  color: #6AEDFF !important;
+  color: #6aedff !important;
 }
 #-blink-dev-tools .cm-css-number {
-  color: #ccc !important;
+  color: #cccccc !important;
 }
 #-blink-dev-tools .cm-css-operator {
-  color: #ccc !important;
+  color: #cccccc !important;
 }
 #-blink-dev-tools .cm-css-property {
-  color: #6AEDFF !important;
+  color: #6aedff !important;
 }
 #-blink-dev-tools .cm-css-qualifier {
-  color: #FF9635 !important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .cm-css-string {
   color: #e3b959 !important;
 }
 #-blink-dev-tools .cm-css-string-2 {
-  color: #ccc !important;
+  color: #cccccc !important;
 }
 #-blink-dev-tools .cm-css-tag {
-  color: #FF9635 !important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .cm-css-variable {
-  color: #FF9635 !important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .cm-css-variable-2 {
-  color: #FF9635 !important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .cm-xml-comment {
   color: #7c7c7c !important;
   font-style: italic !important;
 }
 #-blink-dev-tools .cm-xml-error {
-  color: #bf4c4c  !important;
+  color: #bf4c4c !important;
 }
 #-blink-dev-tools .cm-xml-string {
-  color: #F0874F !important;
+  color: #f0874f !important;
 }
 #-blink-dev-tools .cm-xml-tag {
   color: #49a6d2 !important;
 }
 #-blink-dev-tools .cm-xml-attribute {
-  color: #88AED5 !important;
+  color: #88aed5 !important;
 }
 #-blink-dev-tools .cm-xml-link {
-  color: #db0 !important;
+  color: #e3b959 !important;
 }
 #-blink-dev-tools .webkit-html-attribute-name {
-  color: #88AED5!important;
+  color: #88aed5 !important;
 }
 #-blink-dev-tools .webkit-html-attribute-value {
-  color: #F0874F!important;
+  color: #f0874f !important;
 }
 #-blink-dev-tools .webkit-html-comment {
-  color: #585858!important;
+  color: #7c7c7c !important;
   font-style: italic;
 }
 #-blink-dev-tools .webkit-html-resource-link,
 #-blink-dev-tools .webkit-html-external-link {
-  color: #e3b959!important;
+  color: #e3b959 !important;
 }
 #-blink-dev-tools .webkit-html-tag,
 #-blink-dev-tools .webkit-html-tag-name {
-  color: #49a6d2!important;
+  color: #49a6d2 !important;
 }
 #-blink-dev-tools .webkit-html-text-node,
 #-blink-dev-tools .webkit-html-css-node,
 #-blink-dev-tools .webkit-html-js-node {
-  color: #c2c3c3!important;
+  color: #c2c3c3 !important;
 }
 #-blink-dev-tools .webkit-html-pseudo-element {
   color: #49a5d2 !important;
 }
 #-blink-dev-tools .selector-matches {
-  color: #ff9635!important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .webkit-css-selector {
-  color: #ff9635!important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .webkit-css-at-rule {
-  color: #b094bb!important;
+  color: #b094bb !important;
 }
 #-blink-dev-tools .webkit-css-color {
-  color: #FFCF67!important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .webkit-css-comment {
-  color: #7c7c7c!important;
+  color: #676767 !important;
 }
 #-blink-dev-tools .webkit-css-important {
-  color: #b094bb!important;
+  color: #ff0000 !important;
 }
 #-blink-dev-tools .webkit-css-keyword {
-  color: #db925f!important;
+  color: #ff9635 !important;
 }
 #-blink-dev-tools .webkit-css-number {
-  color: #ffcf67!important;
+  color: #cccccc !important;
 }
 #-blink-dev-tools .webkit-css-property,
 #-blink-dev-tools .styles-section .properties > li .webkit-css-property {
-  color: #6aedff!important;
+  color: #6aedff !important;
   font-weight: 400;
 }
 #-blink-dev-tools .webkit-css-string {
-  color: #fd963f!important;
+  color: #e3b959 !important;
 }
 #-blink-dev-tools .webkit-css-url {
-  color: #eec574!important;
-}
-#-blink-dev-tools .webkit-javascript-ident {
-  color: #fff!important;
-}
-#-blink-dev-tools .webkit-javascript-comment {
-  color: #757160!important;
-}
-#-blink-dev-tools .webkit-javascript-number {
-  color: #db925f!important;
-}
-#-blink-dev-tools .webkit-javascript-keyword {
-  color: #9685dd!important;
-  font-style: italic;
-}
-#-blink-dev-tools .webkit-javascript-undef {
-  color: #7B7B7B!important;
-}
-#-blink-dev-tools .webkit-javascript-string {
-  color: #ef6e19!important;
-}
-#-blink-dev-tools .webkit-javascript-regexp {
-  color: #c96666!important;
+  color: #e3b959 !important;
 }
 #-blink-dev-tools #elements-crumbs {
   background: -webkit-linear-gradient(#505050, #363636) !important;
@@ -759,6 +730,15 @@
   padding-top: 6px !important;
   border-bottom: 1px solid #1d1d1d !important;
   box-shadow: inset 0 1px 0 #626262 !important;
+}
+#-blink-dev-tools #network-views .network-item-view .tabbed-pane-header {
+  padding-top: 0 !important;
+}
+#-blink-dev-tools #network-views .network-item-view .tabbed-pane-header .tabbed-pane-header-tab {
+  height: 31px !important;
+}
+#-blink-dev-tools #network-views .network-item-view .tabbed-pane-header .tabbed-pane-header-tab-title {
+  line-height: 22px !important;
 }
 #-blink-dev-tools .tabbed-pane-header-tabs-drop-down {
   color: #999 !important;
@@ -1702,15 +1682,15 @@
   color: #ddd !important;
   text-shadow: 0 1px 1px #333;
 }
-#-blink-dev-tools #-blink-dev-tools .outline-disclosure ol li,
-#-blink-dev-tools #-blink-dev-tools .text-editor .inner-container .webkit-line-content,
-#-blink-dev-tools #-blink-dev-tools .text-editor-lines .inner-container .webkit-line-number,
-#-blink-dev-tools #-blink-dev-tools .CodeMirror-lines,
-#-blink-dev-tools #-blink-dev-tools #search-results-pane-file-based .search-match,
-#-blink-dev-tools #-blink-dev-tools #console-view .console-message {
+#-blink-dev-tools .outline-disclosure ol li,
+#-blink-dev-tools .text-editor .inner-container .webkit-line-content,
+#-blink-dev-tools .text-editor-lines .inner-container .webkit-line-number,
+#-blink-dev-tools .styles-section .properties li,
+#-blink-dev-tools .CodeMirror-lines,
+#-blink-dev-tools #search-results-pane-file-based .search-match {
   line-height: 14px !important;
 }
-#-blink-dev-tools #-blink-dev-tools .panel.elements .outline-disclosure li.parent::before {
+#-blink-dev-tools .panel.elements .outline-disclosure li.parent::before {
   margin-top: 1px;
 }
 #-blink-dev-tools .panel.resources .base-storage-tree-element-title,
