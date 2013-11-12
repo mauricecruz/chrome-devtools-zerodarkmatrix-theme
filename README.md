@@ -1,4 +1,4 @@
-**NOTE**: The Canary version of the theme is being rewritten in LESS.  I'm still restyling/reorganizing a bunch of things but I managed to band-aid the current theme.  The generated output is no longer commented because comments will remain in the LESS source.
+**NOTE**: Chrome Canary v.**33.0.1706.0** no longer supports custom stylesheets in the User Stylesheets directory.  There may be an alternative method to add custom stylesheets via devtools extensions.  More to come...
 
 # ZeroDarkMatrix Theme for Chrome
 
