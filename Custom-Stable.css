@@ -182,25 +182,25 @@
 
 
 /*-- SOURCES PANEL --*/
-#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents {
+#-webkit-web-inspector .panel.sources .split-view-vertical .split-view-contents {
 	-webkit-transition: right .5s ease-in-out;
 }
 
-#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-sidebar {
+#-webkit-web-inspector .panel.sources .split-view-vertical .split-view-sidebar {
 	-webkit-animation: slideInRightBig .5s ease-out;
 }
 
-#-webkit-web-inspector .panel.scripts div:not(.split-view-horizontal) .split-view-vertical .split-view-sidebar,
-#-webkit-web-inspector .panel.scripts .split-view-vertical .split-view-contents-first.split-view-sidebar {
+#-webkit-web-inspector .panel.sources div:not(.split-view-horizontal) .split-view-vertical .split-view-sidebar,
+#-webkit-web-inspector .panel.sources .split-view-vertical .split-view-contents-first.split-view-sidebar {
 	-webkit-animation: none !important
 }
 
-#-webkit-web-inspector .panel.scripts .split-view-vertical .sidebar-overlay {
+#-webkit-web-inspector .panel.sources .split-view-vertical .sidebar-overlay {
 	-webkit-animation: slideInLeftBig .5s ease-out;
 }
 
 #-webkit-web-inspector .panel.elements .split-view-horizontal .split-view-contents-second:not(.metrics-and-computed),
-#-webkit-web-inspector .panel.scripts .split-view-horizontal > .split-view-contents-second.split-view-sidebar {
+#-webkit-web-inspector .panel.sources .split-view-horizontal > .split-view-contents-second.split-view-sidebar {
 	-webkit-animation: bounceInUp 1s ease-in-out;
 	z-index: 99;
 }
@@ -571,14 +571,14 @@
 }
 
 /*--TABBED PANE HEADER --*/
-#-webkit-web-inspector .panel.scripts .tabbed-pane-header,
+#-webkit-web-inspector .panel.sources .tabbed-pane-header,
 #-webkit-web-inspector #scripts-debug-sidebar-resizer-widget,
-#-webkit-web-inspector .panel.scripts .scripts-navigator-resizer-widget {
+#-webkit-web-inspector .panel.sources .scripts-navigator-resizer-widget {
 	height: 31px !important;
 }
 
-#-webkit-web-inspector .scripts .scripts-navigator-show-hide-button,
-#-webkit-web-inspector .scripts .scripts-debugger-show-hide-button {
+#-webkit-web-inspector .sources .scripts-navigator-show-hide-button,
+#-webkit-web-inspector .sources .scripts-debugger-show-hide-button {
 	top: 5px !important;
 }
 
@@ -1029,19 +1029,19 @@
 /*-- default text color --*/
 #-webkit-web-inspector .panel.resources .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .panel.scripts .base-navigator-tree-element-title {
+#-webkit-web-inspector .panel.sources .base-navigator-tree-element-title {
 	color: #999 !important;
 }
 
 /*-- currently selected element --*/
 #-webkit-web-inspector .panel.resources .selected .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources .selected .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .panel.scripts .selected .base-navigator-tree-element-title {
+#-webkit-web-inspector .panel.sources .selected .base-navigator-tree-element-title {
 	color: #fff !important;
 }
 
 #-webkit-web-inspector .panel.resources .outline-disclosure li.selected .selection,
-#-webkit-web-inspector .panel.scripts .outline-disclosure li.selected .selection {
+#-webkit-web-inspector .panel.sources .outline-disclosure li.selected .selection {
 	background: #364C3B !important;
 	color: #fff !important;
 	border-top: 1px solid #181818 !important;
@@ -1050,14 +1050,14 @@
 }
 
 #-webkit-web-inspector .panel.resources .outline-disclosure li:hover:not(.selected) .selection,
-#-webkit-web-inspector .panel.scripts .outline-disclosure li:hover:not(.selected) .selection {
+#-webkit-web-inspector .panel.sources .outline-disclosure li:hover:not(.selected) .selection {
 	display: block !important;
 	background: #333 !important;
 
 }
 
 #-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .selection,
-#-webkit-web-inspector .panel.scripts .outline-disclosure ol:focus li.selected .selection {
+#-webkit-web-inspector .panel.sources .outline-disclosure ol:focus li.selected .selection {
 	background: #364C3B !important;
 	color: #fff !important;
 	border-top: 1px solid #181818 !important;
@@ -1067,7 +1067,7 @@
 
 #-webkit-web-inspector .panel.resources .outline-disclosure ol:focus li.selected .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources ol:focus .selected .base-storage-tree-element-subtitle,
-#-webkit-web-inspector .panel.scripts .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title {
+#-webkit-web-inspector .panel.sources .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title {
 	color: #fff !important;
 	text-shadow: none !important;
 }
@@ -1077,7 +1077,7 @@
 	border: none !important;
 }
 
-#-webkit-web-inspector .panel.scripts .sidebar-overlay {
+#-webkit-web-inspector .panel.sources .sidebar-overlay {
 	border-right: 1px solid #282828 !important;
 	box-shadow: rgb(20,20,20) 5px 0px 22px 3px !important;
 }
@@ -1501,9 +1501,11 @@
 
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab {
 	border-top: 2px solid rgba(0,0,0,0) !important;
-	margin-top: 2px !important;
+	margin-top: 0 !important;
+	padding-top: 5px !important;
 	min-width: 75px !important;
 	text-align: center !important;
+	border-bottom: none !important;
 }
 
 /* adjust for horizontal split panels */
@@ -1526,7 +1528,7 @@
 }
 
 /*adjust sources tabs and icons */
-#-webkit-web-inspector .scripts .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab {
+#-webkit-web-inspector .sources .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab {
 	position: relative !important;
 	top: -1px !important;
 	padding-top: 5px !important;
