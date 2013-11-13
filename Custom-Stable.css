@@ -1501,7 +1501,7 @@
 
 #-webkit-web-inspector .tabbed-pane:not(.help-window-main) .tabbed-pane-header-tab {
 	border-top: 2px solid rgba(0,0,0,0) !important;
-	margin-top: 0 !important;
+	margin-top: 2px !important;
 	padding-top: 5px !important;
 	min-width: 75px !important;
 	text-align: center !important;
