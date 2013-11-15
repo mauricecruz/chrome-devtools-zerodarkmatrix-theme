@@ -1,18 +1,19 @@
-**NOTE**: Chrome Canary v.**33.0.1706.0** no longer supports custom stylesheets in the User Stylesheets directory.  There may be an alternative method to add custom stylesheets via devtools extensions.  More to come...
-
-UPDATE: Looks like the bus ride is over for now folks... There's no alternative methods and it's [marked as a "won't fix"](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  If you think that sucks too, feel free to throw your two cents in the matter.
-
-[Issue 318566:	User Stylesheets removal breaks all DevTools themes](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566)
-
 # ZeroDarkMatrix Theme for Chrome
 
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
 **Custom.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **32.0.1690.2 canary**
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **33.0.1706.0 canary**
 
 **Custom-Stable.css**
-Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **30.0.1599.101 m**
+Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **31.0.1650.57 m**
+
+## About Chrome Canary
+As of v.**33.0.1706.0**, Chrome Canary no longer supports custom stylesheets in the User Stylesheets directory. 
+
+@darcyclarke [filed an issue to restore this functionality]((https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  Feel free to voice your opinions there.
+
+In the interim, you can [inject styles through the inspector's inspector](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/getDevTheme.js).
 
 
 ## Installation Instructions
