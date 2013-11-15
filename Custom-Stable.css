@@ -489,9 +489,15 @@
 #-webkit-web-inspector .styles-section.read-only,
 #-webkit-web-inspector .split-view-vertical .sidebar-pane.composite .properties-tree,
 #-webkit-web-inspector .panel:not(.timeline),
-#-webkit-web-inspector .panel:not(.timeline) .split-view-contents {
+#-webkit-web-inspector .panel:not(.timeline) .split-view-contents,
+#-webkit-web-inspector #network-views .CodeMirror-lines,
+#-webkit-web-inspector #script-view-fallback {
 	background-color: #222 !important;
 	z-index: 0;
+}
+
+#-webkit-web-inspector #script-view-fallback {
+	color: #ccc  !important;
 }
 
 #-webkit-web-inspector .styles-section.read-only:not(.computed-style){
