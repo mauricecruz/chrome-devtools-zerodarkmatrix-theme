@@ -1062,11 +1062,6 @@ span.cm-token-highlight:before {
   border-top: 1px solid #333 !important;
   border-bottom: 1px solid #444 !important;
 }
-#console-messages .console-message,
-.console-user-command {
-  border-top: none !important;
-  margin: 2px 0;
-}
 #console-messages .console-user-command {
   background-color: #252525 !important;
   border-top: 1px solid #2a2a2a !important;
