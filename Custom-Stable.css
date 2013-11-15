@@ -1447,6 +1447,10 @@
 	box-shadow: inset 0 1px 0 #6E6E6E, 0 2px 2px rgba(0, 0, 0, 0.4), 0 -2px 2px rgba(0, 0, 0, 0.4) !important;
 }
 
+#-webkit-web-inspector .sidebar-tabbed-pane .tabbed-pane-header .tabbed-pane-header-tab-title {
+	line-height: 9px !important;
+}
+
 #-webkit-web-inspector .tabbed-pane-header-contents {
 	color: #bbb !important;
 }
