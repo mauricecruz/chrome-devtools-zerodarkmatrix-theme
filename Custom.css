@@ -287,9 +287,11 @@ span.cm-token-highlight:before {
 /**********************************************
 /* Scrollbars
 /**********************************************/
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+::-webkit-scrollbar,
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
+  width: 12px !important;
+  height: 12px !important;
   background-color: #222222 !important;
 }
 ::-webkit-scrollbar-track:horizontal,
@@ -306,7 +308,9 @@ span.cm-token-highlight:before {
 .custom-popup-horizontal-scroll .custom-popup-vertical-scroll ::-webkit-scrollbar-track:vertical {
   -webkit-box-shadow: inset 4px 1px 8px 1px rgba(0, 0, 0, 0.3) !important;
 }
-::-webkit-scrollbar-corner {
+::-webkit-scrollbar-corner,
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
   -webkit-box-shadow: inset 1px 5px 6px rgba(0, 0, 0, 0.3) !important;
 }
 ::-webkit-scrollbar-thumb {
