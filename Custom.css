@@ -1873,7 +1873,8 @@ button.scripts-step-out .glyph,
 button.status-bar-item.toggled-on .glyph,
 button.clear-status-bar-item:active .glyph,
 button.garbage-collect-status-bar-item:active .glyph,
-button.glue-async-status-bar-item:active .glyph {
+button.glue-async-status-bar-item:active .glyph,
+.filters-toggle.toggled-shown .glyph {
   background-color: rgba(137, 245, 162, 0.6) !important;
 }
 #scripts-debugger-status {
