@@ -6,7 +6,7 @@
 // -------------------------------------------------------
 // Uses base64 decoder from http://www.webtoolkit.info/
 // -------------------------------------------------------
-// Run this snippet inside the inspector for the devtools
+// Run this snippet inside the inspector's inspector.
 // http://stackoverflow.com/questions/12291138/how-do-you-inspect-the-web-inspector-in-chrome
 	
 (function(){
