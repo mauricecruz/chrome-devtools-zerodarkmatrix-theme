@@ -1040,7 +1040,8 @@
 #-webkit-web-inspector .panel.resources .base-storage-tree-element-title,
 #-webkit-web-inspector .panel.resources .base-storage-tree-element-subtitle,
 #-webkit-web-inspector .panel.sources .base-navigator-tree-element-title {
-	color: #999 !important;
+	color: #999 !important;	
+	top: 2px !important;
 }
 
 /*-- currently selected element --*/
@@ -1063,6 +1064,7 @@
 #-webkit-web-inspector .panel.sources .outline-disclosure li:hover:not(.selected) .selection {
 	display: block !important;
 	background: #333 !important;
+	margin-top: 2px !important;
 
 }
 
