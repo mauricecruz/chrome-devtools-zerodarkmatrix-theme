@@ -935,6 +935,9 @@
 /**********************************************
 /* Element - Edit HTML
 /**********************************************/
+#-webkit-web-inspector #elements-content .CodeMirror {
+	outline: none !important;
+}
 
 .CodeMirror-wrap{
 	outline: none !important;
@@ -1450,6 +1453,8 @@
 
 #-webkit-web-inspector .sidebar-tabbed-pane .tabbed-pane-header .tabbed-pane-header-tab-title {
 	line-height: 9px !important;
+	margin-top: 0 !important;
+	display: block !important;
 }
 
 #-webkit-web-inspector .tabbed-pane-header-contents {
