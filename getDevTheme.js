@@ -2,7 +2,7 @@
 // Inject any Chrome devtools theme hosted on Github or Gist.
 //
 // To change the theme, copy the raw url of any Github/Gist 
-// hosted Custom.css stylesheet and paste it in the function.
+// hosted Custom.css stylesheet and paste it in the themeUrl var.
 // -------------------------------------------------------
 // Uses base64 decoder from http://www.webtoolkit.info/
 // -------------------------------------------------------
@@ -10,14 +10,16 @@
 // http://stackoverflow.com/questions/12291138/how-do-you-inspect-the-web-inspector-in-chrome
 	
 (function(){
-	
-getDevTheme('https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css');
-
+var themeUrl = 'https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/Custom-Stable.css';
 
 function getDevTheme(url){
 	var identifier = getDomainIdentifier(),
 				css;
-		
+	
+	function contains(source, findString){
+		return source.indexOf(findString) !== -1;
+	}
+				
 	function getDomainIdentifier(){
 		var node = document.createElement('a'),
 			identifier;
@@ -25,9 +27,9 @@ function getDevTheme(url){
 		node.href = url;
 		identifier = node.hostname;
 		
-		if (identifier.contains('github.com')){
+		if (contains(identifier,'github.com')){
 		
-			if (identifier.contains('gist')){
+			if (contains(identifier,'gist')){
 				return 'gist';
 			} else {
 				return 'github';
@@ -64,7 +66,7 @@ function getDevTheme(url){
 			folderString = '';
 		}
 			
-		return folderString;
+		return folderString;                   
 	}
 	
 	function getGistID(){
@@ -140,5 +142,7 @@ function getDevTheme(url){
 	requestTheme();
 	 
 }
+
+getDevTheme(themeUrl);
  
 })();
