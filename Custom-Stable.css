@@ -741,7 +741,8 @@
 #-webkit-web-inspector #console-messages .console-message,
 #-webkit-web-inspector .console-user-command {
 	border-top: none !important;
-	margin: 2px 0;
+	margin-top: 2px !important;
+	margin-bottom: 2px !important;
 }
 
 #-webkit-web-inspector #console-messages .console-user-command {
