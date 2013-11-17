@@ -10,7 +10,7 @@
 // http://stackoverflow.com/questions/12291138/how-do-you-inspect-the-web-inspector-in-chrome
 	
 (function(){
-var themeUrl = 'https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/Custom-Stable.css';
+var themeUrl = 'https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/Custom.css';
 
 function getDevTheme(url){
 	var identifier = getDomainIdentifier(),
