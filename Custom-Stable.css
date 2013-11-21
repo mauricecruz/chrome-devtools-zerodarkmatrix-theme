@@ -140,6 +140,7 @@
 #-webkit-web-inspector .webkit-html-js-node {color:#c2c3c3!important;}
 
 /*-- CSS --*/
+#-webkit-web-inspector .webkit-html-pseudo-element { color: #49a5d2 !important;}
 #-webkit-web-inspector .selector-matches {color:#ff9635!important;}
 #-webkit-web-inspector .webkit-css-selector {color:#ff9635!important;}
 #-webkit-web-inspector .webkit-css-at-rule {color:#b094bb!important;}
@@ -257,6 +258,12 @@
 #-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children > :last-child * {
 	-webkit-transition: opacity .5s ease-in-out .25s;
 }
+
+#-webkit-web-inspector .panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
+#-webkit-web-inspector .panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
+  color: #a6371a !important;
+}
+
 
 /*-- POPOVERS --*/
 #-webkit-web-inspector .popover {
