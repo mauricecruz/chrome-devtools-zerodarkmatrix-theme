@@ -939,7 +939,7 @@
 	outline: none !important;
 }
 
-.CodeMirror-wrap{
+#-webkit-web-inspector .CodeMirror-wrap {
 	outline: none !important;
 	border: 1px solid #333;
 	border-radius: 5px;
