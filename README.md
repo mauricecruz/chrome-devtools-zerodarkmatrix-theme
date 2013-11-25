@@ -63,6 +63,12 @@ powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https:/
 curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
 ```
 
+### Fedora:
+
+```
+curl -o ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
+```
+
 
 ## Code Highlighting
 
