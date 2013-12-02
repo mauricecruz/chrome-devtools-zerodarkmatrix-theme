@@ -3,6 +3,9 @@
 /* Optimized for Chrome Canary Channel v32
 /* https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme
 /*************************************************************************/
+.scroll-target {
+  -webkit-transform: translateZ(0);
+}
 .styles-section .properties .disabled,
 .styles-section .properties .not-parsed-ok {
   -webkit-transition: opacity 0.5s ease-in-out 0;
@@ -1862,6 +1865,7 @@ select.status-bar-item:hover {
 #bottom-status-bar-container .type,
 #bottom-status-bar-container .timeline-records-stats,
 .drawer-header span,
+.drawer .settings-tab.help-container label,
 .status-bar-item .search-drawer-header,
 .status-bar-item .search-config-label,
 .source-frame-cursor-position,
