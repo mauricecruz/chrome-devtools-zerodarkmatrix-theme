@@ -1437,6 +1437,7 @@ tr.selected .network-cell-subtitle {
 }
 .help-window-main,
 .help-window-main label:hover,
+.settings-tab.help-container label,
 .settings-tab .help-block label,
 .settings-tab .help-block label:hover,
 .settings-tab .help-block td {
@@ -1865,7 +1866,6 @@ select.status-bar-item:hover {
 #bottom-status-bar-container .type,
 #bottom-status-bar-container .timeline-records-stats,
 .drawer-header span,
-.drawer .settings-tab.help-container label,
 .status-bar-item .search-drawer-header,
 .status-bar-item .search-config-label,
 .source-frame-cursor-position,
