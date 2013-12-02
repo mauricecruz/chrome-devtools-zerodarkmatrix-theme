@@ -9,19 +9,22 @@ Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **31.0.1650.57 m**
 
 ## About Chrome Canary
-As of v.**33.0.1706.0**, Chrome Canary no longer supports custom stylesheets in the User Stylesheets directory. 
+As of v.**33.0.1706.0**, Chrome Canary no longer supports custom stylesheets in the User Stylesheets directory.
 
 @darcyclarke [filed an issue to restore this functionality](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  Feel free to voice your opinions there.
 
-In the interim, you can [inject styles through the inspector's inspector](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/getDevTheme.js).
+As of Version 33.0.1726.0 canary you can add themes via extensions and the developer tools experiments.
+* Open chrome://flags and Enable Developer Tools experiments.
+* Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
+* Open the Chrome Extensions and load the theme folder as an unpacked extension.
 
 
 ## Installation Instructions
 There are two installation methods:
 
 ##### Rakefile
-Requires you to have Ruby and Rake installed.  Clone this repo and run rake.  
- 
+Requires you to have Ruby and Rake installed.  Clone this repo and run rake.
+
 This will install the theme on all profiles for both Stable & Canary.  It will backup any existing one to `Custom-backup.css` prior to overwriting.
 
 ##### Copy/Paste
