@@ -1528,42 +1528,6 @@ tr.selected .network-cell-subtitle {
 .settings-dialog .file-mappings-list .settings-list-item:first-child {
   border-top: none !important;
 }
-/***************************************************
-/* Dialog Box [Help]
-****************************************************/
-#glass-pane {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
-.settings-dialog {
-  border: 1px solid #444 !important;
-  background-color: #333 !important;
-  border-radius: 4px !important;
-}
-.dialog-contents .header {
-  color: #ccc !important;
-}
-.dialog-contents .block-header {
-  color: #89f5a2 !important;
-}
-.settings-dialog .settings-list-container {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.settings-dialog .settings-list {
-  border: 1px solid #484848 !important;
-  border-top: 2px solid #282828 !important;
-  border-bottom: 1px solid #585858 !important;
-  border-radius: 2px !important;
-}
-.settings-dialog .settings-list-item,
-.settings-dialog .settings-list-item:hover {
-  background-color: #444 !important;
-  border-top: 1px solid #4e4e4e !important;
-  border-bottom: none !important;
-  color: #ccc!important;
-}
-.settings-dialog .file-mappings-list .settings-list-item:first-child {
-  border-top: none !important;
-}
 /**********************************************
 /* Sources Tab
 /**********************************************/
