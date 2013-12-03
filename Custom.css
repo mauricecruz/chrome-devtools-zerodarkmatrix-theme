@@ -236,14 +236,14 @@
   color: #eee !important;
 }
 .CodeMirror-matchingbracket {
-  border: 1px solid #15CA1A !important;
-  border-radius: 4px;
-  color: #ccc !important;
+  color: #15ca1a !important;
+  text-shadow: 0 0 3px #15ca1a !important;
+  border-bottom: none !important;
 }
 .CodeMirror-nonmatchingbracket {
-  border: 1px solid #db0404 !important;
-  border-radius: 4px;
-  color: #ccc !important;
+  color: #db0404 !important;
+  text-shadow: 0 0 3px #db0404 !important;
+  border-bottom: none !important;
 }
 span.CodeMirror-selectedtext {
   background-color: #383838 !important;
@@ -466,7 +466,7 @@ span.cm-token-highlight:before {
   opacity: .6;
 }
 .cm-js-atom {
-  color: #fff5b4 !important;
+  color: #89f5a2 !important;
 }
 .cm-js-attribute {
   color: #4e87bf !important;
@@ -502,10 +502,10 @@ span.cm-token-highlight:before {
   color: #d8fa3c !important;
 }
 .cm-js-number {
-  color: #db925f !important;
+  color: #89f5a2 !important;
 }
 .cm-js-operator {
-  color: #fbde2d !important;
+  color: #cdb943 !important;
 }
 .cm-js-property {
   color: #cdb943 !important;
@@ -535,6 +535,33 @@ span.cm-token-highlight:before {
 .source-frame-eval-expression {
   background-color: rgba(137, 245, 162, 0.4) !important;
   border-color: #89F5A2 !important;
+}
+.cm-atom {
+  color: #89f5a2 !important;
+}
+.cm-comment {
+  color: #676767 !important;
+  font-style: italic;
+}
+.cm-variable {
+  color: #cccccc !important;
+}
+.cm-string {
+  color: #f07b3c !important;
+}
+.cm-keyword {
+  color: #8b6ccf !important;
+  font-style: italic;
+}
+.cm-number {
+  color: #89f5a2 !important;
+}
+.cm-operator {
+  color: #cdb943 !important;
+}
+.cm-error {
+  background: #9D1E15 !important;
+  color: #f8f8f8 !important;
 }
 /*--CSS--*/
 .cm-css-atom {
@@ -1682,6 +1709,16 @@ tr.selected .network-cell-subtitle {
 }
 .webkit-highlighted-line {
   background-color: #89F5A2 !important;
+}
+.alternate-status-bar-buttons-bar .scripts-pause,
+.alternate-status-bar-buttons-bar .scripts-long-resume,
+.alternate-status-bar-buttons-bar .status-bar-item {
+  background-color: #333 !important;
+  border: 1px solid #222 !important;
+}
+.alternate-status-bar-buttons-bar .status-bar-item.emulate-active {
+  background-color: #444 !important;
+  border: 1px solid #333 !important;
 }
 .properties-tree li,
 .outline-disclosure li::before,
