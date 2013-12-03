@@ -174,7 +174,11 @@
   color: #000 !important;
   font-weight: 700 !important;
 }
+.scroll-target {
+  -webkit-transform: translateZ(0);
+}
 #console-messages,
+#console-view,
 .dialog .fill,
 .help-window-main,
 .tabbed-pane-content,
@@ -183,9 +187,14 @@
 .styles-section.read-only,
 .split-view-vertical .sidebar-pane.composite .properties-tree,
 .panel:not(.timeline):not(.profiles),
-.panel:not(.timeline):not(.profiles) .split-view-contents {
+.panel:not(.timeline):not(.profiles) .split-view-contents,
+#network-views .CodeMirror-lines,
+#script-view-fallback {
   background-color: #222222 !important;
   z-index: 0;
+}
+#script-view-fallback {
+  color: #ccc  !important;
 }
 .timeline {
   background: #fff !important;
@@ -227,14 +236,14 @@
   color: #eee !important;
 }
 .CodeMirror-matchingbracket {
-  border: 1px solid #15CA1A !important;
-  border-radius: 4px;
-  color: #ccc !important;
+  color: #15ca1a !important;
+  text-shadow: 0 0 3px #15ca1a !important;
+  border-bottom: none !important;
 }
 .CodeMirror-nonmatchingbracket {
-  border: 1px solid #db0404 !important;
-  border-radius: 4px;
-  color: #ccc !important;
+  color: #db0404 !important;
+  text-shadow: 0 0 3px #db0404 !important;
+  border-bottom: none !important;
 }
 span.CodeMirror-selectedtext {
   background-color: #383838 !important;
@@ -423,6 +432,9 @@ span.cm-token-highlight:before {
 .sidebar-pane .section:first-child {
   border-top: none !important;
 }
+#elements-content .CodeMirror {
+  outline: none !important;
+}
 .panel.elements .editing {
   background-color: #222222 !important;
   outline: 1px solid #89f5a2 !important;
@@ -454,7 +466,7 @@ span.cm-token-highlight:before {
   opacity: .6;
 }
 .cm-js-atom {
-  color: #fff5b4 !important;
+  color: #89f5a2 !important;
 }
 .cm-js-attribute {
   color: #4e87bf !important;
@@ -490,10 +502,10 @@ span.cm-token-highlight:before {
   color: #d8fa3c !important;
 }
 .cm-js-number {
-  color: #db925f !important;
+  color: #89f5a2 !important;
 }
 .cm-js-operator {
-  color: #fbde2d !important;
+  color: #cdb943 !important;
 }
 .cm-js-property {
   color: #cdb943 !important;
@@ -523,6 +535,33 @@ span.cm-token-highlight:before {
 .source-frame-eval-expression {
   background-color: rgba(137, 245, 162, 0.4) !important;
   border-color: #89F5A2 !important;
+}
+.cm-atom {
+  color: #89f5a2 !important;
+}
+.cm-comment {
+  color: #676767 !important;
+  font-style: italic;
+}
+.cm-variable {
+  color: #cccccc !important;
+}
+.cm-string {
+  color: #f07b3c !important;
+}
+.cm-keyword {
+  color: #8b6ccf !important;
+  font-style: italic;
+}
+.cm-number {
+  color: #89f5a2 !important;
+}
+.cm-operator {
+  color: #cdb943 !important;
+}
+.cm-error {
+  background: #9D1E15 !important;
+  color: #f8f8f8 !important;
 }
 /*--CSS--*/
 .cm-css-atom {
@@ -700,6 +739,7 @@ span.cm-token-highlight:before {
   padding: 2px 8px !important;
   margin: 0 4px !important;
   margin-top: 0 !important;
+  margin-bottom: 1px !important;
   border-color: transparent !important;
 }
 .tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab:hover {
@@ -717,17 +757,26 @@ span.cm-token-highlight:before {
 .tabbed-pane:not(.help-window-main) .tabbed-pane-header .tabbed-pane-header-tab-title {
   line-height: 16px !important;
 }
+.tabbed-pane:not(.help-window-main) .overrides-view .tabbed-pane-header-tab {
+  border-top: none !important;
+  margin-left: 6px !important;
+}
+.tabbed-pane:not(.help-window-main) .overrides-view .tabbed-pane-header-tab.selected {
+  border-top: none !important;
+  border-left: 6px solid #89f5a2 !important;
+  margin-left: 0 !important;
+}
 .tabbed-pane-content .resizer-widget,
 .tabbed-pane-content button.status-bar-item.left-sidebar-show-hide-button,
 .tabbed-pane-content button.status-bar-item.right-sidebar-show-hide-button {
   top: 0 !important;
 }
 .tabbed-pane-content not(.overrides-view) .tabbed-pane-header {
-  flex: 0 0 24px !important;
+  flex: 0 0 25px !important;
 }
 .tabbed-pane-content not(.overrides-view) .tabbed-pane-header .tabbed-pane-header-tab {
-  height: 24px !important;
-  line-height: 18px !important;
+  height: 25px !important;
+  line-height: 18.75px !important;
   cursor: pointer !important;
 }
 /*-- MAIN TOOLBAR --*/
@@ -752,7 +801,6 @@ span.cm-token-highlight:before {
   padding-top: 6px !important;
   border-bottom: 1px solid #1d1d1d !important;
   box-shadow: inset 0 1px 0 #626262 !important;
-  background: -webkit-linear-gradient(#505050, #363636) !important;
 }
 #network-views .network-item-view .tabbed-pane-header {
   padding-top: 0 !important;
@@ -878,11 +926,16 @@ span.cm-token-highlight:before {
   border-top: 1px solid #222 !important;
   color: #ccc !important;
 }
+.search-drawer-header label.search-config-label,
+.drawer .settings-tab label {
+  text-shadow: none !important;
+  color: #bbb !important;
+}
 /**********************************************/
 /* Find Module  [ctrl+shift+F / cmd+shift+F]
 /**********************************************/
 .search-status-bar-summary {
-  background: linear-gradient(tb-topColor, tb-bottomColor) !important;
+  background: linear-gradient(#505050, #363636) !important;
   border-top: 1px solid #6e6e6e !important;
 }
 .search-drawer-header .search-config-search {
@@ -890,9 +943,6 @@ span.cm-token-highlight:before {
 }
 .search-drawer-header input[type="checkbox"].search-config-checkbox {
   vertical-align: middle !important;
-}
-.search-drawer-header label.search-config-label {
-  color: #bbb !important;
 }
 .drawer-header {
   border-right: 1px solid #555 !important;
@@ -1060,6 +1110,9 @@ span.cm-token-highlight:before {
   background: -webkit-linear-gradient(#505050, #383838) !important;
   box-shadow: inset 0 1px 0 #585858, inset 0 -1px 0 #484848;
   border-bottom: none !important;
+}
+.console-filters-header {
+  background-color: #2f2f2f !important;
 }
 #console-prompt {
   color: #f1f1f1 !important;
@@ -1525,42 +1578,6 @@ tr.selected .network-cell-subtitle {
 .settings-dialog .file-mappings-list .settings-list-item:first-child {
   border-top: none !important;
 }
-/***************************************************
-/* Dialog Box [Help]
-****************************************************/
-#glass-pane {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
-.settings-dialog {
-  border: 1px solid #444 !important;
-  background-color: #333 !important;
-  border-radius: 4px !important;
-}
-.dialog-contents .header {
-  color: #ccc !important;
-}
-.dialog-contents .block-header {
-  color: #89f5a2 !important;
-}
-.settings-dialog .settings-list-container {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.settings-dialog .settings-list {
-  border: 1px solid #484848 !important;
-  border-top: 2px solid #282828 !important;
-  border-bottom: 1px solid #585858 !important;
-  border-radius: 2px !important;
-}
-.settings-dialog .settings-list-item,
-.settings-dialog .settings-list-item:hover {
-  background-color: #444 !important;
-  border-top: 1px solid #4e4e4e !important;
-  border-bottom: none !important;
-  color: #ccc!important;
-}
-.settings-dialog .file-mappings-list .settings-list-item:first-child {
-  border-top: none !important;
-}
 /**********************************************
 /* Sources Tab
 /**********************************************/
@@ -1693,6 +1710,16 @@ tr.selected .network-cell-subtitle {
 .webkit-highlighted-line {
   background-color: #89F5A2 !important;
 }
+.alternate-status-bar-buttons-bar .scripts-pause,
+.alternate-status-bar-buttons-bar .scripts-long-resume,
+.alternate-status-bar-buttons-bar .status-bar-item {
+  background-color: #333 !important;
+  border: 1px solid #222 !important;
+}
+.alternate-status-bar-buttons-bar .status-bar-item.emulate-active {
+  background-color: #444 !important;
+  border: 1px solid #333 !important;
+}
 .properties-tree li,
 .outline-disclosure li::before,
 .properties-tree li.parent {
@@ -1792,6 +1819,7 @@ tr.selected .network-cell-subtitle {
 .panel.resources .base-storage-tree-element-subtitle,
 .panel.sources .base-navigator-tree-element-title {
   color: #999 !important;
+  top: 2px !important;
 }
 /*-- currently selected element --*/
 .panel.resources .selected .base-storage-tree-element-title,
@@ -1810,6 +1838,7 @@ tr.selected .network-cell-subtitle {
 .panel.sources .outline-disclosure li:hover:not(.selected) .selection {
   display: block !important;
   background: #333 !important;
+  margin-top: 2px !important;
 }
 .panel.resources .outline-disclosure ol:focus li.selected .selection,
 .panel.sources .outline-disclosure ol:focus li.selected .selection {
@@ -1863,10 +1892,9 @@ select.status-bar-item:hover {
 #bottom-status-bar-container .type,
 #bottom-status-bar-container .timeline-records-stats,
 .drawer-header span,
-.status-bar-item .search-drawer-header,
-.status-bar-item .search-config-label,
 .source-frame-cursor-position,
 .search-status-bar-message,
+.search-status-bar-summary span,
 .search-results-status-bar-message {
   text-shadow: none !important;
   color: #bbb !important;
@@ -1875,7 +1903,9 @@ select.status-bar-item:hover {
 button.scripts-step-over .glyph,
 button.scripts-step-into .glyph,
 button.scripts-step-out .glyph,
+.filters-toggle.toggled-active .glyph,
 button.status-bar-item.toggled-on .glyph,
+button.status-bar-item.toggled-on .glyph:not(.shadow),
 button.clear-status-bar-item:active .glyph,
 button.garbage-collect-status-bar-item:active .glyph,
 button.glue-async-status-bar-item:active .glyph,
@@ -1903,6 +1933,13 @@ button.scripts-step-out:disabled .glyph {
   text-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
   color: #ccc !important;
 }
+.filter-bitset-filter li:hover {
+  background: #3c3c3c !important;
+}
+.network-filters-header,
+.console-filters-header {
+  background: #2f2f2f;
+}
 /*separator between all | rest of options*/
 .filter-bitset-filter-divider {
   background-color: rgba(128, 128, 128, 0.6);
@@ -1910,9 +1947,8 @@ button.scripts-step-out:disabled .glyph {
 /*filter options in console/network panel*/
 .filter-bitset-filter li.selected {
   color: #eee !important;
-  background: #444 !important;
+  background: #484848 !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important;
-  border-bottom: 1px solid #555 !important;
 }
 .filter-bitset-filter .selected.error {
   background: #951e15 !important;
@@ -1920,14 +1956,22 @@ button.scripts-step-out:disabled .glyph {
 .filter-bitset-filter .selected.warning {
   background: #9D8500 !important;
 }
-.filter-bitset-filter .selected.log {
-  background: #89f5a2 !important;
+.filter-bitset-filter .selected.info {
+  background: #49a6d2 !important;
 }
 .filter-bitset-filter .selected.log {
   background: #8b6ccf !important;
 }
 .filter-bitset-filter .selected.debug {
-  background: #49a6d2 !important;
+  background: #CF7634 !important;
+}
+.checkbox-filter-checkbox,
+.checkbox-filter-checkbox-check,
+.filter-checkbox-filter .type {
+  color: #cccccc !important;
+}
+.checkbox-filter-checkbox {
+  background: #fff !important;
 }
 .timeline .panel-status-bar {
   color: #ccc !important;
