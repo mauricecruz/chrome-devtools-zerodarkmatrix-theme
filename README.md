@@ -51,6 +51,13 @@ powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https:/
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
 
+##### Fedora:
+ 
+ ```
+curl -o ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
+ ```
+ 
+
 ## Code Highlighting
 
 All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
