@@ -1710,12 +1710,12 @@ tr.selected .network-cell-subtitle {
 .alternate-status-bar-buttons-bar .scripts-pause,
 .alternate-status-bar-buttons-bar .scripts-long-resume,
 .alternate-status-bar-buttons-bar .status-bar-item {
-  background-color: #333 !important;
-  border: 1px solid #222 !important;
-}
-.alternate-status-bar-buttons-bar .status-bar-item.emulate-active {
   background-color: #444 !important;
   border: 1px solid #333 !important;
+}
+.alternate-status-bar-buttons-bar .status-bar-item.emulate-active {
+  background-color: #333 !important;
+  border: 1px solid #222 !important;
 }
 .properties-tree li,
 .outline-disclosure li::before,
