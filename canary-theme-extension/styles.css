@@ -1545,9 +1545,6 @@ tr.selected .network-cell-subtitle {
 /***************************************************
 /* Dialog Box [Help]
 ****************************************************/
-#glass-pane {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
 .settings-dialog {
   border: 1px solid #444 !important;
   background-color: #333 !important;
