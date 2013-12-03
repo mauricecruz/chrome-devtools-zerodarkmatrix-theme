@@ -2,70 +2,54 @@
 
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
-**Custom.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **33.0.1706.0 canary**
+**canary-theme-extension/styles.css**
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **33.0.1726.0 canary**
 
 **Custom-Stable.css**
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **31.0.1650.57 m**
 
 ## About Chrome Canary
-As of v.**33.0.1706.0**, Chrome Canary no longer supports custom stylesheets in the User Stylesheets directory.
+As of Version v. **33.0.1726.0**, themes only work via extensions and the developer tools experiments.
 
-@darcyclarke [filed an issue to restore this functionality](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  Feel free to voice your opinions there.
-
-As of Version 33.0.1726.0 canary you can add themes via extensions and the developer tools experiments.
-* Open chrome://flags and Enable Developer Tools experiments.
-* Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
-* Open the Chrome Extensions, select 'Developer mode', and load the theme folder as an unpacked extension.
+There is a [thread detailing how this method came about.](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  Feel free to voice your opinions there.
 
 
 ## Installation Instructions
+
+### Chrome Canary 
+* Open chrome://flags and Enable Developer Tools experiments.
+* Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
+* Open the Chrome Extensions, select 'Developer mode', and load the `canary-theme-extension` folder as an unpacked extension.
+
+
+### Chrome Stable
 There are two installation methods:
 
-##### Rakefile
+#### Rakefile
 Requires you to have Ruby and Rake installed.  Clone this repo and run rake.
 
-This will install the theme on all profiles for both Stable & Canary.  It will backup any existing one to `Custom-backup.css` prior to overwriting.
+This will install the theme on all profiles.  It will backup any existing one to `Custom-backup.css` prior to overwriting.
 
-##### Copy/Paste
+#### Copy/Paste
 Pick from the snippets below.
 
-### Mac
-Canary
-```
-curl -o ~/Library/Application\ Support/Google/Chrome\ Canary/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
-```
-Stable
+##### Mac
+
 ```
 curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
 ```
 
-### PC (Windows Vista / 7 / 8)
-Canary
-```
-powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\..\Local\Google\Chrome SxS\User Data\Default\User StyleSheets\Custom.css""")}"
-```
-Stable
+##### PC (Windows Vista / 7 / 8)
+
 ```
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
 
-### PC (Windows XP)
-Canary
-```
-powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\Google\Chrome SxS\User Data\Default\User StyleSheets\Custom.css""")}"
-```
-Stable
+##### PC (Windows XP)
+
 ```
 powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
-
-### Ubuntu: (Chromium)
-
-```
-curl -o ~/.config/chromium/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
-```
-
 
 ## Code Highlighting
 
@@ -120,16 +104,7 @@ Animations may cause performance issues depending on the power of your machine. 
 [css-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-css-highlight.png?raw=true "CSS-Highlight"
 [js-highlighting]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/codekit-js-highlight.png?raw=true "JS-Highlight"
 [console]: https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/blob/master/images/console.png?raw=true "Console"
-[livestyle]: https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/extensions/LiveStyle/preview.png "LiveStyle"
 [readability]: https://f.cloud.github.com/assets/1640686/904010/be9d14b4-fbb9-11e2-8de0-1e846a533d31.png "readability"
-
-
-## Styles for Extensions
-Some extensions don't display well with this theme so I modified the css to improve the presentation.  Copy the css file into its respective extension folder.
-
-#### [Livestyle] (http://livestyle.emmet.io/)
-![livestyle]
-
 
 ## Features
 * Majority of inspector chrome re-styled
