@@ -16,7 +16,7 @@ As of v.**33.0.1706.0**, Chrome Canary no longer supports custom stylesheets in 
 As of Version 33.0.1726.0 canary you can add themes via extensions and the developer tools experiments.
 * Open chrome://flags and Enable Developer Tools experiments.
 * Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
-* Open the Chrome Extensions and load the theme folder as an unpacked extension.
+* Open the Chrome Extensions, select 'Developer mode', and load the theme folder as an unpacked extension.
 
 
 ## Installation Instructions
