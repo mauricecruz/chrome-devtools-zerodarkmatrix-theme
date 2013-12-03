@@ -30,49 +30,41 @@ end
 
 desc "Installs the Chrome Developer Tools custom theme file"
 task :install, :backup do |t, args|
-  args.with_defaults(:backup => nil)  
+  args.with_defaults(:backup => nil)
   home_dir = File.expand_path('~')
   chrome_dirs = []
   stable_filename = "Custom-Stable.css"
-  canary_filename = "Custom.css"
   backup_filename = "Custom-old.css"
 
   if OS.mac?
     chrome_dirs.push File.join(home_dir, "Library", "Application Support", "Google", "Chrome")
-    chrome_dirs.push File.join(home_dir, "Library", "Application Support", "Google", "Chrome Canary")
   elsif OS.win?
     chrome_dirs.push File.join(home_dir, "AppData", "Local", "Google", "Chrome", "User Data")
-    chrome_dirs.push File.join(home_dir, "AppData", "Local", "Google", "Chrome SxS", "User Data")
   else
     puts "Unsuported OS..."
   end
-  
-  chrome_dirs.each { |chrome_dir|    
+
+  chrome_dirs.each { |chrome_dir|
 
     if File.exist?(chrome_dir)
-      
+
       Dir.glob(File.join(chrome_dir, "*", "")).each { |profile_dir|
-        
+
         profile_name = File.basename(profile_dir)
-        if profile_name =~ /(Default|Profile [0-9]+)/             
-          if chrome_dir =~ /SxS|Canary/i              
-              theme = canary_filename
-              version = "Chrome Canary"
-          else
-              theme = stable_filename              
-              version = "Chrome Stable"
-          end
+        if profile_name =~ /(Default|Profile [0-9]+)/
+          theme = stable_filename
+          version = "Chrome Stable"
           puts ""
           puts "Found [#{version}] #{profile_name}","-----------------------------"
           css_new = File.join(File.dirname(__FILE__), theme)
-          css_old = File.join(profile_dir, "User StyleSheets", "Custom.css")                                      
-          if File.exist?(css_old)            
+          css_old = File.join(profile_dir, "User StyleSheets", "Custom.css")
+          if File.exist?(css_old)
             css_backup = File.join(profile_dir, "User StyleSheets", backup_filename)
             puts "Creating backup..."
             FileUtils.cp css_old, css_backup
           end
           puts "Copying theme..."
-          FileUtils.cp css_new, css_old         
+          FileUtils.cp css_new, css_old
         end
       }
 
