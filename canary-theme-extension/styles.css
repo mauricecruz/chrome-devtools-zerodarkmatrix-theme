@@ -2052,30 +2052,38 @@ button.scripts-step-out:disabled .glyph {
 .split-view-sidebar-right {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #333333), color-stop(100%, #252525)) !important;
 }
-#tab-elements {
-  width: 65px !important;
+#tab-elements,
+#tab-network,
+#tab-sources,
+#tab-timeline,
+#tab-profiles,
+#tab-resources,
+#tab-audits,
+#tab-console,
+#tab-layers {
+  width: inherit !important;
 }
-#tab-network {
-  width: 62px !important;
-}
-#tab-sources {
-  width: 58px !important;
-}
-#tab-timeline {
-  width: 63px !important;
-}
-#tab-profiles {
-  width: 56px !important;
-}
-#tab-resources {
-  width: 70px !important;
-}
-#tab-audits {
-  width: 51px !important;
-}
-#tab-console {
+.platform-windows #tab-console {
   width: 60px !important;
 }
-#tab-layers {
-  width: 50px !important;
+.platform-windows #tab-search {
+  width: 53px !important;
+}
+.platform-windows #tab-emulation {
+  width: 72px !important;
+}
+.platform-windows #tab-rendering {
+  width: 72px !important;
+}
+.platform-mac #tab-console {
+  width: 65px !important;
+}
+.platform-mac #tab-search {
+  width: 55px !important;
+}
+.platform-mac #tab-emulation {
+  width: 76px !important;
+}
+.platform-mac #tab-rendering {
+  width: 76px !important;
 }
