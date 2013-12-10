@@ -780,6 +780,13 @@ span.cm-token-highlight:before {
   line-height: 18.75px !important;
   cursor: pointer !important;
 }
+/*-- Override MAC Toolbar Background --*/
+body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
+body.undocked.platform-mac-mountain-lion .toolbar-background,
+body.platform-mac-mountain-lion.inactive .toolbar-background,
+body.platform-mac-mountain-lion .toolbar-background {
+  background-image: -webkit-linear-gradient(#505050, #363636) !important;
+}
 /*-- MAIN TOOLBAR --*/
 .toolbar {
   background: -webkit-linear-gradient(#505050, #363636) !important;
@@ -1111,9 +1118,6 @@ span.cm-token-highlight:before {
   background: -webkit-linear-gradient(#505050, #383838) !important;
   box-shadow: inset 0 1px 0 #585858, inset 0 -1px 0 #484848;
   border-bottom: none !important;
-}
-.console-filters-header {
-  background-color: #2f2f2f !important;
 }
 #console-prompt {
   color: #f1f1f1 !important;
@@ -1965,7 +1969,8 @@ button.scripts-step-out:disabled .glyph {
 }
 .checkbox-filter-checkbox,
 .checkbox-filter-checkbox-check,
-.filter-checkbox-filter .type {
+.filter-checkbox-filter .type,
+#text-filter-regex + label {
   color: #cccccc !important;
 }
 .checkbox-filter-checkbox {
