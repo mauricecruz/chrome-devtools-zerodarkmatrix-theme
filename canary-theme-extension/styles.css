@@ -1192,6 +1192,10 @@ body.platform-mac-mountain-lion .toolbar-background {
   background-color: #364c3b !important;
   outline: 1px solid #528156 !important;
 }
+.data-grid .data-container tr .editing * {
+  color: #FFF !important;
+  background-color: #222222 !important;
+}
 /**********************************************
 /* Network Tab (uses _tables.less for list of nodes)
 /**********************************************/
