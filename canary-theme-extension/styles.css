@@ -1409,6 +1409,10 @@ body.platform-mac-mountain-lion .toolbar-background {
 .database-user-query .error {
   color: #f66 !important;
 }
+/*-- FileSystem --*/
+.filesystem-directory-tree li {
+  color: #999;
+}
 /*************************************
  * Help/Settings Overlay
  *************************************/
