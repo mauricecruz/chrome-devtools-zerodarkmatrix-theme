@@ -975,41 +975,6 @@ body.platform-mac-mountain-lion .toolbar-background {
 .split-view.hbox > .split-view-sidebar.split-view-contents-first:not(.maximized) {
   border-right: 2px solid #272727 !important;
 }
-#tab-elements,
-#tab-network,
-#tab-sources,
-#tab-timeline,
-#tab-profiles,
-#tab-resources,
-#tab-audits,
-#tab-console,
-#tab-layers {
-  width: inherit !important;
-}
-.platform-windows #tab-console {
-  width: 60px !important;
-}
-.platform-windows #tab-search {
-  width: 53px !important;
-}
-.platform-windows #tab-emulation {
-  width: 72px !important;
-}
-.platform-windows #tab-rendering {
-  width: 72px !important;
-}
-.platform-mac #tab-console {
-  width: 65px !important;
-}
-.platform-mac #tab-search {
-  width: 55px !important;
-}
-.platform-mac #tab-emulation {
-  width: 76px !important;
-}
-.platform-mac #tab-rendering {
-  width: 76px !important;
-}
 /**********************************************/
 /* Navigation Arrows
 /**********************************************/
@@ -1723,6 +1688,10 @@ body.inactive .sidebar-tree-item.selected,
 }
 .database-user-query .error {
   color: #f66 !important;
+}
+/*-- FileSystem --*/
+.filesystem-directory-tree li {
+  color: #999;
 }
 /*************************************
  * Help/Settings Overlay
