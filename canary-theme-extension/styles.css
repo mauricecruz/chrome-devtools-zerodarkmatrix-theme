@@ -932,7 +932,8 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
 body.undocked.platform-mac-mountain-lion .toolbar-background,
 body.platform-mac-mountain-lion.inactive .toolbar-background,
-body.platform-mac-mountain-lion .toolbar-background {
+body.platform-mac-mountain-lion .toolbar-background,
+body:not(.undocked) .toolbar-background {
   background-image: -webkit-linear-gradient(#505050, #363636) !important;
 }
 .toolbar {
