@@ -722,6 +722,9 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .cm-xml-link {
   color: #e3b959 !important;
 }
+.shadow-root .webkit-html-fragment.shadow-root {
+  color: #ddbb00 !important;
+}
 /*--GLOBAL--*/
 .CodeMirror-code {
   color: #cccccc;
@@ -1998,6 +2001,22 @@ body.inactive .sidebar-tree-item.selected,
   color: #111 !important;
   border-radius: 2px !important;
   padding: 2px !important;
+}
+.CodeMirror-linewidget {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6) !important;
+}
+.CodeMirror-linewidget .source-frame-breakpoint-condition {
+  border: 1px solid #6f6f6f !important;
+  border-radius: 4px !important;
+  background-image: -webkit-linear-gradient(#505050, #363636) !important;
+}
+.CodeMirror-linewidget .source-frame-breakpoint-message {
+  color: #89f5a2 !important;
+}
+.CodeMirror-linewidget #source-frame-breakpoint-condition {
+  background-color: #222222 !important;
+  border: none !important;
+  height: 22px !important;
 }
 /************************************************
 /* Status bar
