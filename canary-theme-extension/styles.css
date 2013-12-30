@@ -1158,6 +1158,9 @@ body:not(.undocked) .toolbar-background {
   background-color: #484848 !important;
   border-top: none !important;
 }
+.search-results-matches {
+  color: #666 !important;
+}
 .search-match-content {
   color: #A3A3A3 !important;
 }
@@ -2093,7 +2096,8 @@ button.scripts-step-out:disabled .glyph {
   background: #3c3c3c !important;
 }
 .network-filters-header,
-.console-filters-header {
+.console-filters-header,
+.timeline-filters-header {
   background: #2f2f2f;
 }
 /*separator between all | rest of options*/
