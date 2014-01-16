@@ -529,44 +529,6 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .sidebar-pane .section:first-child {
   border-top: none !important;
 }
-/**********************************************
-/* Element Highlighter
-/**********************************************/
-#elements-content .CodeMirror {
-  outline: none !important;
-}
-.panel.elements .editing {
-  background-color: #222222 !important;
-  outline: 1px solid #89f5a2 !important;
-  color: #cccccc !important;
-}
-.panel.elements .outline-disclosure ol:focus li.selected .selection,
-.panel.elements .outline-disclosure li.selected .selection {
-  outline: 1px solid #56795e !important;
-  background-color: #364c3b !important;
-}
-.panel.elements .outline-disclosure li.hovered:not(.selected) .selection {
-  border-radius: 0 !important;
-  background-color: #2f2f2f !important;
-  border-top: 1px solid #484848 !important;
-  border-bottom: 1px solid #484848 !important;
-}
-.panel.elements .parent.selected.expanded + .children,
-.panel.elements .parent.hovered.expanded + .children {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding-bottom: 5px !important;
-  box-shadow: inset 0 0 30px 0 #080808;
-  border-bottom: 1px solid #3c3c3c !important;
-}
-.panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
-.panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
-  color: #a6371a !important;
-}
-.panel.elements .parent.selected.expanded + .children > :last-child *,
-.panel.elements .parent.hovered.expanded + .children > :last-child * {
-  opacity: .6;
-}
 .cm-js-atom {
   color: #89f5a2 !important;
 }
@@ -723,6 +685,9 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   color: #e3b959 !important;
 }
 .shadow-root .webkit-html-fragment.shadow-root {
+  color: #ddbb00 !important;
+}
+.outline-disclosure ol li .highlight {
   color: #ddbb00 !important;
 }
 /*--GLOBAL--*/
@@ -1082,6 +1047,14 @@ body:not(.undocked) .toolbar-background {
 }
 #search-results-pane-file-based .parent.expanded::before {
   -webkit-mask-position: -20px -96px !important;
+}
+#drawer-contents .search-match-line-number,
+.webkit-line-number {
+  background: #2a2a2a !important;
+  border-right: 1px solid #3c3c3c !important;
+  padding: 1px 5px 1px 0 !important;
+  display: inline-block;
+  color: #999 !important;
 }
 .search-drawer-header label.search-config-label,
 .drawer .settings-tab label,
@@ -1600,15 +1573,24 @@ body:not(.undocked) .toolbar-background {
   border-bottom: 1px solid #7b7b7b !important;
 }
 .timeline-utilization-strip .timeline-graph-bar {
-  border-color: #555555 !important;
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(200, 200, 200, 0.3) !important;
+  background-color: rgba(200, 200, 200, 0.2) !important;
 }
 #timeline-overview-panel {
   border-bottom: 1px solid #505050 !important;
 }
-.resources-divider,
-.resources-event-divider {
+.resources-divider {
   background-color: #2a2a2a !important;
+}
+.panel:not(.network) .resources-dividers-label-bar {
+  background: transparent !important;
+  border-bottom: 1px solid #1d1d1d !important;
+}
+.panel:not(.network) #timeline-grid-header .resources-dividers-label-bar {
+  background: -webkit-linear-gradient(#505050, #363636) !important;
+}
+.overview-grid-dividers-background {
+  background-color: red !important;
 }
 #timeline-overview-container {
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -1648,20 +1630,57 @@ body:not(.undocked) .toolbar-background {
   color: #cccccc !important;
 }
 /**********************************************
+/* Element Highlighter
+/**********************************************/
+#elements-content .CodeMirror {
+  outline: none !important;
+}
+.panel.elements .editing {
+  background-color: #222222 !important;
+  outline: 1px solid #89f5a2 !important;
+  color: #cccccc !important;
+}
+.panel.elements .outline-disclosure ol:focus li.selected .selection,
+.panel.elements .outline-disclosure li.selected .selection {
+  outline: 1px solid #56795e !important;
+  background-color: #364c3b !important;
+}
+.panel.elements .outline-disclosure li.hovered:not(.selected) .selection {
+  border-radius: 0 !important;
+  background-color: #2f2f2f !important;
+  border-top: 1px solid #484848 !important;
+  border-bottom: 1px solid #484848 !important;
+}
+.panel.elements .parent.selected.expanded + .children,
+.panel.elements .parent.hovered.expanded + .children {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 5px !important;
+  box-shadow: inset 0 0 30px 0 #080808;
+  border-bottom: 1px solid #3c3c3c !important;
+}
+.panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
+.panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
+  color: #a6371a !important;
+}
+.panel.elements .parent.selected.expanded + .children > :last-child *,
+.panel.elements .parent.hovered.expanded + .children > :last-child * {
+  opacity: .6;
+}
+/**********************************************
 /* Profilers
 /**********************************************/
-#profile-views .data-grid td > div {
-  color: #aaa !important;
+#profile-views .data-grid td > div,
+.profile-launcher-view label,
+.retainers-view-header,
+.profile-launcher-view-tree-item,
+.sidebar-tree-section,
+.resources-divider-label,
+.panel:not(.timeline) .sidebar-tree-item {
+  color: #cccccc !important;
 }
 #profile-views .data-grid button {
-  color: #333 !important;
-}
-.profile-launcher-view label {
-  color: #cccccc;
-}
-.resources-dividers-label-bar {
-  background: -webkit-linear-gradient(#505050, #363636) !important;
-  border-bottom: 1px solid #1d1d1d !important;
+  color: #d9d9d9 !important;
 }
 .heap-snapshot-view tr:not(.selected) td.object-column span.highlight {
   background-color: #364c3b !important;
@@ -1674,15 +1693,6 @@ body:not(.undocked) .toolbar-background {
   background: -webkit-linear-gradient(#505050, #363636) !important;
   box-shadow: inset 0 1px 0 #626262;
   border-top: none !important;
-}
-.retainers-view-header {
-  color: #cccccc !important;
-}
-.profile-launcher-view-tree-item,
-.sidebar-tree-section,
-.resources-divider-label,
-.panel:not(.timeline) .sidebar-tree-item {
-  color: #cccccc !important;
 }
 body.inactive .sidebar-tree-item.selected,
 :focus .sidebar-tree-item.selected,
@@ -1744,27 +1754,27 @@ body.inactive .sidebar-tree-item.selected,
  *************************************/
 .settings-tab .help-section-title,
 .settings-tab-container .help-section-title {
-  color: #89F5A2 !important;
+  color: #89f5a2 !important;
 }
 .help-window-main,
 .help-window-main label:hover,
 .settings-tab .help-block label,
 .settings-tab .help-block label:hover,
 .settings-tab .help-block td {
-  color: #bbb !important;
+  color: #cccccc !important;
 }
 .settings-tab select,
 .help-window-main .help-block select,
 .help-content option,
 .settings-tab input {
-  color: #111 !important;
+  color: #111111 !important;
 }
 .help-window-main .help-block select:disabled,
 .settings-tab select:disabled,
 .settings-tab input:disabled {
-  background-color: #888 !important;
-  border-color: #aaa !important;
-  color: #555 !important;
+  background-color: #888888 !important;
+  border-color: #bbbbbb !important;
+  color: #bbbbbb !important;
 }
 .settings-tab-container .help-key-cell .help-key {
   color: #111 !important;
@@ -1780,9 +1790,9 @@ body.inactive .sidebar-tree-item.selected,
 }
 .help-window-main .settings-list-item,
 .help-window-main .settings-list-item:hover {
-  background-color: #333 !important;
-  border-top: 1px solid #484848 !important;
-  border-bottom: 1px solid #282828 !important;
+  background-color: #2f2f2f !important;
+  border-top: 1px solid #626262 !important;
+  border-bottom: 1px solid #1d1d1d !important;
 }
 .help-window-main .settings-list-item.selected {
   background-color: rgba(150, 255, 150, 0.2) !important;
@@ -1797,7 +1807,7 @@ body.inactive .sidebar-tree-item.selected,
   color: #89f5a2 !important;
 }
 .help-window-main .file-system-path {
-  color: #ccc !important;
+  color: #cccccc !important;
 }
 .help-window-main .file-system-path-name {
   color: #89f5a2 !important;
@@ -1945,13 +1955,6 @@ body.inactive .sidebar-tree-item.selected,
 }
 .pane-title-button.element-state {
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneElementStateButtons.png) !important;
-}
-#drawer-contents .search-match-line-number {
-  background: #2a2a2a !important;
-  border-right: 1px solid #3c3c3c !important;
-  padding: 1px 5px 1px 0 !important;
-  display: inline-block;
-  color: #999 !important;
 }
 /* Highlight in Scripts  */
 .webkit-highlighted-line.webkit-line-content {
