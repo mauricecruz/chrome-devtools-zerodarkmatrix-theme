@@ -1,0 +1,21 @@
+{
+  "name": "chrome-devtools-zerodarkmatrix-theme",
+  "version": "0.0.0",
+  "description": "A highly customized dark theme for Google Chrome",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme.git"
+  },
+  "author": "Maurice Cruz",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt-contrib-less": "~0.8.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1"
+  }
+}
