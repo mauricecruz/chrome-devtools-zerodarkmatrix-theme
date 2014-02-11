@@ -2,13 +2,7 @@
 /* Zero-Dark-Matrix
 /* Optimized for Chrome Canary Channel v34
 /* https://github.com/mauricecruz/zero-base-themes
-/*************************************************************************/
-/**********************************************
-/* Animations
-/* -------------------------------------------
-/* If you are experiencing performance issues,
-/* remove the animations section below.
-/**********************************************/
+/******************************************************************************/
 /*-- SOURCES PANEL --*/
 .panel.sources .split-view-vertical .split-view-contents {
   -webkit-transition: right 0.5s ease-in-out;
@@ -198,6 +192,28 @@
     -webkit-transform: scale(1);
   }
 }
+.panel.elements .parent.selected.expanded + .children,
+.panel.elements .parent.hovered.expanded + .children {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-bottom: 5px !important;
+  box-shadow: inset 0 0 30px 0 #080808;
+  border-bottom: 1px solid #3c3c3c !important;
+}
+.panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
+.panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
+  color: #a6371a !important;
+}
+.panel.elements .parent.selected.expanded + .children > :last-child *,
+.panel.elements .parent.hovered.expanded + .children > :last-child * {
+  opacity: .6;
+}
+/**********************************************
+/* Animations
+/* -------------------------------------------
+/* If you are experiencing performance issues,
+/* remove the animations section below.
+/**********************************************/
 /**********************************************
 /* Readability
 /* -------------------------------------------
@@ -620,6 +636,9 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   background: #9D1E15 !important;
   color: #f8f8f8 !important;
 }
+.cm-s-default .cm-property {
+  color: #cccccc !important;
+}
 /*--CSS--*/
 .cm-css-atom {
   color: #cccccc !important;
@@ -943,17 +962,6 @@ body:not(.undocked) .toolbar-background {
 }
 .split-view.hbox > .split-view-sidebar.split-view-contents-first:not(.maximized) {
   border-right: 2px solid #272727 !important;
-}
-#tab-elements,
-#tab-network,
-#tab-sources,
-#tab-timeline,
-#tab-profiles,
-#tab-resources,
-#tab-audits,
-#tab-console,
-#tab-layers {
-  width: inherit !important;
 }
 .platform-windows #tab-console {
   width: 60px !important;
@@ -1379,6 +1387,9 @@ body:not(.undocked) .toolbar-background {
 .network-log-grid.data-grid th {
   border-bottom: transparent !important;
 }
+.network.panel .panel-status-bar {
+  border-bottom: none !important;
+}
 /**********************************************/
 /* Elements/Network
 /**********************************************/
@@ -1651,22 +1662,9 @@ body:not(.undocked) .toolbar-background {
   border-top: 1px solid #484848 !important;
   border-bottom: 1px solid #484848 !important;
 }
-.panel.elements .parent.selected.expanded + .children,
-.panel.elements .parent.hovered.expanded + .children {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding-bottom: 5px !important;
-  box-shadow: inset 0 0 30px 0 #080808;
-  border-bottom: 1px solid #3c3c3c !important;
-}
-.panel.elements .parent.selected.expanded + .children > li .webkit-html-pseudo-element:first-child,
-.panel.elements .parent.hovered.expanded + .children > li .webkit-html-pseudo-element:first-child {
-  color: #a6371a !important;
-}
-.panel.elements .parent.selected.expanded + .children > :last-child *,
-.panel.elements .parent.hovered.expanded + .children > :last-child * {
-  opacity: .6;
-}
+/**********************************************
+/* Element Highlighter
+/**********************************************/
 /**********************************************
 /* Profilers
 /**********************************************/
@@ -1709,34 +1707,34 @@ body.inactive .sidebar-tree-item.selected,
 }
 /*-- RESOURCES CONTENT --*/
 .resource-view.image .title {
-  color: #ccc !important;
+  color: #cccccc !important;
 }
 .resource-view.image .infoList dt {
-  color: #666 !important;
+  color: #666666 !important;
   margin-bottom: 5px !important;
 }
 .resource-view.image .infoList dd {
-  color: #888 !important;
+  color: #808080 !important;
   margin-bottom: 5px !important;
 }
 /*-- WEB SQL --*/
 .database-query-prompt {
-  color: #eee !important;
+  color: #cccccc !important;
 }
 .database-user-query {
-  border-top: 1px solid #2a2a2a !important;
-  border-bottom: 1px solid #1e1e1e !important;
+  border-top: 1px solid #222222 !important;
+  border-bottom: 1px solid #080808 !important;
   padding-bottom: 10px !important;
 }
 .database-user-query + span {
   padding: 2px 0 !important;
-  border-top: 1px solid #2a2a2a !important;
-  border-bottom: 1px solid #1e1e1e !important;
+  border-top: 1px solid #222222 !important;
+  border-bottom: 1px solid #080808 !important;
   background-color: #252525 !important;
   width: 100% !important;
 }
 .database-user-query .database-query-text {
-  color: #aaa !important;
+  color: #aaaaaa !important;
   width: 100% !important;
   display: inline-block !important;
   margin-bottom: 5px;
@@ -1747,7 +1745,7 @@ body.inactive .sidebar-tree-item.selected,
   margin-top: -5px !important;
 }
 .database-user-query .error {
-  color: #f66 !important;
+  color: #ff6666 !important;
 }
 /*************************************
  * Help/Settings Overlay
@@ -1777,16 +1775,17 @@ body.inactive .sidebar-tree-item.selected,
   color: #bbbbbb !important;
 }
 .settings-tab-container .help-key-cell .help-key {
-  color: #111 !important;
+  color: #222222 !important;
 }
 .settings-tab-container .help-key-cell span {
-  color: #eee !important;
+  color: #eeeeee !important;
 }
 .help-window-main .settings-list-container {
-  background-color: rgba(0, 0, 0, 0) !important;
+  padding: 10px !important;
+  background-color: #222222 !important;
 }
 .help-window-main .settings-list {
-  border: 1px solid #444 !important;
+  border: 1px solid #444444 !important;
 }
 .help-window-main .settings-list-item,
 .help-window-main .settings-list-item:hover {
@@ -1816,31 +1815,29 @@ body.inactive .sidebar-tree-item.selected,
 /* Dialog Box [Help]
 ****************************************************/
 .settings-dialog {
-  border: 1px solid #444 !important;
-  background-color: #333 !important;
+  border: 1px solid #444444 !important;
+  background-color: #222222 !important;
   border-radius: 4px !important;
 }
 .dialog-contents .header {
-  color: #ccc !important;
+  color: #eeeeee !important;
 }
 .dialog-contents .block-header {
   color: #89f5a2 !important;
 }
 .settings-dialog .settings-list-container {
-  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: #444444 !important;
 }
 .settings-dialog .settings-list {
-  border: 1px solid #484848 !important;
-  border-top: 2px solid #282828 !important;
-  border-bottom: 1px solid #585858 !important;
+  border-color: #444444 !important;
   border-radius: 2px !important;
 }
 .settings-dialog .settings-list-item,
 .settings-dialog .settings-list-item:hover {
-  background-color: #444 !important;
-  border-top: 1px solid #4e4e4e !important;
+  background-color: #444444 !important;
+  border-top: 1px solid #444444 !important;
   border-bottom: none !important;
-  color: #ccc!important;
+  color: #eeeeee !important;
 }
 .settings-dialog .file-mappings-list .settings-list-item:first-child {
   border-top: none !important;
@@ -1850,7 +1847,7 @@ body.inactive .sidebar-tree-item.selected,
 /**********************************************/
 /*placeholder text when no file is open*/
 .tabbed-pane-placeholder {
-  text-shadow: 0 1px 0 #000 !important;
+  text-shadow: 0 1px 0 #121212 !important;
   color: #999 !important;
 }
 /*-- Save Problem Overlay --*/
@@ -1961,7 +1958,7 @@ body.inactive .sidebar-tree-item.selected,
   border-radius: 2px;
 }
 .webkit-highlighted-line.webkit-line-content * {
-  color: #000 !important;
+  color: #121212 !important;
 }
 /*exception icon state colors */
 .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph {
@@ -1998,7 +1995,8 @@ body.inactive .sidebar-tree-item.selected,
   border-top: none !important;
   overflow: none !important;
 }
-#scripts-debug-toolbar {
+#scripts-debug-toolbar,
+.scripts-debug-toolbar {
   background: -webkit-linear-gradient(#505050, #363636) !important;
   border-bottom: 1px solid #1d1d1d !important;
   box-shadow: inset 0 1px 0 #626262;
@@ -2248,4 +2246,15 @@ label.checkbox,
 }
 .split-view-sidebar-right {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #333333), color-stop(100%, #252525)) !important;
+}
+#tab-elements,
+#tab-network,
+#tab-sources,
+#tab-timeline,
+#tab-profiles,
+#tab-resources,
+#tab-audits,
+#tab-console,
+#tab-layers {
+  width: inherit !important;
 }
