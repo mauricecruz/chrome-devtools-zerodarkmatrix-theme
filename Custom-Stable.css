@@ -231,9 +231,7 @@
   color: #000 !important;
   font-weight: 700 !important;
 }
-#-blink-dev-tools .scroll-target {
-  -webkit-transform: translateZ(0);
-}
+
 #-blink-dev-tools #console-messages,
 #-blink-dev-tools #console-view,
 #-blink-dev-tools #network-views .CodeMirror-lines,

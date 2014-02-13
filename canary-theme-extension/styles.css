@@ -255,9 +255,6 @@
   color: #000 !important;
   font-weight: 700 !important;
 }
-.scroll-target {
-  -webkit-transform: translateZ(0);
-}
 #console-messages,
 #console-view,
 #network-views .CodeMirror-lines,
