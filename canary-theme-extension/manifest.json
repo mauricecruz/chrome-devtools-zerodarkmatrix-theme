@@ -1,7 +1,13 @@
 {
-  "name": "chrome-devtools-zerodarkmatrix-theme",
-  "version": "0.0.1",
-  "description": "Enable DevTools experiments in about:flags, toggle \"Allow UI themes\" experiment.",
-  "devtools_page": "devtools.html",
-  "manifest_version": 2
+	"name": "DevTools Theme: Zero Dark Matrix",
+	"version": "1.0.0",
+	"description": "A highly customized dark theme for Devtools. Enable DevTools experiments in about:flags, toggle \"Allow UI themes\" experiment.",
+	"devtools_page": "devtools.html",
+	"homepage_url": "https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme",
+	"manifest_version": 2,
+	"icons": {
+		"16": "images/icon16.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	}
 }
