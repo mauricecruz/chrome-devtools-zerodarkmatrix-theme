@@ -32,12 +32,6 @@
 #-blink-dev-tools #network-views {
   -webkit-animation: bounceInRight 0.5s ease-in-out;
 }
-#-blink-dev-tools #search-results-pane-file-based .search-match .highlighted-match,
-#-blink-dev-tools .webkit-search-result,
-#-blink-dev-tools .webkit-highlighted-line.webkit-line-content,
-#-blink-dev-tools .CodeMirror .cm-line-with-selection span.cm-column-with-selection {
-  -webkit-animation: match-animation 0.5s ease-in-out;
-}
 #-blink-dev-tools .styles-section .properties .overloaded,
 #-blink-dev-tools .styles-section .properties .inactive,
 #-blink-dev-tools .styles-section .properties .disabled,
@@ -185,6 +179,9 @@
     -webkit-transform: scale(1);
   }
 }
+#-blink-dev-tools .panel.visible {
+  -webkit-transform: translatez(0);
+}
 #-blink-dev-tools .panel.elements .parent.selected.expanded + .children,
 #-blink-dev-tools .panel.elements .parent.hovered.expanded + .children {
   border-bottom-left-radius: 5px;
@@ -231,7 +228,6 @@
   color: #000 !important;
   font-weight: 700 !important;
 }
-
 #-blink-dev-tools #console-messages,
 #-blink-dev-tools #console-view,
 #-blink-dev-tools #network-views .CodeMirror-lines,
@@ -1076,6 +1072,7 @@
 }
 #-blink-dev-tools .search-match:hover {
   background-color: #2f2f2f !important;
+  box-shadow: inset 0 1px 0 0 #484848, inset 0 -1px 0 0 #484848;
 }
 #-blink-dev-tools .inspector-footer {
   background-color: #484848 !important;
@@ -1102,6 +1099,7 @@
 #-blink-dev-tools .data-grid th,
 #-blink-dev-tools .data-grid .data {
   background: none !important;
+  border-left: 1px solid #3c3c3c !important;
 }
 #-blink-dev-tools .data-grid .header {
   background-image: -webkit-linear-gradient(#505050, #363636);
@@ -1515,7 +1513,7 @@
   background-color: red !important;
 }
 #-blink-dev-tools #timeline-overview-container {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: #222222 !important;
 }
 #-blink-dev-tools #timeline-overview-container canvas {
   background-color: transparent !important;
@@ -1590,6 +1588,7 @@
   background: -webkit-linear-gradient(#505050, #363636) !important;
   box-shadow: inset 0 1px 0 #626262;
   border-top: none !important;
+  border-bottom: none !important;
 }
 #-blink-dev-tools body.inactive .sidebar-tree-item.selected,
 #-blink-dev-tools :focus .sidebar-tree-item.selected,
