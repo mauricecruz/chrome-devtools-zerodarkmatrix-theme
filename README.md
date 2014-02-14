@@ -1,3 +1,8 @@
+# NOTICE
+If you're using the **Canary**, [this theme is now hosted on the Web Store](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo).  Adding it from the web store will provide you with automatic updates.
+
+Detailed commit messages for this theme are on [zero base themes](https://github.com/mauricecruz/zero-base-themes).
+
 # ZeroDarkMatrix Theme for Chrome
 
 A highly customized dark theme for Google Chrome. There are 2 versions:
