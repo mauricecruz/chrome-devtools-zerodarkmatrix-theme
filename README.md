@@ -1,5 +1,5 @@
 # NOTICE
-If you're using **Canary**, [this theme is now hosted on the Web Store](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo).  Adding it from the web store will provide you with automatic updates.
+If you're using **Canary**, [this theme is now hosted on the Web Store](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo). Add it for automatic updates.
 
 Detailed commit messages for this theme are on [zero base themes](https://github.com/mauricecruz/zero-base-themes).
 
@@ -8,7 +8,7 @@ Detailed commit messages for this theme are on [zero base themes](https://github
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
 **canary-theme-extension/styles.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. **34.0.1787.2 canary**
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. ** 34.0.1839.0 canary**
 
 **Custom-Stable.css**
 Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **32.0.1700.76 m**
@@ -23,9 +23,9 @@ The Canary version is now built using [LESS](http://lesscss.org/) and is hosted 
 ## Installation Instructions
 
 ### Chrome Canary 
+* Add [Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo) from the Chrome Web Store.
 * Open chrome://flags and Enable Developer Tools experiments.
 * Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
-* Open the Chrome Extensions, select 'Developer mode', and load the `canary-theme-extension` folder as an unpacked extension.
 
 
 ### Chrome Stable
