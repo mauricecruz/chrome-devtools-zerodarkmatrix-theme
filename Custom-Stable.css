@@ -460,9 +460,33 @@
 #-blink-dev-tools .styles-section .properties .not-parsed-ok {
   opacity: .5 !important;
 }
+#-blink-dev-tools .sidebar-pane {
+  /*-- METRICS--*/
+}
 #-blink-dev-tools .sidebar-pane .body,
 #-blink-dev-tools .sidebar-pane .monospace {
   color: #cccccc !important;
+}
+#-blink-dev-tools .sidebar-pane .section.expanded > .header {
+  border-bottom: 1px solid #1d1d1d !important;
+}
+#-blink-dev-tools .sidebar-pane .section.expanded > .properties-tree {
+  background-color: #272727 !important;
+}
+#-blink-dev-tools .sidebar-pane .body .metrics {
+  color: #000 !important;
+  border-top: 1px solid #3c3c3c;
+}
+#-blink-dev-tools .sidebar-pane .body .metrics .position,
+#-blink-dev-tools .sidebar-pane .body .metrics .margin:not([style^=background-color]),
+#-blink-dev-tools .sidebar-pane .body .metrics .border:not([style^=background-color]),
+#-blink-dev-tools .sidebar-pane .body .metrics .padding:not([style^=background-color]),
+#-blink-dev-tools .sidebar-pane .body .metrics .margin:not([style^=background-color]),
+#-blink-dev-tools .sidebar-pane .body .metrics .content:not([style^=background-color]) {
+  background-color: #888 !important;
+}
+#-blink-dev-tools .sidebar-pane .section:first-child {
+  border-top: none !important;
 }
 #-blink-dev-tools .styles-section.first-styles-section,
 #-blink-dev-tools .sidebar-separator + .styles-section {
@@ -483,26 +507,11 @@
 #-blink-dev-tools .styles-element-state-pane.expanded {
   margin-top: 0 !important;
 }
-#-blink-dev-tools .sidebar-pane .body .metrics {
-  color: #000 !important;
-  border-top: 1px solid #3c3c3c;
-}
-#-blink-dev-tools .sidebar-pane .body .metrics .position,
-#-blink-dev-tools .sidebar-pane .body .metrics .margin:not([style^=background-color]),
-#-blink-dev-tools .sidebar-pane .body .metrics .border:not([style^=background-color]),
-#-blink-dev-tools .sidebar-pane .body .metrics .padding:not([style^=background-color]),
-#-blink-dev-tools .sidebar-pane .body .metrics .margin:not([style^=background-color]),
-#-blink-dev-tools .sidebar-pane .body .metrics .content:not([style^=background-color]) {
-  background-color: #888 !important;
-}
 #-blink-dev-tools .sidebar-pane-stack .event-category,
 #-blink-dev-tools .sidebar-pane .section {
   border-top: 1px solid #343434 !important;
   border-bottom: 1px solid #101010 !important;
   margin-top: 0 !important;
-}
-#-blink-dev-tools .sidebar-pane .section:first-child {
-  border-top: none !important;
 }
 #-blink-dev-tools .cm-js-atom {
   color: #89f5a2 !important;
@@ -864,6 +873,9 @@
 #-blink-dev-tools body.undocked.platform-mac-mountain-lion .toolbar-background,
 #-blink-dev-tools body.platform-mac-mountain-lion.inactive .toolbar-background,
 #-blink-dev-tools body.platform-mac-mountain-lion .toolbar-background,
+#-blink-dev-tools body.undocked.platform-mac.inactive .toolbar-background,
+#-blink-dev-tools body.undocked.platform-mac .toolbar-background,
+#-blink-dev-tools body.inactive .toolbar-background,
 #-blink-dev-tools body:not(.undocked) .toolbar-background {
   background-image: -webkit-linear-gradient(#505050, #363636) !important;
 }
@@ -1640,34 +1652,55 @@
 #-blink-dev-tools .database-user-query .error {
   color: #ff6666 !important;
 }
-#-blink-dev-tools .settings-tab .help-section-title,
-#-blink-dev-tools .settings-tab-container .help-section-title {
-  color: #89f5a2 !important;
+#-blink-dev-tools .help-window-main {
+  color: #cccccc !important;
+  /***************************************************
+  /* Workspaces Dialog Box
+  ****************************************************/
 }
-#-blink-dev-tools .help-window-main,
-#-blink-dev-tools .help-window-main label:hover,
-#-blink-dev-tools .settings-tab .help-block label,
-#-blink-dev-tools .settings-tab .help-block label:hover,
-#-blink-dev-tools .settings-tab .help-block td {
+#-blink-dev-tools .help-window-main .settings-tab-container header {
+  border-bottom: 1px solid #6f6f6f !important;
+}
+#-blink-dev-tools .help-window-main .help-footnote {
+  border-top: 1px solid #6f6f6f !important;
+}
+#-blink-dev-tools .help-window-main label,
+#-blink-dev-tools .help-window-main label:hover {
   color: #cccccc !important;
 }
-#-blink-dev-tools .settings-tab select,
-#-blink-dev-tools .help-window-main .help-block select,
-#-blink-dev-tools .help-content option,
-#-blink-dev-tools .settings-tab input {
-  color: #111111 !important;
+#-blink-dev-tools .help-window-main .tabbed-pane-header-tab.selected {
+  color: #89f5a2 !important;
 }
-#-blink-dev-tools .help-window-main .help-block select:disabled,
-#-blink-dev-tools .settings-tab select:disabled,
-#-blink-dev-tools .settings-tab input:disabled {
-  background-color: #888888 !important;
-  border-color: #bbbbbb !important;
-  color: #bbbbbb !important;
+#-blink-dev-tools .help-window-main .help-section-title {
+  color: #89f5a2 !important;
 }
-#-blink-dev-tools .settings-tab-container .help-key-cell .help-key {
+#-blink-dev-tools .help-window-main .help-block label,
+#-blink-dev-tools .help-window-main .help-block label:hover,
+#-blink-dev-tools .help-window-main .help-block td {
+  color: #cccccc !important;
+}
+#-blink-dev-tools .help-window-main select,
+#-blink-dev-tools .help-window-main input,
+#-blink-dev-tools .help-window-main option {
   color: #222222 !important;
 }
-#-blink-dev-tools .settings-tab-container .help-key-cell span {
+#-blink-dev-tools .help-window-main fieldset:disabled label {
+  color: #404040 !important;
+}
+#-blink-dev-tools .help-window-main select:disabled,
+#-blink-dev-tools .help-window-main input:disabled,
+#-blink-dev-tools .help-window-main .settings-tab-text-button:disabled {
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  background-color: #888888 !important;
+  border-color: #959595 !important;
+  color: #bbbbbb !important;
+}
+#-blink-dev-tools .help-window-main .help-key-cell .help-key {
+  color: #222222 !important;
+}
+#-blink-dev-tools .help-window-main .help-key-cell span {
   color: #eeeeee !important;
 }
 #-blink-dev-tools .help-window-main .settings-list-container {
@@ -1677,8 +1710,7 @@
 #-blink-dev-tools .help-window-main .settings-list {
   border: 1px solid #444444 !important;
 }
-#-blink-dev-tools .help-window-main .settings-list-item,
-#-blink-dev-tools .help-window-main .settings-list-item:hover {
+#-blink-dev-tools .help-window-main .settings-list-item {
   background-color: #2f2f2f !important;
   border-top: 1px solid #626262 !important;
   border-bottom: 1px solid #1d1d1d !important;
@@ -1692,9 +1724,6 @@
 #-blink-dev-tools .help-window-main .settings-list-item:last-child {
   border-bottom: none !important;
 }
-#-blink-dev-tools .dialog-contents .header {
-  color: #89f5a2 !important;
-}
 #-blink-dev-tools .help-window-main .file-system-path {
   color: #cccccc !important;
 }
@@ -1706,10 +1735,10 @@
   background-color: #222222 !important;
   border-radius: 4px !important;
 }
-#-blink-dev-tools .dialog-contents .header {
+#-blink-dev-tools .settings-dialog .dialog-contents .header {
   color: #eeeeee !important;
 }
-#-blink-dev-tools .dialog-contents .block-header {
+#-blink-dev-tools .settings-dialog .dialog-contents .block-header {
   color: #89f5a2 !important;
 }
 #-blink-dev-tools .settings-dialog .settings-list-container {
@@ -1719,8 +1748,7 @@
   border-color: #444444 !important;
   border-radius: 2px !important;
 }
-#-blink-dev-tools .settings-dialog .settings-list-item,
-#-blink-dev-tools .settings-dialog .settings-list-item:hover {
+#-blink-dev-tools .settings-dialog .settings-list-item {
   background-color: #444444 !important;
   border-top: 1px solid #444444 !important;
   border-bottom: none !important;
@@ -1731,17 +1759,26 @@
 }
 #-blink-dev-tools .tabbed-pane-placeholder {
   text-shadow: 0 1px 0 #121212 !important;
-  color: #999 !important;
+  color: #999999 !important;
 }
 #-blink-dev-tools .source-frame-unsaved-committed-changes {
   background-color: rgba(255, 255, 255, 0.2) !important;
 }
-#-blink-dev-tools .breakpoints-list-deactivated {
+#-blink-dev-tools .sidebar-pane {
+  /* Breakpoints/Dom Breakpoints */
+  /* Call Stack */
+}
+#-blink-dev-tools .sidebar-pane .breakpoints-list-deactivated {
   background-color: #2f2f2f !important;
   opacity: 0.3 !important;
 }
-#-blink-dev-tools .breakpoint-list li {
+#-blink-dev-tools .sidebar-pane .breakpoint-list li {
   color: #89f5a2 !important;
+  border-top: 1px solid #343434 !important;
+  border-bottom: 1px solid #101010 !important;
+}
+#-blink-dev-tools .sidebar-pane .breakpoint-list li:not(.breakpoint-hit):hover {
+  background-color: #2f2f2f !important;
   border-top: 1px solid #343434 !important;
   border-bottom: 1px solid #101010 !important;
 }
@@ -1751,32 +1788,22 @@
   border-bottom: 1px solid #56795e !important;
   color: #eee !important;
 }
-#-blink-dev-tools .sidebar-pane .breakpoint-list li:not(.breakpoint-hit):hover {
-  background-color: #2f2f2f !important;
-  border-top: 1px solid #343434 !important;
-  border-bottom: 1px solid #101010 !important;
-}
-#-blink-dev-tools .breakpoints-deactivated .breakpoint-list {
-  background-color: rgba(0, 0, 0, 0) !important;
-  opacity: .3 !important;
-}
-#-blink-dev-tools .sidebar-pane > .body .info,
-#-blink-dev-tools .sidebar-label,
-#-blink-dev-tools .placard .title,
-#-blink-dev-tools .placard .subtitle {
+#-blink-dev-tools .sidebar-pane .placard .title,
+#-blink-dev-tools .sidebar-pane .placard .subtitle {
   color: #cccccc !important;
 }
-#-blink-dev-tools .placard:nth-of-type(2n) {
+#-blink-dev-tools .sidebar-pane .placard:nth-of-type(2n) {
   background: #2a2a2a !important;
 }
-#-blink-dev-tools .placard.selected {
+#-blink-dev-tools .sidebar-pane .placard.selected {
   background: #364c3b !important;
   color: #e6e6e6 !important;
   border-top: 1px solid #56795e !important;
   border-bottom: 1px solid #56795e !important;
 }
-#-blink-dev-tools .placard.selected * {
-  color: #eee !important;
+#-blink-dev-tools .sidebar-pane .placard.selected .title,
+#-blink-dev-tools .sidebar-pane .placard.selected .subtitle {
+  color: #e6e6e6 !important;
 }
 #-blink-dev-tools .sidebar-pane > .body .placard + .info {
   background: #222222 !important;
@@ -1784,23 +1811,9 @@
   color: #89f5a2 !important;
   font-style: normal !important;
 }
-#-blink-dev-tools .sidebar-pane .section.expanded > .header {
-  border-bottom: 1px solid #1d1d1d !important;
-}
-#-blink-dev-tools .sidebar-pane-stack > .sidebar-pane.visible:nth-last-of-type(1) {
-  border-bottom: none !important;
-}
-#-blink-dev-tools .sidebar-pane-stack .section .event-bars,
-#-blink-dev-tools .sidebar-pane .section .event-bars,
-#-blink-dev-tools .sidebar-pane-stack .properties-tree,
-#-blink-dev-tools .sidebar-pane .properties-tree {
-  background-color: #222222 !important;
-}
-#-blink-dev-tools .sidebar-pane-stack .section .event-bars,
-#-blink-dev-tools .sidebar-pane-toolbar .select-settings option,
-#-blink-dev-tools .sidebar-pane-toolbar .sidebar-pane-subtitle,
-#-blink-dev-tools .sidebar-pane {
-  color: #bbb !important;
+#-blink-dev-tools .breakpoints-deactivated .breakpoint-list {
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: .3 !important;
 }
 #-blink-dev-tools .sidebar-pane-title {
   background-image: -webkit-linear-gradient(#505050, #363636) !important;
@@ -1808,9 +1821,16 @@
   border-top: 1px solid #626262 !important;
   border-bottom: 1px solid #1d1d1d !important;
 }
+#-blink-dev-tools .sidebar-pane-stack > .sidebar-pane.visible:nth-last-of-type(1) {
+  border-bottom: none !important;
+}
+#-blink-dev-tools .sidebar-pane-stack .section .event-bars,
+#-blink-dev-tools .sidebar-pane .section .event-bars,
+#-blink-dev-tools .sidebar-pane .children.expanded {
+  background-color: #272727 !important;
+}
 #-blink-dev-tools .pane-title-button.add,
-#-blink-dev-tools .sidebar-pane-toolbar > .pane-title-button.refresh,
-#-blink-dev-tools .pane-title-button.element-state {
+#-blink-dev-tools .sidebar-pane-toolbar > .pane-title-button.refresh {
   /*background-image: none !important;*/
   -webkit-background-position: -24px 0 !important;
   background-color: rgba(0, 0, 0, 0.8) !important;
@@ -1822,6 +1842,11 @@
 #-blink-dev-tools .sidebar-pane-toolbar > .pane-title-button.refresh {
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneRefreshButtons.png) !important;
 }
+#-blink-dev-tools .panel.elements .sidebar-pane-toolbar > select > option,
+#-blink-dev-tools .panel.elements .sidebar-pane-toolbar > select > hr {
+  color: #cccccc !important;
+  background-color: #222222 !important;
+}
 #-blink-dev-tools .panel.elements .sidebar-pane-toolbar > select.select-settings {
   /*background-image: none !important; */
   -webkit-background-position: -24px 0 !important;
@@ -1829,8 +1854,12 @@
   -webkit-mask-repeat: no-repeat !important;
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneSettingsButtons.png) !important;
 }
-#-blink-dev-tools .pane-title-button.element-state {
+#-blink-dev-tools .panel.elements .sidebar-pane-toolbar .pane-title-button.element-state {
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/paneElementStateButtons.png) !important;
+}
+#-blink-dev-tools .panel.elements .sidebar-pane-toolbar .pane-title-button.element-state,
+#-blink-dev-tools .panel.elements .sidebar-pane-toolbar .pane-title-button.pane-title-button.add {
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 #-blink-dev-tools .webkit-highlighted-line.webkit-line-content {
   border-radius: 2px;
@@ -1839,10 +1868,10 @@
   color: #121212 !important;
 }
 #-blink-dev-tools .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph {
-  background-color: rgba(180, 3, 3, 0.4) !important;
+  background-color: #dc0303 !important;
 }
 #-blink-dev-tools .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph {
-  background-color: rgba(213, 181, 0, 0.6) !important;
+  background-color: #d5bf00 !important;
 }
 #-blink-dev-tools .webkit-highlighted-line {
   background-color: #89f5a2 !important;
