@@ -33,7 +33,7 @@ task :install, :backup do |t, args|
   args.with_defaults(:backup => nil)
   home_dir = File.expand_path('~')
   chrome_dirs = []
-  stable_filename = "Custom-Stable.css"
+  stable_filename = "Custom.css"
   backup_filename = "Custom-old.css"
 
   if OS.mac?

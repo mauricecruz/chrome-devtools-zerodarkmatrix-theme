@@ -1,32 +1,28 @@
-# NOTICE
-If you're using **Canary**, [this theme is now hosted on the Web Store](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo). Add it for automatic updates.
+# Notice
 
-Detailed commit messages for this theme are on [zero base themes](https://github.com/mauricecruz/zero-base-themes).
+If your version higher than v.**33.0.1726.0**, themes only work via extensions and the developer tools experiments. 
+[Get the theme from the Web Store](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo). Updates will be automatic.
+
+Detailed commit messages for this theme are now on [zero base themes](https://github.com/mauricecruz/zero-base-themes).
+
 
 # ZeroDarkMatrix Theme for Chrome
-
 A highly customized dark theme for Google Chrome. There are 2 versions:
 
-**canary-theme-extension/styles.css**
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. ** 34.0.1839.0 canary**
+**canary-theme-extension/styles.css**   
+Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. ** 34.0.1848.2 canary**   
+This version will work on Dev and Beta, but may have slight imperfections since it's optimized for Canary.
 
-**Custom-Stable.css**
-Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **32.0.1700.76 m**
+**Custom.css**   
+Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **32.0.1700.107 m**
 
-## About Chrome Canary
-As of Version v. **33.0.1726.0**, themes only work via extensions and the developer tools experiments.
-
-There is a [thread detailing how this method came about.](https://code.google.com/p/chromium/issues/detail?can=4&start=0&num=100&q=&colspec=ID%20Pri%20M%20Iteration%20ReleaseBlock%20Cr%20Status%20Owner%20Summary%20OS%20Modified&groupby=&sort=&id=318566).  Feel free to voice your opinions there.
-
-The Canary version is now built using [LESS](http://lesscss.org/) and is hosted in the [zero base themes](https://github.com/mauricecruz/zero-base-themes) repo.
 
 ## Installation Instructions
 
-### Chrome Canary 
+### Chrome Canary | Dev | Beta
 * Add [Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo) from the Chrome Web Store.
 * Open chrome://flags and Enable Developer Tools experiments.
 * Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
-
 
 ### Chrome Stable
 There are two installation methods:
@@ -42,25 +38,25 @@ Pick from the snippets below.
 ##### Mac
 
 ```
-curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
+curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
 ```
 
 ##### PC (Windows Vista / 7 / 8)
 
 ```
-powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
+powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
 
 ##### PC (Windows XP)
 
 ```
-powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
+powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
 ```
 
 ##### Fedora:
  
  ```
-curl -o ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom-Stable.css
+curl -o ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
  ```
  
 
