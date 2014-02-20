@@ -336,7 +336,7 @@
   background-color: #89f5a2 !important;
 }
 #-blink-dev-tools .cm-whitespace:before {
-  color: #555 !important;
+  color: #444 !important;
 }
 #-blink-dev-tools .cm-tab:before {
   border-bottom: 1px solid #555 !important;
@@ -1009,49 +1009,6 @@
 #-blink-dev-tools #search-results-pane-file-based .parent.expanded::before {
   -webkit-mask-position: -20px -96px !important;
 }
-#-blink-dev-tools #drawer-contents .search-match-line-number,
-#-blink-dev-tools .webkit-line-number {
-  background: #2a2a2a !important;
-  border-right: 1px solid #3c3c3c !important;
-  padding: 1px 5px 1px 0 !important;
-  display: inline-block;
-  color: #999 !important;
-}
-#-blink-dev-tools .search-drawer-header label.search-config-label,
-#-blink-dev-tools .drawer .settings-tab label,
-#-blink-dev-tools #drawer-footer td label {
-  text-shadow: none !important;
-  color: #bbb !important;
-}
-#-blink-dev-tools .revision-history-drawer ol[tabindex="0"] > .parent {
-  background-color: #2D2D2D !important;
-  color: #ddd !important;
-  border-top: 1px solid #5d5d5d !important;
-  border-bottom: 1px solid #111 !important;
-  height: 20px !important;
-}
-#-blink-dev-tools .revision-history-link {
-  color: #89F5A2 !important;
-}
-#-blink-dev-tools .overrides-view .tabbed-pane-header-tab {
-  color: #999 !important;
-}
-#-blink-dev-tools .overrides-view .tabbed-pane-content {
-  color: #ccc !important;
-}
-#-blink-dev-tools .overrides-view .tabbed-pane-content :disabled {
-  color: #666!important;
-}
-#-blink-dev-tools .overrides-view .tabbed-pane-content input:disabled,
-#-blink-dev-tools .overrides-view .tabbed-pane-content select:disabled {
-  background-color: #888!important;
-  border-color: #888 !important;
-}
-#-blink-dev-tools .overrides-footer {
-  background-color: #333 !important;
-  border-top: 1px solid #222 !important;
-  color: #ccc !important;
-}
 #-blink-dev-tools #search-results-pane-file-based .search-result {
   background-color: #2a2a2a !important;
   color: #cccccc !important;
@@ -1655,8 +1612,8 @@
 #-blink-dev-tools .help-window-main {
   color: #cccccc !important;
   /***************************************************
-  /* Workspaces Dialog Box
-  ****************************************************/
+	/* Workspaces Dialog Box
+	****************************************************/
 }
 #-blink-dev-tools .help-window-main .settings-tab-container header {
   border-bottom: 1px solid #6f6f6f !important;
@@ -1756,6 +1713,89 @@
 }
 #-blink-dev-tools .settings-dialog .file-mappings-list .settings-list-item:first-child {
   border-top: none !important;
+}
+#-blink-dev-tools #drawer-contents .search-match-line-number,
+#-blink-dev-tools .webkit-line-number {
+  background: #2a2a2a !important;
+  border-right: 1px solid #3c3c3c !important;
+  padding: 1px 5px 1px 0 !important;
+  display: inline-block;
+  color: #999 !important;
+}
+#-blink-dev-tools .search-drawer-header label.search-config-label,
+#-blink-dev-tools .drawer .settings-tab label,
+#-blink-dev-tools #drawer-footer td label {
+  text-shadow: none !important;
+  color: #bbb !important;
+}
+#-blink-dev-tools .overrides-view .tabbed-pane-header-tab {
+  color: #999 !important;
+}
+#-blink-dev-tools .overrides-view .tabbed-pane-content {
+  color: #ccc !important;
+}
+#-blink-dev-tools .overrides-view .tabbed-pane-content :disabled {
+  color: #666!important;
+}
+#-blink-dev-tools .overrides-view .tabbed-pane-content input:disabled,
+#-blink-dev-tools .overrides-view .tabbed-pane-content select:disabled {
+  background-color: #888!important;
+  border-color: #888 !important;
+}
+#-blink-dev-tools .overrides-footer {
+  background-color: #333 !important;
+  border-top: 1px solid #222 !important;
+  color: #ccc !important;
+}
+#-blink-dev-tools .revision-history-link {
+  color: #89F5A2 !important;
+}
+#-blink-dev-tools .outline-disclosure.revision-history-drawer ol li {
+  padding-top: 2px !important;
+  line-height: 15px !important;
+}
+#-blink-dev-tools .revision-history-drawer > ol > .parent {
+  background-color: #2a2a2a !important;
+  color: #cccccc !important;
+  border-top: 1px solid #2f2f2f !important;
+  border-bottom: 1px solid #151515 !important;
+  margin: 0 !important;
+  height: 22px !important;
+}
+#-blink-dev-tools .revision-history-drawer > ol > .parent + .children {
+  margin-bottom: 10px !important;
+}
+#-blink-dev-tools .revision-history-drawer .revision-history-revision {
+  color: #cccccc !important;
+  background-color: #2c2c2c !important;
+  border-top: 1px solid #363636 !important;
+  border-bottom: 1px solid #1a1a1a !important;
+  height: 22px !important;
+  line-height: 20px !important;
+}
+#-blink-dev-tools .revision-history-drawer .source-code {
+  margin: 5px 0 15px 10px !important;
+}
+#-blink-dev-tools .revision-history-drawer .source-code .revision-history-line-separator:nth-child(1) {
+  background-color: #222222 !important;
+}
+#-blink-dev-tools .revision-history-drawer .revision-history-line-separator {
+  background-color: #252525 !important;
+  margin-top: 4px !important;
+}
+#-blink-dev-tools .revision-history-drawer .revision-history-line-removed,
+#-blink-dev-tools .revision-history-drawer .revision-history-line-added {
+  background-color: #222222 !important;
+}
+#-blink-dev-tools .revision-history-drawer .revision-history-line-removed span:last-child,
+#-blink-dev-tools .revision-history-drawer .revision-history-line-added span:last-child {
+  margin-left: 2px;
+}
+#-blink-dev-tools .revision-history-drawer .revision-history-line-removed {
+  color: #ff6666 !important;
+}
+#-blink-dev-tools .revision-history-drawer .revision-history-line-added {
+  color: #7EB17E !important;
 }
 #-blink-dev-tools .tabbed-pane-placeholder {
   text-shadow: 0 1px 0 #121212 !important;
