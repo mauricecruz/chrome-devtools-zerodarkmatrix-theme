@@ -1,0 +1,21 @@
+This is a theme for the Developer Tools [CTRL/CMD + SHIFT + I].
+
+
+Changelog
+---------------------------------------------------------
+1.1.0
+- Added support for both Stable and Canary channels
+
+1.0.4
+- Styled History Tab
+
+1.0.3
+- fixed flickering issues on element hover
+
+
+Installation Instructions
+---------------------------------------------------------
+- Add this theme
+- Goto chrome://flags and Enable Developer Tools experiments.
+- Open developer tools settings, select Experiments tab, and check 'Allow custom UI themes'.
+- Reload devtools.
