@@ -1,30 +1,17 @@
-# Notice
+# ZeroDarkMatrix Theme for Chrome
+A highly customized dark theme for Google Chrome.
 
-If your version higher than v.**33.0.1726.0**, themes only work via extensions and the developer tools experiments. 
-[Get the theme from the Web Store](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo). Updates will be automatic.
+Stable and Canary channels are officially supported.  Beta and Dev channels will work, but I'm not testing on them.
 
 Detailed commit messages for this theme are now on [zero base themes](https://github.com/mauricecruz/zero-base-themes).
 
+## Installation
 
-# ZeroDarkMatrix Theme for Chrome
-A highly customized dark theme for Google Chrome. There are 2 versions:
-
-**canary-theme-extension/styles.css**   
-Tested on [Chrome Canary Channel](https://www.google.com/intl/en/chrome/browser/index.html?extra=devchannel#eula) v. ** 34.0.1848.2 canary**   
-This version will work on Dev and Beta, but may have slight imperfections since it's optimized for Canary.
-
-**Custom.css**   
-Tested on [Chrome Stable Channel](https://www.google.com/intl/en/chrome/browser/)  v. **32.0.1700.107 m**
-
-
-## Installation Instructions
-
-### Chrome Canary | Dev | Beta
 * Add [Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo) from the Chrome Web Store.
-* Open chrome://flags and Enable Developer Tools experiments.
-* Open developer tools settings, select Experiments tab, and check Allow custom UI themes.
+* Open `chrome://flags` &#9654; Enable Developer Tools experiments.
+* Open developer tools settings &#9654; Experiments &#9654; [&#10004;] Allow custom UI themes.
 
-### Chrome Stable
+### Older Chrome versions (v32 and lower)
 There are two installation methods:
 
 #### Rakefile
@@ -59,23 +46,6 @@ powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https:/
 curl -o ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
  ```
  
-
-## Code Highlighting
-
-All code highlighting has been moved to the top of the stylesheet.  Feel free to fork and customize to your liking.
-
-## Readability
-
-You can adjust the line height for the Elements/Sources Tab, Find, and Console interfaces.  It's the first set of selectors in the stylesheet. [More info...](https://github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/issues/29)
-![readability]
-Thanks to @orloxx for the suggestion.
-
-
-## Animations
-
-Animations may cause performance issues depending on the power of your machine.  If you notice any issues, you can simply delete the animation section from the stylesheet.
-
-
 ## Preview
 
 ### Elements
