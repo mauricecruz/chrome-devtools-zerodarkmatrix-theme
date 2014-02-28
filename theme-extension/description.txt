@@ -3,6 +3,9 @@ This is a theme for the Developer Tools [CTRL/CMD + SHIFT + I].
 
 Changelog
 ---------------------------------------------------------
+1.1.1
+- Added selection indicators on Profile & Audits Panels.  
+
 1.1.0
 - Added support for both Stable and Canary channels
 
