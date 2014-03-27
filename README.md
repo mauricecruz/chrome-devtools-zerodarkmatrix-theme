@@ -8,7 +8,7 @@ Detailed commit messages for this theme are now on [zero base themes](https://gi
 ## Installation
 
 * Add [Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo) from the Chrome Web Store.
-* Open `chrome://flags` &#9654; Enable Developer Tools experiments.
+* Open `chrome://flags` &#9654; Enable Developer Tools experiments and click "Relaunch Now" at the bottom.
 * Open developer tools settings &#9654; Experiments &#9654; [&#10004;] Allow custom UI themes.
 
 ### Older Chrome versions (v32 and lower)
