@@ -370,6 +370,7 @@ span.cm-token-highlight:before {
   background-color: #2f2f2f !important;
   box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.5) !important;
 }
+.filtered-item-list-dialog-item .filtered-item-list-dialog-title,
 .filtered-item-list-dialog-item span {
   color: #e6e6e6 !important;
 }
@@ -600,6 +601,21 @@ button.overrides-swap:not(:disabled):active {
 .search-drawer-header input[type="checkbox"].search-config-checkbox {
   vertical-align: middle !important;
 }
+.sidebar-pane-filter-box {
+  border-top: 1px solid #2f2f2f !important;
+}
+.sidebar-pane-filter-box.styles-filter-engaged {
+  background-color: transparent !important;
+}
+.sidebar-pane-filter-box > input {
+  color: #cccccc !important;
+}
+.styles-section .properties li.filter-match,
+.styles-section .simple-selector.filter-match {
+  background-color: #364c3b !important;
+  box-shadow: 0 0 0 1px #56795e !important;
+  border-radius: 2px;
+}
 /**********************************************
 /* DevTool Chrome
 /**********************************************/
@@ -678,6 +694,9 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .split-view.hbox > .split-view-resizer > .split-view-resizer-border {
   border: none !important;
 }
+.sidebar {
+  background: none !important;
+}
 /**********************************************/
 /* Navigation Arrows
 /**********************************************/
@@ -747,6 +766,12 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 #search-results-pane-file-based .parent.expanded::before {
   -webkit-mask-position: -20px -96px !important;
 }
+#search-results-pane-file-based .parent.expanded::before {
+  -webkit-mask-position: -20px -93px !important;
+}
+#search-results-pane-file-based .parent::before {
+  -webkit-mask-position: -4px -93px !important;
+}
 /**********************************************/
 /* Console
 /**********************************************/
@@ -772,6 +797,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   background-color: #272727 !important;
   border-top: 1px solid #2a2a2a !important;
   border-bottom: 1px solid #1d1d1d !important;
+  padding: 2px 22px 2px 0 !important;
 }
 .console-message .children li,
 .console-user-command .children li {
@@ -1004,8 +1030,12 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .profile-launcher-view-tree-item,
 .sidebar-tree-section,
 .resources-divider-label,
-.panel:not(.timeline) .sidebar-tree-item {
+.panel:not(.timeline) .sidebar-tree-item,
+.profile-entry-info {
   color: #cccccc !important;
+}
+.profile-entry-info {
+  text-shadow: 0 0 1px #222222;
 }
 #profile-views .data-grid button {
   color: #bfbfbf !important;
@@ -1081,9 +1111,6 @@ input.status-bar-item:focus {
 .database-user-query .error {
   color: #ff5a5a !important;
 }
-.resources .sidebar {
-  background: none !important;
-}
 /*************************************
  * Help/Settings Overlay
  *************************************/
@@ -1151,7 +1178,7 @@ input.status-bar-item:focus {
   background-color: #222222 !important;
 }
 .help-window-main .settings-list {
-  border: 1px solid #444444 !important;
+  border: 1px solid #454545 !important;
 }
 .help-window-main .settings-list-item {
   background-color: #2f2f2f !important;
@@ -1167,14 +1194,21 @@ input.status-bar-item:focus {
 .help-window-main .settings-list-item:last-child {
   border-bottom: none !important;
 }
-.help-window-main .file-system-path {
-  color: #cccccc !important;
-}
 .help-window-main .file-system-path-name {
   color: #89f5a2 !important;
 }
+.file-system-path,
+.list-column-text,
+.settings-list-column-path {
+  color: #cccccc !important;
+}
+.list-column-editor {
+  background-color: #2f2f2f !important;
+  border: 1px solid #3c3c3c !important;
+  color: #e6e6e6 !important;
+}
 .settings-dialog {
-  border: 1px solid #444444 !important;
+  border: 1px solid #454545 !important;
   background-color: #222222 !important;
   border-radius: 4px !important;
 }
@@ -1193,12 +1227,20 @@ input.status-bar-item:focus {
 }
 .settings-dialog .settings-list-item {
   background-color: #444444 !important;
-  border-top: 1px solid #444444 !important;
-  border-bottom: none !important;
+  border-top: 1px solid #626262 !important;
+  border-bottom: 1px solid #1d1d1d !important;
   color: #333333 !important;
 }
-.settings-dialog .file-mappings-list .settings-list-item:first-child {
+.settings-dialog .add-list-item {
+  border-bottom: none !important;
+}
+.settings-dialog .file-mappings-list .settings-list-item:first-child,
+.settings-dialog .excluded-folders-section .settings-list-item:first-child {
   border-top: none !important;
+}
+.swatch {
+  width: 12px !important;
+  height: 12px !important;
 }
 /**********************************************
 /* Sources Tab
@@ -1355,10 +1397,18 @@ input.status-bar-item:focus {
   border-top: none !important;
   overflow: none !important;
 }
-#scripts-debug-toolbar {
+.scripts-debug-toolbar {
   background: -webkit-linear-gradient(#505050, #363636) !important;
   border-bottom: 1px solid #1d1d1d !important;
   box-shadow: inset 0 1px 0 #626262;
+}
+.help-indent-labels label {
+  color: #cccccc !important;
+}
+.scripts-debug-toolbar-drawer {
+  background-color: transparent !important;
+  border-bottom: none !important;
+  color: #cccccc !important;
 }
 .CodeMirror .webkit-html-message-bubble {
   color: #111 !important;
@@ -1572,6 +1622,21 @@ input.status-bar-item:focus {
   background-color: #364c3b !important;
   outline: 1px solid #56795e !important;
 }
+.spectrum-container {
+  border: none !important;
+  background: #222222 !important;
+  border-radius: 3px !important;
+  padding: 7px 10px !important;
+}
+.spectrum-container .swatch {
+  margin-right: 3px !important;
+}
+.spectrum-range-container {
+  padding-bottom: 0 !important;
+}
+.spectrum-range-container input {
+  position: static !important;
+}
 /**********************************************
 /* Readability
 /* -------------------------------------------
@@ -1590,6 +1655,48 @@ input.status-bar-item:focus {
 }
 .panel.elements .outline-disclosure li.parent::before {
   margin-top: 1px;
+}
+/**********************************************
+/* Screencast
+/**********************************************/
+.screencast {
+  background-color: #222222 !important;
+}
+.screencast .screencast-viewport {
+  background-color: #3c3c3c;
+  box-shadow: 0 0 2px 0 #89f5a2;
+  margin: auto !important;
+}
+.screencast .screencast-navigation button {
+  background-color: #89f5a2 !important;
+  -webkit-mask-image: -webkit-image-set(url(Images/navigationControls.png) 1x, url(Images/navigationControls_2x.png) 2x);
+  background-image: none !important;
+  border: none !important;
+  width: 21px !important;
+  height: 21px !important;
+  cursor: pointer !important;
+}
+.screencast .screencast-navigation button.back {
+  -webkit-mask-position: 0 2px;
+}
+.screencast .screencast-navigation button.forward {
+  -webkit-mask-position: -17px 2px;
+}
+.screencast .screencast-navigation button.reload {
+  -webkit-mask-position: -36px 2px;
+}
+.screencast .screencast-navigation button[disabled] {
+  background-color: #7b7b7b !important;
+  opacity: 1 !important;
+  cursor: default !important;
+}
+.screencast .screencast-navigation .progress {
+  background-color: #89f5a2 !important;
+}
+.screencast .screencast-navigation input {
+  background: #2f2f2f !important;
+  color: #e6e6e6 !important;
+  border: 1px solid #3c3c3c !important;
 }
 /**********************************************
 /* Scrollbars
@@ -1758,7 +1865,7 @@ input.status-bar-item:focus {
 .panel:not(.elements):not(.console) .base-storage-tree-element-subtitle,
 .panel:not(.elements):not(.console) .base-navigator-tree-element-title {
   color: #cccccc !important;
-  top: 2px !important;
+  top: 1px !important;
 }
 .panel:not(.elements):not(.console) .selected .base-storage-tree-element-title,
 .panel:not(.elements):not(.console) .selected .base-storage-tree-element-subtitle,
@@ -1875,6 +1982,18 @@ label.checkbox,
 }
 .checkbox-filter-checkbox {
   background: #fff !important;
+}
+.filter-bitset-filter li {
+  padding: 2px 6px !important;
+  margin: auto 2px !important;
+  border-radius: 8px !important;
+}
+.status-bar-select-arrow {
+  position: relative !important;
+  right: 5px !important;
+}
+.event-listener-breakpoints .checkbox-elem {
+  top: 0 !important;
 }
 /**********************************************
 /* Suggest Box
@@ -2239,8 +2358,8 @@ label.checkbox,
   border-top: 2px solid rgba(0, 0, 0, 0) !important;
   border-left: none !important;
   border-right: none !important;
-  padding: 2px 8px !important;
-  margin: 0 4px !important;
+  padding: 2px 7px !important;
+  margin: 0 !important;
   margin-top: 0 !important;
   margin-bottom: 1px !important;
   border-color: transparent !important;
@@ -2288,6 +2407,7 @@ label.checkbox,
   border-top: none !important;
   border-bottom: #222 !important;
 }
+body .toolbar-background,
 body.undocked.platform-mac-mountain-lion.inactive .toolbar-background,
 body.undocked.platform-mac-mountain-lion .toolbar-background,
 body.platform-mac-mountain-lion.inactive .toolbar-background,
@@ -2297,6 +2417,7 @@ body.undocked.platform-mac .toolbar-background,
 body.inactive .toolbar-background,
 body:not(.undocked) .toolbar-background {
   background-image: -webkit-linear-gradient(#505050, #363636) !important;
+  border-bottom: none !important;
 }
 select.tabbed-pane-header-tabs-drop-down-select {
   background-color: #222222 !important;
@@ -2387,5 +2508,9 @@ select.tabbed-pane-header-tabs-drop-down-select {
   background-color: #3c3c3c;
 }
 #error-warning-count {
+  color: #cccccc !important;
+}
+.tabbed-pane-header-tabs-drop-down > select.drop-down-menu option {
+  background-color: #222222 !important;
   color: #cccccc !important;
 }
