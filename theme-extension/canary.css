@@ -2,8 +2,10 @@
 /* Made with Zero Base Themes                                            */
 /* https://github.com/mauricecruz/zero-base-themes                       */
 /* ----------------------------------------------------------------------*/
-/* Zero Dark Matrix by Maurice Cruz [@mauricecruz]                       */
 /*************************************************************************/
+/* Made with Zero Base Themes                                            */
+/* https://github.com/mauricecruz/zero-base-themes                       */
+/* ----------------------------------------------------------------------*/
 /*-- SOURCES PANEL --*/
 .panel.sources .split-view-vertical .split-view-contents {
   -webkit-transition: right 0.5s ease-in-out;
@@ -205,6 +207,8 @@
 .panel.elements .parent.hovered.expanded + .children > :last-child * {
   opacity: .6;
 }
+/* Zero Dark Matrix by Maurice Cruz [@mauricecruz]                       */
+/*************************************************************************/
 /**********************************************
 /* Animations
 /* -------------------------------------------
@@ -288,6 +292,9 @@ span.cm-token-highlight:before {
 }
 .CodeMirror-linenumber {
   border-right: none !important;
+}
+.cm-line-without-source-mapping {
+  background-color: #252525 !important;
 }
 @-webkit-keyframes fadeout-revised {
   0% {
@@ -587,6 +594,7 @@ button.overrides-swap:not(:disabled):active {
 .status-bar {
   background-color: #484848 !important;
   border-top: none !important;
+  border-bottom: none !important;
 }
 .search-results-matches {
   color: #cccccc !important;
@@ -656,7 +664,7 @@ button.overrides-swap:not(:disabled):active {
   box-shadow: inset 0 1px 0 0 #484848, inset 0 -1px 0 0 #484848;
 }
 .panel .sidebar-tree-item .disclosure-button {
-  background-color: #aab0af !important;
+  background-color: #8c8c8c !important;
 }
 .panel .data-grid th {
   border: none !important;
@@ -697,6 +705,11 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .sidebar {
   background: none !important;
 }
+.editing {
+  background-color: #222222 !important;
+  outline: 1px solid #89f5a2 !important;
+  color: #cccccc !important;
+}
 /**********************************************/
 /* Navigation Arrows
 /**********************************************/
@@ -710,7 +723,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .sidebar-pane .parent.expanded::before,
 .sidebar-pane-stack .sidebar-pane-title.expanded::before,
 .timeline-expandable-expanded .timeline-expandable-arrow {
-  background-color: #aab0af !important;
+  background-color: #8c8c8c !important;
   background-image: none !important;
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -4px -96px !important;
@@ -719,6 +732,9 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   opacity: 1 !important;
   -webkit-transition: -webkit-transform 0.1s ease-in-out;
   -webkit-transform: rotate(90deg);
+}
+.sidebar-pane-stack .sidebar-pane-title.expanded::before {
+  -webkit-transform: rotate(90deg) translateX(2px);
 }
 .styles-section.matched-styles .properties li.parent .expand-element,
 #console-messages .console-group-messages .section .header::before,
@@ -731,7 +747,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 .sidebar-pane .parent::before,
 .sidebar-pane-stack .sidebar-pane-title::before,
 .timeline-expandable-collapsed .timeline-expandable-arrow {
-  background-color: #aab0af !important;
+  background-color: #8c8c8c !important;
   background-image: none !important;
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -4px -96px !important;
@@ -742,7 +758,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   -webkit-transform: rotate(0deg);
 }
 .data-grid th.sort-ascending > div::after {
-  background-color: #aab0af !important;
+  background-color: #8c8c8c !important;
   background-image: none !important;
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -4px -96px !important;
@@ -753,7 +769,7 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
   -webkit-mask-position: -4px -108px !important;
 }
 .data-grid th.sort-descending > div::after {
-  background-color: #aab0af !important;
+  background-color: #8c8c8c !important;
   background-image: none !important;
   -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
   -webkit-mask-position: -4px -96px !important;
@@ -771,6 +787,24 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 }
 #search-results-pane-file-based .parent::before {
   -webkit-mask-position: -4px -93px !important;
+}
+.panel.network .outline-disclosure li.parent::before {
+  top: 3px !important;
+}
+.sidebar-tabbed-pane .section > .header::before,
+.event-bars .event-bar .header::before {
+  margin-top: 3px !important;
+}
+.status-bar-select-arrow {
+  background-color: #8c8c8c !important;
+  background-image: none !important;
+  -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
+  -webkit-mask-position: -4px -96px !important;
+  -webkit-mask-repeat: no-repeat !important;
+  color: rgba(0, 0, 0, 0) !important;
+  opacity: 1 !important;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  -webkit-mask-position: -20px -96px !important;
 }
 /**********************************************/
 /* Console
@@ -907,11 +941,6 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 #elements-content .CodeMirror {
   outline: none !important;
 }
-.panel.elements .editing {
-  background-color: #222222 !important;
-  outline: 1px solid #89f5a2 !important;
-  color: #cccccc !important;
-}
 .panel.elements .outline-disclosure ol:focus li.selected .selection,
 .panel.elements .outline-disclosure li.selected .selection {
   outline: 1px solid #56795e !important;
@@ -1036,6 +1065,8 @@ body.dock-to-right:not(.undocked):not(.overlay-contents) {
 }
 .profile-entry-info {
   text-shadow: 0 0 1px #222222;
+  background-color: rgba(34, 34, 34, 0.9) !important;
+  border-radius: 4px;
 }
 #profile-views .data-grid button {
   color: #bfbfbf !important;
@@ -1061,6 +1092,15 @@ input.status-bar-item:hover,
 input.status-bar-item:focus {
   border: 1px solid #3c3c3c !important;
 }
+.paint-profiler-view canvas {
+  background-color: #222222 !important;
+}
+.layers.panel .outline-disclosure li {
+  margin-top: 2px !important;
+}
+.layers.panel .selection {
+  height: 18px !important;
+}
 /**********************************************
 /* Resources Tab
 /**********************************************/
@@ -1074,11 +1114,11 @@ input.status-bar-item:focus {
   color: #cccccc !important;
 }
 .resource-view.image .infoList dt {
-  color: #666666 !important;
+  color: #626262 !important;
   margin-bottom: 5px !important;
 }
 .resource-view.image .infoList dd {
-  color: #808080 !important;
+  color: #cccccc !important;
   margin-bottom: 5px !important;
 }
 /*-- WEB SQL --*/
@@ -1110,6 +1150,12 @@ input.status-bar-item:focus {
 }
 .database-user-query .error {
   color: #ff5a5a !important;
+}
+.indexed-db-database-view .outline-disclosure .attribute-name {
+  color: #626262 !important;
+}
+.indexed-db-database-view .outline-disclosure .attribute-value {
+  color: #cccccc !important;
 }
 /*************************************
  * Help/Settings Overlay
@@ -1388,6 +1434,19 @@ input.status-bar-item:focus {
   background-color: inherit !important;
   line-height: inherit !important;
 }
+.event-listener-breakpoints.properties-tree li {
+  height: auto !important;
+  padding-top: 0 !important;
+}
+.event-listener-breakpoints.properties-tree li:before {
+  -webkit-mask-position: -4px -93px !important;
+}
+.event-listener-breakpoints.properties-tree li .checkbox-elem {
+  top: 2px !important;
+}
+.event-listener-breakpoints.properties-tree li.parent .checkbox-elem {
+  top: 3px !important;
+}
 /**********************************************
 /* Sources Panel Controls
 /**********************************************/
@@ -1465,7 +1524,7 @@ input.status-bar-item:focus {
 }
 .timeline-tree-item.selected .timeline-tree-item-expand-arrow,
 .timeline-tree-item-expand-arrow {
-  background-color: #aab0af !important;
+  background-color: #8c8c8c !important;
 }
 #counter-values-bar,
 #memory-graphs-container .sidebar-tree-section,
@@ -1582,6 +1641,9 @@ input.status-bar-item:focus {
 .timeline-frame-container {
   background: none !important;
 }
+#timeline-overview-panel .split-view-sidebar > label {
+  color: #cccccc !important;
+}
 /**********************************************
 /* Popovers
 /**********************************************/
@@ -1645,7 +1707,6 @@ input.status-bar-item:focus {
 /* to line up expand/collapse arrow in
 /* elements panel
 /**********************************************/
-.outline-disclosure ol li,
 .text-editor .inner-container .webkit-line-content,
 .text-editor-lines .inner-container .webkit-line-number,
 .styles-section .properties li,
@@ -1865,12 +1926,13 @@ input.status-bar-item:focus {
 .panel:not(.elements):not(.console) .base-storage-tree-element-subtitle,
 .panel:not(.elements):not(.console) .base-navigator-tree-element-title {
   color: #cccccc !important;
-  top: 1px !important;
+  top: 0 !important;
 }
 .panel:not(.elements):not(.console) .selected .base-storage-tree-element-title,
 .panel:not(.elements):not(.console) .selected .base-storage-tree-element-subtitle,
 .panel:not(.elements):not(.console) .selected .base-navigator-tree-element-title {
   color: #e6e6e6 !important;
+  text-shadow: none !important;
 }
 .panel:not(.elements):not(.console) .sidebar li {
   color: #cccccc !important;
@@ -1898,12 +1960,6 @@ input.status-bar-item:focus {
   border-top: 1px solid #56795e !important;
   border-bottom: 1px solid #56795e !important;
   margin-top: -1px !important;
-  text-shadow: none !important;
-}
-.panel:not(.elements):not(.console) .outline-disclosure ol:focus li.selected .base-storage-tree-element-title,
-.panel:not(.elements):not(.console) ol:focus .selected .base-storage-tree-element-subtitle,
-.panel:not(.elements):not(.console) .outline-disclosure ol:focus li.selected .base-navigator-tree-element-title {
-  color: #e6e6e6 !important;
   text-shadow: none !important;
 }
 .panel:not(.elements):not(.console) .sidebar-overlay {
@@ -2514,32 +2570,6 @@ select.tabbed-pane-header-tabs-drop-down-select {
   background-color: #222222 !important;
   color: #cccccc !important;
 }
-.event-listener-breakpoints.properties-tree li {
-  height: auto !important;
-  padding-top: 0 !important;
-}
-.event-listener-breakpoints.properties-tree li:before {
-  -webkit-mask-position: -4px -93px !important;
-}
-.event-listener-breakpoints.properties-tree li .checkbox-elem {
-  top: 2px !important;
-}
-.event-listener-breakpoints.properties-tree li.parent .checkbox-elem {
-  top: 3px !important;
-}
-.panel:not(.elements):not(.console) .base-storage-tree-element-title,
-.panel:not(.elements):not(.console) .base-storage-tree-element-subtitle,
-.panel:not(.elements):not(.console) .base-navigator-tree-element-title {
-  color: #cccccc !important;
-  top: 0 !important;
-}
-#timeline-overview-panel .split-view-sidebar > label {
-  color: #cccccc !important;
-}
-.profile-entry-info {
-  background-color: rgba(34, 34, 34, 0.9) !important;
-  border-radius: 4px;
-}
 .console-user-command {
   border-top: none !important;
   border-bottom: none !important;
@@ -2558,4 +2588,83 @@ select.tabbed-pane-header-tabs-drop-down-select {
 .overrides-activate-network #tab-network .tabbed-pane-header-tab-title::after,
 .overrides-activate-sensors #tab-sensors .tabbed-pane-header-tab-title::after {
   color: #89f5a2 !important;
+}
+.overrides-splash-screen {
+  color: #cccccc !important;
+}
+.overrides-splash-screen .glyph {
+  background-color: #7b7b7b !important;
+}
+.heap-snapshot-view .heap-snapshot-view-resizer {
+  background: -webkit-linear-gradient(#505050, #363636) !important;
+  box-shadow: inset 0 1px 0 #626262;
+  border-top: none !important;
+  border-bottom: none !important;
+  color: #cccccc;
+}
+#profile-views .data-container .object-column {
+  color: #cccccc;
+}
+#profile-views .data-container .object-column button {
+  background-image: linear-gradient(#505050, #363636) !important;
+  color: #b3b3b3 !important;
+  border: 1px solid #3c3c3c !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+#profile-views .data-container .object-column button:disabled {
+  cursor: default !important;
+  opacity: 0.3 !important;
+}
+#profile-views .data-container .object-column button:not(:disabled):active {
+  box-shadow: inset 0 1px 1px 0 #151515, 0 1px 1px 0 #6f6f6f !important;
+}
+.data-grid td {
+  color: #cccccc !important;
+}
+/*L27 - text color of status bar labels
+replaces '.search-status-bar-summary span'*/
+.search-status-bar-summary .search-message {
+  text-shadow: none !important;
+  color: #cccccc !important;
+}
+.save-device-button,
+.remove-device-button {
+  background-image: linear-gradient(#505050, #363636) !important;
+  color: #b3b3b3 !important;
+  border: 1px solid #3c3c3c !important;
+  border-radius: 3px !important;
+  cursor: pointer !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+.save-device-button:disabled,
+.remove-device-button:disabled {
+  cursor: default !important;
+  opacity: 0.3 !important;
+}
+.save-device-button:not(:disabled):active,
+.remove-device-button:not(:disabled):active {
+  box-shadow: inset 0 1px 1px 0 #151515, 0 1px 1px 0 #6f6f6f !important;
+}
+.blackbox-dialog .columns-header {
+  color: #89f5a2 !important;
+}
+.timeline-progress-pane {
+  background-color: rgba(111, 111, 111, 0.5) !important;
+  color: #cccccc !important;
+}
+.timeline-range-summary > div {
+  color: #cccccc !important;
+}
+.vbox.devices {
+  color: #cccccc !important;
+}
+.vbox.devices a {
+  color: #89f5a2;
+}
+.outline-disclosure li.in-clipboard .highlight {
+  outline: 1px dashed #888888 !important;
 }
