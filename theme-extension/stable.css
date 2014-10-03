@@ -236,17 +236,18 @@
 }
 .CodeMirror-selected,
 span.CodeMirror-selectedtext {
-  background: #3c3c3c !important;
+  background: #F0D3AC !important;
+  color: #ffffff !important;
 }
 .CodeMirror-matchingbracket {
-  color: #15ca1a !important;
-  text-shadow: 0 0 3px #15ca1a !important;
+  color: #000 !important;
   border-bottom: none !important;
+  background-color: #A6E22E !important;
 }
 .CodeMirror-nonmatchingbracket {
-  color: #db0404 !important;
-  text-shadow: 0 0 3px #db0404 !important;
+  background-color: #DB0404 !important;
   border-bottom: none !important;
+  color: #FFF !important;
 }
 .cm-search-highlight-start:before {
   border-color: #89f5a2 !important;
