@@ -3,7 +3,7 @@ A highly customized dark theme for Google Chrome.
 
 Stable and Canary channels are officially supported.  Beta and Dev channels will work, but I'm not testing on them.
 
-Detailed commit messages for this theme are now on [zero base themes](https://github.com/mauricecruz/zero-base-themes).
+➡ Please follow development for this theme at [zero base themes](https://github.com/mauricecruz/zero-base-themes).
 
 ## Installation
 
@@ -11,41 +11,7 @@ Detailed commit messages for this theme are now on [zero base themes](https://gi
 * Open `chrome://flags` &#9654; Enable Developer Tools experiments and click "Relaunch Now" at the bottom.
 * Open developer tools settings &#9654; Experiments &#9654; [&#10004;] Allow custom UI themes.
 
-### Older Chrome versions (v32 and lower)
-There are two installation methods:
 
-#### Rakefile
-Requires you to have Ruby and Rake installed.  Clone this repo and run rake.
-
-This will install the theme on all profiles.  It will backup any existing one to `Custom-backup.css` prior to overwriting.
-
-#### Copy/Paste
-Pick from the snippets below.
-
-##### Mac
-
-```
-curl -o ~/Library/Application\ Support/Google/Chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
-```
-
-##### PC (Windows Vista / 7 / 8)
-
-```
-powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\..\Local\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
-```
-
-##### PC (Windows XP)
-
-```
-powershell -Command "& {(new-object System.Net.WebClient).DownloadFile(""https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css""","""$env:APPDATA\Google\Chrome\User Data\Default\User StyleSheets\Custom.css""")}"
-```
-
-##### Fedora:
- 
- ```
-curl -o ~/.config/google-chrome/Default/User\ StyleSheets/Custom.css https://raw.github.com/mauricecruz/chrome-devtools-zerodarkmatrix-theme/master/Custom.css
- ```
- 
 ## Preview
 
 ### Elements
