@@ -1,3 +1,7 @@
+# Notice
+Experiments settings reset in `44.0.2403.89`. Open developer tools settings &#9654; Experiments &#9654; [&#10004;] Allow custom UI themes to enable theme again.
+
+
 # ZeroDarkMatrix Theme for Chrome
 A highly customized dark theme for Google Chrome.
 
