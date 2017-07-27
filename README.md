@@ -1,5 +1,5 @@
 # NOTICE: Custom UI Themes may no longer be supported.
-Shadown piercing combinators are deprecated and support for them will be removed from Chrome around September 2017. This affects all custom UI themes including this one. If you have interest in this feature being maintained, please [star this issue](https://bugs.chromium.org/p/chromium/issues/detail?id=709732).
+Shadow piercing combinators are deprecated and support for them will be removed from Chrome around September 2017. This affects all custom UI themes including this one. If you have interest in this feature being maintained, please [star this issue](https://bugs.chromium.org/p/chromium/issues/detail?id=709732).
 
 # ZeroDarkMatrix Theme for Chrome
 A highly customized dark theme for Google Chrome.
