@@ -1,5 +1,8 @@
-# NOTICE: Custom UI Themes may no longer be supported.
-Shadow piercing combinators are deprecated and support for them will be removed from Chrome around September 2017. This affects all custom UI themes including this one. If you have interest in this feature being maintained, please [star this issue](https://bugs.chromium.org/p/chromium/issues/detail?id=709732).
+# Only Supporting Stable Channel (Temporarily)
+
+The css combinators used to override the devtools CSS is deprecated and support will be removed from Chrome in m63 (~ December 2017). The [Chrome Team will continue to support custom themes](https://bugs.chromium.org/p/chromium/issues/detail?id=709732&can=2&q=709732) by changing the implementation.
+
+The implementation change requires a rewrite of this theme. During this time, only stable channel will be supported.
 
 # ZeroDarkMatrix Theme for Chrome
 A highly customized dark theme for Google Chrome.
