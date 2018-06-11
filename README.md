@@ -1,19 +1,3 @@
-# Update (2017-10-18)
-The fix to continue support for custom devtools themes landed in m62. The new method injects the custom stylesheet into every shadow root that gets rendered. This caused devtools to be super sluggish especially with the shadow piercing combinators. I haven't finished refactoring the styles, but I decided to release it early to address some of the performance and style issues.
-
-### How You Can Help
-Please [file issues](https://github.com/mauricecruz/zero-base-themes/issues) for anything that seems broken/unstyled.
-
-I'm trying to prune as much css as possible to improve performance. Haven't figured out a good way of verifying if a selector is was removed/deprecated by the Chrome Team other than searching the code base. And that's a slow and painful process.
-
-If you want to pitch in with the cleanup, feel free to create pull requests.
-
-# Only Supporting Stable Channel (Temporarily)
-
-The css combinators used to override the devtools CSS is deprecated and support will be removed from Chrome in m63 (~ December 2017). The [Chrome Team will continue to support custom themes](https://bugs.chromium.org/p/chromium/issues/detail?id=709732&can=2&q=709732) by changing the implementation.
-
-The implementation change requires a rewrite of this theme. During this time, only stable channel will be supported.
-
 # ZeroDarkMatrix Theme for Chrome
 A highly customized dark theme for Google Chrome.
 
@@ -25,7 +9,8 @@ Stable and Canary channels are officially supported.  Beta and Dev channels will
 
 * Add [Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo) from the Chrome Web Store.
 * Open `chrome://flags/#enable-devtools-experiments` &#9654; Enable Developer Tools experiments and click "Relaunch Now" at the bottom.
-* Open developer tools settings &#9654; Experiments &#9654; [&#10004;] Allow custom UI themes. Reopen the developer tools.
+* Open developer tools settings, set Theme mode to 'Dark'
+* Select Experiments tab, and check 'Allow custom UI themes. Reopen the developer tools.
 
 
 ## Preview
