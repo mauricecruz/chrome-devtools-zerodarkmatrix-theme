@@ -9,8 +9,22 @@ Stable and Canary channels are officially supported.  Beta and Dev channels will
 
 * Add [Zero Dark Matrix](https://chrome.google.com/webstore/detail/devtools-theme-zero-dark/bomhdjeadceaggdgfoefmpeafkjhegbo) from the Chrome Web Store.
 * Open `chrome://flags/#enable-devtools-experiments` &#9654; Enable Developer Tools experiments and click "Relaunch Now" at the bottom.
-* Open developer tools settings, set Theme mode to 'Dark'
-* Select Experiments tab, and check 'Allow custom UI themes. Reopen the developer tools.
+* Open the Developer Tools panel -> Click on the 3 dots on upper right hand side -> settings -> 
+
+![DeveloperToolsSettings]
+
+on left hand side drowdown set theme to 'Dark' 
+
+![ThemeDark]
+
+* In the same panel on the left hand side select the Experiments tab. Check 'Allow custom UI themes`
+![AllowCustomUIThemes]
+
+
+[DeveloperToolsSettings]: https://user-images.githubusercontent.com/635449/49825404-2fb2a480-fd39-11e8-9cd3-423714b428c7.png?raw=true "Developer Tools Settings"
+[ThemeDark]: https://user-images.githubusercontent.com/635449/49825339-0134c980-fd39-11e8-83aa-ef4fa03e7122.png?raw=true "Theme Dark"
+[AllowCustomUIThemes]: https://user-images.githubusercontent.com/635449/49825299-e6faeb80-fd38-11e8-836d-f641a7376a04.png?raw=true "Allow Custom UI Themes"
+
 
 
 ## Preview
